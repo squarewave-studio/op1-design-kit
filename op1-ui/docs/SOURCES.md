@@ -46,7 +46,7 @@ documentation shell under the SIL Open Font License 1.1. The font and its
 are hosted with the site. It is separate from OP-1 screen lettering.
 
 [Archivo](https://www.omnibus-type.com/fonts/archivo/), by The Archivo Project
-Authors, supplies the home page hero under the SIL Open Font
+Authors, supplies the home page hero and share-image lettering under the SIL Open Font
 License 1.1. Its variable Latin font and [licence](https://squarewave-studio.github.io/op1-design-kit/assets/fonts/Archivo-OFL.txt)
 are hosted locally with the documentation.
 

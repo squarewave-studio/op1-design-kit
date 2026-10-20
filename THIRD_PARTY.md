@@ -71,7 +71,7 @@ from the OP-1's locally supplied stock font.
 
 ### Archivo
 
-The home page hero uses Archivo by The Archivo Project
+The home page hero and share image use Archivo by The Archivo Project
 Authors under the SIL Open Font License 1.1. The local font is in
 `op1-ui/assets/fonts/archivo-latin-standard-normal.woff2`; its notice is
 `op1-ui/assets/fonts/Archivo-OFL.txt`. It is separate from OP-1 screen lettering.
