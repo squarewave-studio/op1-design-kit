@@ -263,7 +263,7 @@
     },
     {
       "id": "encoder-ownership",
-      "guidance": "Use Blue, Green, White and Orange in physical order, reinforced by labels and positions; document normal, Shift and page maps."
+      "guidance": "Use Blue, Green, White and Orange in physical order. Identify each encoder through its corresponding colour in a label, value, marker or controlled graphic, reinforced by grouping, position and shape. Neutral labels, values or units are valid where ownership remains clear; not every element must share identical paint. Document normal, Shift and page maps."
     },
     {
       "id": "alignment",

@@ -140,12 +140,24 @@ actual font. A missing glyph is an explicit error.
 
 ## Four Encoder Lanes
 
-Blue, Green, White, Orange, in physical order. Keep the label, edited value and
-corresponding visual feature associated with the same lane colour. Labels,
-position and shape should also identify ownership, so the UI remains usable
-without colour discrimination. The fourth control is called Orange here;
-older op1r documentation sometimes calls it Red. The kit token for that
-role is red-orange; it does not change its physical identity.
+Blue, Green, White, Orange, in physical order. Make encoder ownership clear
+using the corresponding colour in a label, value, marker or controlled graphical
+element. Reinforce that association with grouping, position and shape, so the
+screen remains usable without colour discrimination. The label, value, unit and
+drawing do not all have to use identical paint: neutral text is valid where the
+controlling encoder remains clear.
+
+Stock screens use several treatments. FM and Mixer use encoder-coloured numeric
+values. Phone pairs a Green PHONIC label and an Orange/Red TELEMATIC label with
+White numeric values. These are different ways to communicate ownership, rather
+than a requirement to recolour every number. See TE's [original layout guide](https://teenage.engineering/guides/op-1/original/layout)
+and the Phone illustration in the [original manual](https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf),
+PDF page 44. For a new screen, choose a consistent treatment for its reading task;
+coloured labels with White values and encoder-coloured values are both options.
+
+The fourth control is called Orange here; older op1r documentation sometimes
+calls it Red. The kit token for that role is red-orange; it does not change its
+physical identity.
 
 Primary and Shift control maps should be documented side by side. Keep an
 important persistent lane stable across pages where practical: GIN's morph is
