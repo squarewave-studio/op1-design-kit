@@ -2,6 +2,7 @@ import {mkdir,writeFile} from 'node:fs/promises';
 import {interactionPatterns} from '../src/interaction-examples.mjs';
 import {renderSvg,validateScene} from '../src/components.mjs';
 import {checkLayout} from '../src/layout.mjs';
+import {serializeScene} from '../src/export-scene.mjs';
 
 const out=new URL('../../skills/op1-design/references/visuals/',import.meta.url);
 await mkdir(out,{recursive:true});
@@ -13,7 +14,7 @@ for(const p of interactionPatterns) {
     if(issues.length)throw new Error(`${id}: ${issues.join('; ')}`);
     await writeFile(new URL(id+'.svg',out),renderSvg(scene,{title}).replace(/<title>.*?<\/title>/,'')+'\n');
     // Original schematic geometry and semantic text only, never stock glyph data.
-    await writeFile(new URL(id+'.json',out),JSON.stringify({...scene,nodes:scene.nodes.filter(n=>!n.textId)})+'\n');
+    await writeFile(new URL(id+'.json',out),serializeScene({...scene,nodes:scene.nodes.filter(n=>!n.textId)})+'\n');
     states.push({id,title,state,png:id+'.png',svg:id+'.svg',scene:id+'.json'});
   }
   const {states:_,...contract}=p;
