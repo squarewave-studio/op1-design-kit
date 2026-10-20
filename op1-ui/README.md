@@ -10,7 +10,7 @@ share what you learn. Version **0.1.0 is a draft**; it is not a TE specification
 
 ![Original Membrane instrument concept](examples/renders/membrane-rest.png)
 
-*Original artwork rendered with a local stock OP-1 font. The font file and glyph vectors are not included. Host spacing is approximate.*
+*Original artwork rendered with the bundled Iosevka Thin preview font. Iosevka is included under OFL; no stock font is distributed.*
 
 ## Start Here
 
@@ -19,11 +19,11 @@ share what you learn. Version **0.1.0 is a draft**; it is not a TE specification
 - [Patterns And Screen Examples](docs/EXAMPLES.md): composition studies and original applications.
 - [Screen Families](docs/STOCK.md): design language across the original OP-1.
 - [Icons](docs/ICONS.md): stock symbol IDs, meanings, local loading and original icon design.
-- [Fonts](docs/FONTS.md): where to get `opfont.svg`, stock IDs, glyph checks and host loading.
+- [Fonts](docs/FONTS.md): bundled Iosevka previews, unpacking your own stock font, character IDs and host loading.
 - [Graphics](docs/GRAPHICS.md): restricted SVG, named blocks, smooth edges and CPU cost.
 - [Components](docs/COMPONENTS.md): APIs, layouts and runtime binding contracts.
 - [Sources](docs/SOURCES.md): community links and licence notes.
-- [Agent Skill](../skills/op1-design/SKILL.md): portable, self-contained instructions.
+- [For Agents](docs/AGENT-SKILL.md): install the skill and use it with your coding agent.
 
 See the kit in a real instrument: [GIN](https://github.com/squarewave-studio/op1-mods/tree/main/mods/gin).
 
@@ -40,7 +40,7 @@ python3 op1-ui/tools/preview.py
 # Open http://127.0.0.1:8765/op1-ui/workbench.html
 ```
 
-It starts in labelled schematic-font mode. If you need faithful typography,
+It starts with the bundled Iosevka Thin placeholder. For a separate stock-lettering check,
 choose your own `opfont.svg` with the file picker. The browser reads it on your
 machine and uploads nothing. The kit does not serve TE assets.
 
@@ -82,17 +82,18 @@ required. See [Installation And Usage](docs/AGENT-SKILL.md).
 Or copy the whole `skills/op1-design` folder into your
 tool's skills directory. It follows the [Agent Skills format](https://agentskills.io/specification)
 and includes its references and local font inspector. Ask it to design an
-original OP-1 screen with your local stock font and stock-derived typography profiles.
+original OP-1 screen with the bundled Iosevka preview and stock-derived typography profiles.
 
 [`SKILL.md`](../skills/op1-design/SKILL.md) indexes the portable references.
 The maintained [Spec](../skills/op1-design/references/SPEC.md) and
 [JSON rules](../skills/op1-design/references/design-kit.json) build the site
 specification, public JSON and code constants. The
 [creative prompts](../skills/op1-design/references/IDEATION.md) support exploring
-original ideas with the user. The [verification guide](../skills/op1-design/references/VERIFICATION.md)
+ideas for your instrument. The [verification guide](../skills/op1-design/references/VERIFICATION.md)
 covers host screenshots, image inspection and the bundled font, SVG and scene
 checkers. The [visual index](../skills/op1-design/references/VISUALS.md) links local image
-pairs, editable schematic SVGs and state contracts. Load only the relevant files.
+pairs, editable schematic SVGs and state contracts. Choose a pattern to explore
+and compare its states.
 
 ## Build The Site
 

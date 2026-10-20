@@ -39,33 +39,33 @@
 <path id="decay-value-0-2" d="M 150,31 L 150,29 L 152,27 L 158,27 L 160,29 L 160,33 L 150,47 L 160,47" fill="none" stroke="#ffffff" stroke-width="1.5"/>
 <path id="decay-value-0-3" d="M 165,27 L 171,27 L 173,31 L 173,43 L 171,47 L 165,47 L 163,43 L 163,31 L 165,27" fill="none" stroke="#ffffff" stroke-width="1.5"/>
 <path id="source-envelope-0" d="M 137 66 L 145 52 C 154 60 169 65 190 66" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="pitch-label-1-0" d="M 12,93.3333 L 12,80 L 16,80 L 18.6667,82.6667 L 18.6667,84 L 16,86.6667 L 12,86.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-1" d="M 20.6667,80 L 27.3333,80" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-2" d="M 24,80 L 24,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-3" d="M 20.6667,93.3333 L 27.3333,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-4" d="M 29.3333,80 L 36,80" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-5" d="M 32.6667,80 L 32.6667,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-6" d="M 44.6667,81.3333 L 43.3333,80 L 39.3333,80 L 38,81.3333 L 38,92 L 39.3333,93.3333 L 43.3333,93.3333 L 44.6667,92" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-7" d="M 46.6667,80 L 46.6667,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-8" d="M 53.3333,80 L 53.3333,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="pitch-label-1-9" d="M 46.6667,86.6667 L 53.3333,86.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="shape-label-1-0" d="M 72.6667,81.3333 L 71.3333,80 L 67.3333,80 L 66,81.3333 L 66,85.3333 L 67.3333,86.6667 L 71.3333,86.6667 L 72.6667,88 L 72.6667,92 L 71.3333,93.3333 L 67.3333,93.3333 L 66,92" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-1" d="M 74.6667,80 L 74.6667,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-2" d="M 81.3333,80 L 81.3333,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-3" d="M 74.6667,86.6667 L 81.3333,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-4" d="M 83.3333,93.3333 L 86.6667,80 L 90,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-5" d="M 84.6667,88 L 88.6667,88" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-6" d="M 92,93.3333 L 92,80 L 96,80 L 98.6667,82.6667 L 98.6667,84 L 96,86.6667 L 92,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-7" d="M 107.3333,80 L 100.6667,80 L 100.6667,93.3333 L 107.3333,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="shape-label-1-8" d="M 100.6667,86.6667 L 106,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="decay-label-1-0" d="M 137,80 L 141,80 L 143.6667,82.6667 L 143.6667,90.6667 L 141,93.3333 L 137,93.3333 L 137,80" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-1" d="M 152.3333,80 L 145.6667,80 L 145.6667,93.3333 L 152.3333,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-2" d="M 145.6667,86.6667 L 151,86.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-3" d="M 161,81.3333 L 159.6667,80 L 155.6667,80 L 154.3333,81.3333 L 154.3333,92 L 155.6667,93.3333 L 159.6667,93.3333 L 161,92" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-4" d="M 163,93.3333 L 166.3333,80 L 169.6667,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-5" d="M 164.3333,88 L 168.3333,88" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-6" d="M 171.6667,80 L 175,86.6667 L 178.3333,80" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-<path id="decay-label-1-7" d="M 175,86.6667 L 175,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="pitch-label-1-0" d="M 12,92.3333 L 12,79 L 16,79 L 18.6667,81.6667 L 18.6667,83 L 16,85.6667 L 12,85.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-1" d="M 20.6667,79 L 27.3333,79" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-2" d="M 24,79 L 24,92.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-3" d="M 20.6667,92.3333 L 27.3333,92.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-4" d="M 29.3333,79 L 36,79" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-5" d="M 32.6667,79 L 32.6667,92.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-6" d="M 44.6667,80.3333 L 43.3333,79 L 39.3333,79 L 38,80.3333 L 38,91 L 39.3333,92.3333 L 43.3333,92.3333 L 44.6667,91" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-7" d="M 46.6667,79 L 46.6667,92.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-8" d="M 53.3333,79 L 53.3333,92.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-9" d="M 46.6667,85.6667 L 53.3333,85.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="shape-label-1-0" d="M 72.6667,80.3333 L 71.3333,79 L 67.3333,79 L 66,80.3333 L 66,84.3333 L 67.3333,85.6667 L 71.3333,85.6667 L 72.6667,87 L 72.6667,91 L 71.3333,92.3333 L 67.3333,92.3333 L 66,91" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-1" d="M 74.6667,79 L 74.6667,92.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-2" d="M 81.3333,79 L 81.3333,92.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-3" d="M 74.6667,85.6667 L 81.3333,85.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-4" d="M 83.3333,92.3333 L 86.6667,79 L 90,92.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-5" d="M 84.6667,87 L 88.6667,87" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-6" d="M 92,92.3333 L 92,79 L 96,79 L 98.6667,81.6667 L 98.6667,83 L 96,85.6667 L 92,85.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-7" d="M 107.3333,79 L 100.6667,79 L 100.6667,92.3333 L 107.3333,92.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-8" d="M 100.6667,85.6667 L 106,85.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="decay-label-1-0" d="M 137,79 L 141,79 L 143.6667,81.6667 L 143.6667,89.6667 L 141,92.3333 L 137,92.3333 L 137,79" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-1" d="M 152.3333,79 L 145.6667,79 L 145.6667,92.3333 L 152.3333,92.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-2" d="M 145.6667,85.6667 L 151,85.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-3" d="M 161,80.3333 L 159.6667,79 L 155.6667,79 L 154.3333,80.3333 L 154.3333,91 L 155.6667,92.3333 L 159.6667,92.3333 L 161,91" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-4" d="M 163,92.3333 L 166.3333,79 L 169.6667,92.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-5" d="M 164.3333,87 L 168.3333,87" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-6" d="M 171.6667,79 L 175,85.6667 L 178.3333,79" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-7" d="M 175,85.6667 L 175,92.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
 <path id="source-number-1-0" d="M 197.6667,86.6667 L 197.6667,85.3333 L 199,84 L 203,84 L 204.3333,85.3333 L 204.3333,88 L 197.6667,97.3333 L 204.3333,97.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
 <path id="source-identity-1" d="M 190 79 L 212 79 L 212 104 L 190 104 Z" fill="none" stroke="#b9b9c9" stroke-width="1"/>
 <path id="pitch-dial-1" d="M 45 109 C 45 115.6274 39.6274 121 33 121 C 26.3726 121 21 115.6274 21 109 C 21 102.3726 26.3726 97 33 97 C 39.6274 97 45 102.3726 45 109" fill="none" stroke="#698eff" stroke-width="1.5"/>

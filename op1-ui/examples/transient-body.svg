@@ -26,7 +26,7 @@
 <path id="mix-unit-0" d="M 299.3333,67.3333 L 306,54" fill="none" stroke="#ff423f" stroke-width="1.5"/>
 <path id="mix-unit-1" d="M 299.3333,54 L 300.6667,54 L 300.6667,56.6667 L 299.3333,56.6667 L 299.3333,54" fill="none" stroke="#ff423f" stroke-width="1.5"/>
 <path id="mix-unit-2" d="M 304.6667,64.6667 L 306,64.6667 L 306,67.3333 L 304.6667,67.3333 L 304.6667,64.6667" fill="none" stroke="#ff423f" stroke-width="1.5"/>
-<path id="neutral-reference" d="M 40,82 L 300,82" fill="none" stroke="#625d77" stroke-width="1"/>
+<path id="neutral-reference" d="M 44,82 L 300,82" fill="none" stroke="#625d77" stroke-width="1"/>
 <path id="neutral-label-0" d="M 10.3333,76 L 14.3333,76 L 15.6667,78.6667 L 15.6667,86.6667 L 14.3333,89.3333 L 10.3333,89.3333 L 9,86.6667 L 9,78.6667 L 10.3333,76" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
 <path id="neutral-label-1" d="M 17.6667,76 L 21.6667,76 L 24.3333,78.6667 L 24.3333,86.6667 L 21.6667,89.3333 L 17.6667,89.3333 L 17.6667,76" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
 <path id="neutral-label-2" d="M 26.3333,89.3333 L 26.3333,76 L 30.3333,76 L 33,78.6667 L 33,80 L 30.3333,82.6667 L 26.3333,82.6667" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>

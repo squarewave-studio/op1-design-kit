@@ -47,7 +47,7 @@ export function browserChoice(bank='METAL') {
   box(s,'bank-choice',12,36+banks.indexOf(bank)*25,128,24,'blue');
   box(s,'patch-choice',168,61,139,24,'green');
   line(s,'column-divider',[[154,34],[154,113]],'decorative',1);
-  label(s,'bank-position',`${banks.indexOf(bank)+1}/3`,16,125,'blue');label(s,'patch-position','2/3',304,125,'green','xs','right');
+  label(s,'bank-position',`${banks.indexOf(bank)+1}/3`,16,121,'blue');label(s,'patch-position','2/3',304,121,'green','xs','right');
   return s;
 }
 export function shiftPresentation(shift=false) {

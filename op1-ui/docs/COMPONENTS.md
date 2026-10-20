@@ -1,18 +1,18 @@
-# Components and adapters
+# Components And Adapters
 
 The kit includes layout helpers, original schematic lettering and screen
 examples. Use them to explore a design, then connect it to your target SDK.
 The original JavaScript and C constants and examples use MIT; native SDKs and
 font assets keep their own terms.
 
-## Public reference API
+## Public Reference API
 
 Import `op1-ui/src/components.mjs` in Node or a browser. No package dependencies.
 
 | Export | Contract |
 | --- | --- |
 | `scene()` | New 320×160 scene with path nodes and semantic text records |
-| `text(scene, options)` | stock-derived typography profiles text; measured overflow/missing glyphs throw; no shrinking |
+| `text(scene, options)` | Text in a stock-derived size profile; overflow and missing characters raise an error |
 | `parameter(scene, options)` | Named value and optional unit associated with encoder lane 0–3 |
 | `header(scene, options)` | Left title, context and right-aligned small page name |
 | `softKeys(scene, labels)` | Exactly four T1–T4 captions; empty means unused |
@@ -33,8 +33,9 @@ the anchor. Returned bounds describe the original schematic font, not stock text
 
 Parameter options: `{id, label, value, unit, lane, x, y, size, width, align}`. Values are
 already formatted strings; audio/model conversion belongs to the caller. Name and value share an edge anchor; the optional unit joins the value on its
-baseline. The library remeasures the full pair in stock host mode. The
-library will reject a value/unit pair that does not fit. Change the unit format or arrangement if the pair does not fit.
+baseline. The Iosevka and stock-font adapters remeasure the complete pair. If
+it does not fit, change the unit format or arrangement; the library does not
+shrink it automatically.
 
 `screens.mjs` exposes `playScreen` and `editorScreen`; `patterns.mjs` supplies
 the [Screen Examples](EXAMPLES.md). They are
@@ -43,7 +44,17 @@ a released instrument. Their ranges and controls are examples. Connect your actu
 model and documented input contract. The workbench's few T-key simulations do
 not establish that every displayed feature has a backend.
 
-## Stock host mode
+## Choose A Preview Font
+
+Use the bundled Iosevka adapter for shareable previews. It loads the included
+font, applies the selected character variants and measures visible lettering.
+Follow [Host Preview Font](PREVIEW-FONT.md) for the browser and static-render
+helpers. `renderSvg()` alone keeps the original schematic alphabet.
+
+For a private stock-lettering check, load your own `opfont.svg` locally. Keep
+these renders private and check native text spacing separately.
+
+### Local Stock-Font Adapter
 
 `stock-font.mjs` is an optional browser-only local asset adapter. It retains
 stock curves in DOM, measures that font and replaces the semantic text records

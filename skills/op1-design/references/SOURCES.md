@@ -49,3 +49,11 @@ are hosted with the site. It is separate from OP-1 screen lettering.
 Authors, supplies the home page hero under the SIL Open Font
 License 1.1. Its variable Latin font and [licence](https://squarewave-studio.github.io/op1-design-kit/assets/fonts/Archivo-OFL.txt)
 are hosted locally with the documentation.
+
+## Host Preview Font
+
+[Iosevka](https://github.com/be5invis/Iosevka/tree/v34.9.0), by Renzhi Li, supplies
+the Thin host placeholder under the SIL Open Font License 1.1. Its unmodified
+font file, notice and selected-variant profile are included in the skill.
+[Host Preview Font](PREVIEW-FONT.md) explains the settings and limits. Iosevka
+is not the OP-1 font and does not supply its stock icons.

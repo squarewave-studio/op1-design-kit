@@ -1,9 +1,11 @@
 import { scene, text, renderSvg, validateScene, tokens } from './src/components.mjs';
 import { playScreen, editorScreen } from './src/screens.mjs';
 import { loadStockFont, applyStockFont } from './src/stock-font.mjs';
+import {loadPreviewFont,applyPreviewFont} from '../skills/op1-design/assets/fonts/preview-font.mjs';
 import { exampleScenes } from './src/example-scenes.mjs';
 
 const $ = id => document.getElementById(id);
+let previewFont=null;
 let view = 'play', values = [40, 40, 40, 40], font = null;
 const keyLabels = { play: ['EDIT', 'ENV', 'FX', 'LFO'], editor: ['EXIT', 'PREV', 'NEXT', 'NAME'] };
 function draw() {
@@ -11,6 +13,7 @@ function draw() {
   $('screen').innerHTML = renderSvg(s, { guides: $('guides').checked });
   const issues = validateScene(s);
   if (font) { try { issues.push(...applyStockFont($('screen').querySelector('svg'), s, font)); } catch (error) { issues.push(error.message); } }
+  else if(previewFont) {try {issues.push(...applyPreviewFont($('screen').querySelector('svg'),s,previewFont));}catch(error){issues.push(error.message);}}
   $('validation').textContent = issues.join(' / ');
   $('screen').style.width = `${320 * Number($('zoom').value)}px`;
   $('screen').style.height = `${160 * Number($('zoom').value)}px`;
@@ -23,6 +26,7 @@ function draw() {
   const spec = exampleScenes['type-scale'];
   $('type-specimen').innerHTML = renderSvg(spec);
   if (font) applyStockFont($('type-specimen').querySelector('svg'), spec, font);
+  else if(previewFont) applyPreviewFont($('type-specimen').querySelector('svg'),spec,previewFont);
 }
 for (let i = 0; i < 4; i++) {
   const label = document.createElement('label');
@@ -44,5 +48,6 @@ async function setFont(source) {
   draw();
 }
 $('font-file').addEventListener('change', async e => { try { if (e.target.files[0]) await setFont(await e.target.files[0].text()); } catch (error) { $('font-status').textContent = error.message; } });
-$('clear-font').addEventListener('click', () => { font = null; $('font-file').value = ''; $('font-status').textContent = 'Schematic alphabet. Not the stock OP-1 font.'; $('glyphs').textContent = 'Load a stock font to inspect its inventory.'; draw(); });
+$('clear-font').addEventListener('click', () => { font = null; $('font-file').value = ''; $('font-status').textContent = 'Iosevka Thin preview. Stock lettering needs a separate local check.'; $('glyphs').textContent = 'Iosevka preview set: A–Z, 0–9 and the punctuation documented in Fonts. Stock icons remain separate.'; draw(); });
 draw();
+loadPreviewFont().then(loaded=>{previewFont=loaded;if(!font){$('font-status').textContent='Iosevka Thin preview. Stock lettering needs a separate local check.';draw();}}).catch(error=>{$('font-status').textContent=`Iosevka unavailable: ${error.message}. Schematic lettering shown.`;});

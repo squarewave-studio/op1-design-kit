@@ -59,11 +59,11 @@
 <path id="bank-choice" d="M 12 61 L 140 61 L 140 85 L 12 85 Z" fill="none" stroke="#698eff" stroke-width="1.5"/>
 <path id="patch-choice" d="M 168 61 L 307 61 L 307 85 L 168 85 Z" fill="none" stroke="#00ed95" stroke-width="1.5"/>
 <path id="column-divider" d="M 154,34 L 154,113" fill="none" stroke="#625d77" stroke-width="1"/>
-<path id="bank-position-0" d="M 16,127.6667 L 16,126.3333 L 17.3333,125 L 21.3333,125 L 22.6667,126.3333 L 22.6667,129 L 16,138.3333 L 22.6667,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="bank-position-1" d="M 24.6667,138.3333 L 31.3333,125" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="bank-position-2" d="M 33.3333,125 L 40,125 L 37.3333,131.6667 L 40,134.3333 L 40,137 L 38.6667,138.3333 L 33.3333,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="bank-position-3" d="M 34.6667,131.6667 L 37.3333,131.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
-<path id="patch-position-0" d="M 280,127.6667 L 280,126.3333 L 281.3333,125 L 285.3333,125 L 286.6667,126.3333 L 286.6667,129 L 280,138.3333 L 286.6667,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="patch-position-1" d="M 288.6667,138.3333 L 295.3333,125" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="patch-position-2" d="M 297.3333,125 L 304,125 L 301.3333,131.6667 L 304,134.3333 L 304,137 L 302.6667,138.3333 L 297.3333,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
-<path id="patch-position-3" d="M 298.6667,131.6667 L 301.3333,131.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/></svg>
+<path id="bank-position-0" d="M 16,123.6667 L 16,122.3333 L 17.3333,121 L 21.3333,121 L 22.6667,122.3333 L 22.6667,125 L 16,134.3333 L 22.6667,134.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-1" d="M 24.6667,134.3333 L 31.3333,121" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-2" d="M 33.3333,121 L 40,121 L 37.3333,127.6667 L 40,130.3333 L 40,133 L 38.6667,134.3333 L 33.3333,134.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-3" d="M 34.6667,127.6667 L 37.3333,127.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="patch-position-0" d="M 280,123.6667 L 280,122.3333 L 281.3333,121 L 285.3333,121 L 286.6667,122.3333 L 286.6667,125 L 280,134.3333 L 286.6667,134.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-1" d="M 288.6667,134.3333 L 295.3333,121" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-2" d="M 297.3333,121 L 304,121 L 301.3333,127.6667 L 304,130.3333 L 304,133 L 302.6667,134.3333 L 297.3333,134.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-3" d="M 298.6667,127.6667 L 301.3333,127.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/></svg>

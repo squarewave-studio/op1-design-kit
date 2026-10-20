@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scope": "Original host pattern demonstrations; not stock screens or native implementations",
   "fontModes": {
-    "png": "stock-local / optical-v1",
+    "png": "open-font-preview / iosevka-thin-op1-preview-v1",
     "svg": "original schematic alphabet",
     "scene": "semantic text records plus original schematic geometry"
   },

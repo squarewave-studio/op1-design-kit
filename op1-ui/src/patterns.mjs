@@ -23,9 +23,9 @@ export function engineStudy() {
   const s=scene();
   for(let row=0;row<2;row++) {
     const y=row*70;
-    label(s,`pitch-label-${row}`,'PITCH',12,10+y,'blue');
-    label(s,`shape-label-${row}`,'SHAPE',66,10+y,'green');
-    label(s,`decay-label-${row}`,'DECAY',137,10+y,'white');
+    label(s,`pitch-label-${row}`,'PITCH',12,10+y-row,'blue');
+    label(s,`shape-label-${row}`,'SHAPE',66,10+y-row,'green');
+    label(s,`decay-label-${row}`,'DECAY',137,10+y-row,'white');
     label(s,`source-number-${row}`,String(row+1),201,14+y,'secondary','browserRow','center');
     curve(s,`source-identity-${row}`,[['M',190,9+y],['L',212,9+y],['L',212,34+y],['L',190,34+y],['Z']],'secondary',1);
     const dialY=(row?39:41)+y,radius=row?12:13;
@@ -79,7 +79,7 @@ export function membraneScreen({state='rest'}={}) {
   const feltWidth=Math.max(3,18+(damping-42)*.45),left=169-feltWidth;
   curve(s,'damping-contact',[['M',left+2,68],['L',169,72],['L',167,77],['L',left,73],['Z']],'white',1.3,'background');
   const values=[tension,position,damping,shell].map(String);
-  ['TENSION','STRIKE','DAMP','SHELL'].forEach((name,i)=>{label(s,`name-${i}`,name,212,24+i*31,lane[i]);label(s,`value-${i}`,values[i],311,24+tokens.type.browserRow.nominalHeight-20+i*31,lane[i],'parameterValue','right');});
+  ['TENSION','STRIKE','DAMP','SHELL'].forEach((name,i)=>{label(s,`name-${i}`,name,208,24+i*31,lane[i]);label(s,`value-${i}`,values[i],311,24+tokens.type.browserRow.nominalHeight-20+i*31,lane[i],'parameterValue','right');});
   return s;
 }
 export function envelopeStudy() {
@@ -95,7 +95,7 @@ export function transientScreen({state='rest'}={}) {
   label(s,'instrument','TRANSIENT',12,9,'secondary');
   label(s,'amount-label','MIX',306,9,'orange','browserRow','right');label(s,'amount-value',changed?'80':'60',306,28,'orange','parameterValue','right');label(s,'mix-unit','%',306,54,'orange','browserRow','right');
   const neutral=82,peak=neutral-4*attack,body=neutral-4*bodyGain,tail=145+.5*tailMs;
-  line(s,'neutral-reference',[[40,neutral],[300,neutral]],'decorative',1);
+  line(s,'neutral-reference',[[44,neutral],[300,neutral]],'decorative',1);
   label(s,'neutral-label','0DB',9,76,'secondary');
   curve(s,'attack',[['M',45,neutral],['C',48,neutral,52,peak+4,58,peak]],'blue',2);
   curve(s,'body',[['M',58,peak],['C',69,body-4,101,body,145,body]],'green',2);

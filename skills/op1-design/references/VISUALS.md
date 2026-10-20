@@ -4,7 +4,7 @@ Original static examples for seven stock-derived relationships. Choose a row,
 read its contract, then open its images. Each state is a complete 320×160
 logical screen. The site shows the same pairs beside the guidance.
 
-PNG: stock-local / optical-v1 lettering, approximate spacing. SVG: original
+PNG: open-font-preview / iosevka-thin-op1-preview-v1 lettering with its own advances. SVG: original
 schematic alphabet. Neither is a native rendering or performance result.
 Stock font files and reusable stock glyph geometry are not included.
 

@@ -1,0 +1,29 @@
+{
+  "id": "iosevka-thin-op1-preview-v1",
+  "family": "Iosevka",
+  "version": "34.9.0",
+  "weight": 100,
+  "file": "Iosevka-Thin.woff2",
+  "license": "Iosevka-OFL.md",
+  "sha256": "273de62b3dd42f5c47407cf2150cf0bc1c44b13bd217ad08009e9ef34bc351b2",
+  "unitsPerEm": 1000,
+  "capHeight": 735,
+  "features": {
+    "cv01": 1,
+    "cv02": 1,
+    "cv03": 1,
+    "cv04": 1,
+    "cv05": 1,
+    "cv06": 1,
+    "cv07": 1,
+    "cv08": 2,
+    "cv09": 3,
+    "cv10": 1,
+    "cv19": 1
+  },
+  "spacing": "font advances; visible-ink anchors; no synthetic weight, stretching or extra tracking",
+  "source": "https://github.com/be5invis/Iosevka/tree/v34.9.0",
+  "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-Thin.2pbn6cyy-tq5l.woff2",
+  "scope": "Openly licensed host placeholder. Not stock lettering, stock metrics or a device font.",
+  "textCharacters": " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#%*+,-./:;<=>?_"
+}

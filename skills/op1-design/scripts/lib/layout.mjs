@@ -24,7 +24,11 @@ function intersects(a,b,r) {
   return true;
 }
 export function checkLayout(s, gap=tokens.layout.textArtworkGap) {
-  const boxes=s.texts.filter(t=>t.value).map(t=>({id:t.id,x:t.x,y:t.y,w:t.width,h:tokens.type[t.size].nominalHeight,pad:tokens.type[t.size].strokeWidth/2}));
+  const invalid=s.texts.filter(t=>t.inkBounds!==undefined && (!t.inkBounds || !['x','y','width','height'].every(k=>Number.isFinite(t.inkBounds[k])) || t.inkBounds.width<0 || t.inkBounds.height<0));
+  if(invalid.length)return invalid.map(t=>`${t.id}: invalid measured ink bounds`);
+  const boxes=s.texts.filter(t=>t.value).map(t=>t.inkBounds
+    ? {id:t.id,x:t.inkBounds.x,y:t.inkBounds.y,w:t.inkBounds.width,h:t.inkBounds.height,pad:0}
+    : {id:t.id,x:t.x,y:t.y,w:t.width,h:tokens.type[t.size].nominalHeight,pad:tokens.type[t.size].strokeWidth/2});
   const isText=n=>Boolean(n.textId);
   const art=s.nodes.filter(n=>!isText(n));const issues=[];
   for(let i=0;i<boxes.length;i++) {

@@ -307,7 +307,7 @@
     },
     {
       "id": "assets",
-      "guidance": "Keep TE code, firmware, fonts, glyph geometry, kerning databases and extracted stock artwork out of public source and hosted files. For additional design examples, consult the owner’s existing original OP-1 firmware locally or TE’s official original OP-1 manual as an external reference. Do not bundle manual pages or illustrations with the skill or its machine-readable rules. Website quotations remain separately attributed, outside MIT and beside their analysis."
+      "guidance": "Keep TE code, firmware, fonts, glyph geometry, kerning databases and extracted stock artwork out of public source and hosted files. For additional design examples, consult the owner\u2019s existing original OP-1 firmware locally or TE\u2019s official original OP-1 manual as an external reference. Do not bundle manual pages or illustrations with the skill or its machine-readable rules. Website quotations remain separately attributed, outside MIT and beside their analysis."
     },
     {
       "id": "creative-exploration",
@@ -323,15 +323,25 @@
     },
     {
       "id": "text-clearance",
-      "guidance": "Keep text clear of other text and artwork, including stroke extents and changing states. Use the kit’s proposed 2-unit text-to-artwork gap, remeasure values and units together in the selected font, and repeat native checks with actual ink bounds."
+      "guidance": "Keep text clear of other text and artwork, including stroke extents and changing states. Use the kit\u2019s proposed 2-unit text-to-artwork gap, remeasure values and units together in the selected font, and repeat native checks with actual ink bounds."
     },
     {
       "id": "host-verification",
-      "guidance": "Use the project’s actual preview and available capture tools. Check relevant boundary and interaction states, save and visually inspect host PNGs in the selected font mode, fix issues and report the renderer, scale and limitations. Portable font, SVG and scene checks supplement image inspection; they do not qualify native rendering, hardware legibility or CPU/audio cost."
+      "guidance": "Use the project\u2019s actual preview and available capture tools. Check relevant boundary and interaction states, save and visually inspect host PNGs in the selected font mode, fix issues and report the renderer, scale and limitations. Portable font, SVG and scene checks supplement image inspection; they do not qualify native rendering, hardware legibility or CPU/audio cost."
     },
     {
       "id": "input-navigation-contract",
-      "guidance": "Pair a proposed screen’s visual states with the actual primary/Shift inputs, detail and return routes, state retained on return and discoverability for unlabelled controls. Mark unimplemented bindings as proposed and test the real input route; a graphic does not establish an interaction."
+      "guidance": "Pair a proposed screen\u2019s visual states with the actual primary/Shift inputs, detail and return routes, state retained on return and discoverability for unlabelled controls. Mark unimplemented bindings as proposed and test the real input route; a graphic does not establish an interaction."
     }
-  ]
+  ],
+  "previewFont": {
+    "mode": "open-font-preview",
+    "id": "iosevka-thin-op1-preview-v1",
+    "family": "Iosevka",
+    "version": "34.9.0",
+    "weight": 100,
+    "profile": "assets/fonts/profile.json",
+    "pathBase": "skill-root",
+    "scope": "Host placeholder only. Stock-derived size profiles and native font checks remain separate."
+  }
 }
