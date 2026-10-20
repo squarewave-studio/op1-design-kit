@@ -1,0 +1,23 @@
+name: Public Asset Safety
+on:
+  workflow_call:
+  pull_request:
+  push:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - name: Check public assets and guard fixtures
+        run: |
+          python3 tools/check_public_assets.py --all
+          python3 -m unittest discover -s tests

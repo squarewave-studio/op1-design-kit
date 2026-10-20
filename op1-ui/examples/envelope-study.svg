@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="envelope" d="M 20 119 C 26 74 42 44 66 29 C 74 68 91 76 131 78 L 228 78 C 240 103 260 119 298 119" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="point-0-h" d="M 18.5,119 L 21.5,119" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-0-v" d="M 20,117.5 L 20,120.5" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-1-h" d="M 64.5,29 L 67.5,29" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-1-v" d="M 66,27.5 L 66,30.5" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-2-h" d="M 129.5,78 L 132.5,78" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-2-v" d="M 131,76.5 L 131,79.5" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-3-h" d="M 226.5,78 L 229.5,78" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-3-v" d="M 228,76.5 L 228,79.5" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-4-h" d="M 296.5,119 L 299.5,119" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="point-4-v" d="M 298,117.5 L 298,120.5" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="value-0-0" d="M 12,138.3333 L 15.3333,125 L 18.6667,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-1" d="M 13.3333,133 L 17.3333,133" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-2" d="M 30,127.6667 L 32.6667,125 L 32.6667,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-3" d="M 29.3333,138.3333 L 36,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-4" d="M 38,127.6667 L 38,126.3333 L 39.3333,125 L 43.3333,125 L 44.6667,126.3333 L 44.6667,129 L 38,138.3333 L 44.6667,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-1-0" d="M 92,125 L 96,125 L 98.6667,127.6667 L 98.6667,135.6667 L 96,138.3333 L 92,138.3333 L 92,125" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-1" d="M 109.3333,127.6667 L 109.3333,126.3333 L 110.6667,125 L 114.6667,125 L 116,126.3333 L 116,129 L 109.3333,138.3333 L 116,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-2" d="M 123.3333,138.3333 L 123.3333,125 L 118,134.3333 L 124.6667,134.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-3" d="M 128,125 L 132,125 L 133.3333,127.6667 L 133.3333,135.6667 L 132,138.3333 L 128,138.3333 L 126.6667,135.6667 L 126.6667,127.6667 L 128,125" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-2-0" d="M 178.6667,126.3333 L 177.3333,125 L 173.3333,125 L 172,126.3333 L 172,130.3333 L 173.3333,131.6667 L 177.3333,131.6667 L 178.6667,133 L 178.6667,137 L 177.3333,138.3333 L 173.3333,138.3333 L 172,137" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-1" d="M 196,125 L 192,125 L 189.3333,129 L 189.3333,137 L 190.6667,138.3333 L 194.6667,138.3333 L 196,137 L 196,133 L 194.6667,131.6667 L 189.3333,131.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-2" d="M 204.6667,125 L 198,125 L 198,131.6667 L 203.3333,131.6667 L 204.6667,133 L 204.6667,137 L 203.3333,138.3333 L 198,138.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-3-0" d="M 252,138.3333 L 252,125 L 256,125 L 258.6667,127.6667 L 258.6667,129 L 256,131.6667 L 252,131.6667" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-1" d="M 254.6667,131.6667 L 258.6667,138.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-2" d="M 270,127.6667 L 272.6667,125 L 272.6667,138.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-3" d="M 269.3333,138.3333 L 276,138.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-4" d="M 281.3333,137 L 281.3333,138.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-5" d="M 286.6667,127.6667 L 286.6667,126.3333 L 288,125 L 292,125 L 293.3333,126.3333 L 293.3333,129 L 286.6667,138.3333 L 293.3333,138.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/></svg>

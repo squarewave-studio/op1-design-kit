@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OP-1 Design Kit · SquareWave Studio</title>
+<meta name="description" content="A draft design kit for original OP-1 screens. Stock-derived typography, four encoder colours, stock font loading and practical SVG guidance.">
+<meta property="og:title" content="OP-1 Design Kit · SquareWave Studio">
+<meta property="og:description" content="Small screen. Clear ideas. Components and guidance for original OP-1 synths, effects and tools.">
+<meta property="og:image" content="https://squarewave-studio.github.io/op1-design-kit/og.png">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="preview.css">
+</head>
+<body>
+<header class="masthead"><a class="studio-brand" href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit"><img src="assets/squarewave-mark.svg" width="28" height="28" alt="">SquareWave<span>Studio</span></a><span>OPEN INSTRUMENT TOOLS / 001</span><a href="#credits">Credits ↗</a></header>
+<main>
+<section class="intro"><div><p class="eyebrow">A COMMUNITY DESIGN KIT FOR THE ORIGINAL OP-1</p><h1>Small screen.<br>Clear ideas.</h1><p class="lede">Four colours. Clear readouts. One instrument.<br>A shared starting point for synths, effects and tools that feel at home.</p></div><div class="mark" aria-label="Blue, green, white, orange encoder order"><i></i><i></i><i></i><i></i></div></section>
+<nav class="links"><a href="start.html">Start Building ↗</a><a href="spec.html">Spec ↗</a><a href="docs/FONTS.md">Stock Font Setup ↗</a><a href="docs/GRAPHICS.md">Graphics &amp; CPU ↗</a><a href="agents.html">For Agents ↗</a><span>v0.1 · DRAFT</span></nav>
+<section class="workbench">
+<div class="screen-column"><div class="section-label"><span>01 / SCREEN WORKBENCH</span><span id="dimensions">320 × 160 LOGICAL</span></div>
+<div class="tabs" role="group" aria-label="Reference layout"><button data-view="play" aria-pressed="true">Play</button><button data-view="editor" aria-pressed="false">Edit</button></div>
+<div class="screen-well"><div id="screen" role="img" aria-label="OP-1 reference screen"></div></div>
+<div class="tkeys" aria-label="Simulated T keys"><button id="key1">T1 · EDIT</button><button id="key2">T2 · ENV</button><button id="key3">T3 · FX</button><button id="key4">T4 · LFO</button></div>
+<p class="caption" id="screen-caption">Original reference artwork. Host preview; device rendering and case clearance require native checks.</p>
+<div class="view-options"><label>View <select id="zoom"><option value="1">1× logical</option><option value="2" selected>2× logical</option><option value="1.25">400 × 200 comparison</option></select></label><label><input type="checkbox" id="guides"> Safe area</label><label><input type="checkbox" id="shift"> Shift controls</label></div>
+<p id="validation" role="status"></p></div>
+<aside class="controls"><p class="section-label">CHANGE A VALUE</p><div id="sliders"></div>
+
+<div class="font-panel"><p class="eyebrow">THE LETTERING MATTERS</p><h2>Bring Your Stock Font.</h2><p>Choose <code>opfont.svg</code> from your own firmware files. The browser loads it on your machine and nothing is uploaded.</p><label class="file-label">Load opfont.svg<input type="file" id="font-file" accept=".svg,image/svg+xml"></label><button id="clear-font">Use Schematic Lettering</button><p id="font-status" role="status">Schematic alphabet. Not the stock OP-1 font.</p><details><summary>Available Characters</summary><pre id="glyphs">Load a stock font to inspect its inventory.</pre></details><a href="docs/FONTS.md">Where To Find It ↗</a></div></aside>
+</section>
+<section class="principles"><article><p class="eyebrow">02 / TYPE</p><h2>Type Follows The Task.</h2><div id="type-specimen"></div><p>Use stock browser rows, parameter readouts and dominant numbers as references. Choose the scale for the task and leave space for the complete lettering.</p></article><article><p class="eyebrow">03 / CONTROL</p><h2>Colour Has A Job.</h2><div class="swatches"><span>01 BLUE</span><span>02 GREEN</span><span>03 WHITE</span><span>04 ORANGE</span></div><p>Keep each control’s label, value and visual cue connected to its encoder. Retain names and positions so colour is never the only clue.</p></article><article><p class="eyebrow">04 / DRAW LESS</p><h2>Change The State,<br>Keep The Scene.</h2><p>Use named SVG blocks and prebuilt states. Hide unused geometry, update on change and keep static work separate from live drawing. Retained nodes still cost raster work unless pixels are actually cached.</p><a href="docs/GRAPHICS.md">Visibility, caches & smooth edges ↗</a></article></section>
+<section class="closing"><p>Made For People.<br>Readable By Agents.</p><div><p>JSON tokens, dependency-free components, C constants, SVG checks and the <a href="agents.html">op1-design skill</a>.</p><pre>npx skills add squarewave-studio/op1-design-kit</pre><p>Defaults are recommendations. Stock behaviour, community observations and new proposals are identified in the source notes.</p></div></section>
+<section id="credits" class="credits"><p class="eyebrow">05 / CREDITS</p><h2>Built On Shared Knowledge</h2><p>Thanks to <a href="https://github.com/op1hacks">op1hacks</a>, <a href="https://github.com/pcppcp/op1r-src">op1r, pcppcp (popcorp) and contributors</a>, <a href="https://hundekraft.github.io/op1-workshop/">Hundekraft</a> and <a href="https://maikopruett.com/op-1">Maiko</a> for publishing their work. Teenage Engineering makes the OP-1.</p><p><a href="credits.html">Sources And Credits ↗</a></p><section class="support"><h3>Support My Open Source Work</h3><p>These tools are free. A tip helps me keep building them.</p><p><a href="https://buy.squarewave.studio/checkout/buy/880667af-df68-45e1-b8e5-e36c2b5de26e">Buy Me A Coffee ($5)</a> · <a href="https://buy.squarewave.studio/checkout/buy/eeb321a3-dea8-486d-9ef7-0794584feb9c">Buy Me Lunch ($10)</a> · <a href="https://buy.squarewave.studio/checkout/buy/edba5162-42c0-4c27-bc95-f41096c2451d">Buy Me Dinner ($20)</a> · <a href="https://buy.squarewave.studio/checkout/buy/59446300-c1a9-43d5-90ce-6b4c9f4252c7">Choose Your Own Amount</a></p></section></section>
+</main><footer><p><a href="https://squarewave.studio/op-patchstudio?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit">Made by SquareWave Studio. I also make OP-PatchStudio for the OP-1 Field and OP-XY.</a></p><p>Unofficial. Not affiliated with, authorised by or endorsed by Teenage Engineering AB.</p><p><a href="licence.html">MIT Licence</a> · <a href="contributing.html">Contributing</a></p></footer>
+<script type="module" src="preview.mjs"></script>
+</body></html>

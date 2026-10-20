@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="heading-0" d="M 16,23.3333 L 16,10 L 20,10 L 22.6667,12.6667 L 22.6667,14 L 20,16.6667 L 16,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-1" d="M 18.6667,16.6667 L 22.6667,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-2" d="M 31.3333,10 L 24.6667,10 L 24.6667,23.3333 L 31.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-3" d="M 24.6667,16.6667 L 30,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-4" d="M 33.3333,23.3333 L 36.6667,10 L 40,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-5" d="M 34.6667,18 L 38.6667,18" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-6" d="M 42,10 L 46,10 L 48.6667,12.6667 L 48.6667,20.6667 L 46,23.3333 L 42,23.3333 L 42,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-7" d="M 52,10 L 56,10 L 57.3333,12.6667 L 57.3333,20.6667 L 56,23.3333 L 52,23.3333 L 50.6667,20.6667 L 50.6667,12.6667 L 52,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-8" d="M 59.3333,10 L 59.3333,20.6667 L 60.6667,23.3333 L 64.6667,23.3333 L 66,20.6667 L 66,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-9" d="M 68,10 L 74.6667,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-10" d="M 71.3333,10 L 71.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-11" d="M 92,11.3333 L 90.6667,10 L 86.6667,10 L 85.3333,11.3333 L 85.3333,15.3333 L 86.6667,16.6667 L 90.6667,16.6667 L 92,18 L 92,22 L 90.6667,23.3333 L 86.6667,23.3333 L 85.3333,22" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-12" d="M 94,10 L 100.6667,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-13" d="M 97.3333,10 L 97.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-14" d="M 102.6667,10 L 102.6667,20.6667 L 104,23.3333 L 108,23.3333 L 109.3333,20.6667 L 109.3333,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-15" d="M 111.3333,10 L 115.3333,10 L 118,12.6667 L 118,20.6667 L 115.3333,23.3333 L 111.3333,23.3333 L 111.3333,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-16" d="M 120,10 L 123.3333,16.6667 L 126.6667,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="heading-17" d="M 123.3333,16.6667 L 123.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-0-0" d="M 16,53.3333 L 16,40 L 19.3333,46.6667 L 22.6667,40 L 22.6667,53.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-1" d="M 26,40 L 30,40 L 31.3333,42.6667 L 31.3333,50.6667 L 30,53.3333 L 26,53.3333 L 24.6667,50.6667 L 24.6667,42.6667 L 26,40" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-2" d="M 33.3333,40 L 37.3333,40 L 40,42.6667 L 40,50.6667 L 37.3333,53.3333 L 33.3333,53.3333 L 33.3333,40" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-3" d="M 48.6667,40 L 42,40 L 42,53.3333 L 48.6667,53.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-4" d="M 42,46.6667 L 47.3333,46.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-0" d="M 255,53.3333 L 255,33.3333 L 261,33.3333 L 265,37.3333 L 265,39.3333 L 261,43.3333 L 255,43.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-1" d="M 270,33.3333 L 276,33.3333 L 278,37.3333 L 278,49.3333 L 276,53.3333 L 270,53.3333 L 268,49.3333 L 268,37.3333 L 270,33.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-2" d="M 281,33.3333 L 281,53.3333 L 291,53.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-3" d="M 294,33.3333 L 299,43.3333 L 304,33.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="value-0-4" d="M 299,43.3333 L 299,53.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-1-0" d="M 17.3333,68 L 21.3333,68 L 22.6667,70.6667 L 22.6667,78.6667 L 21.3333,81.3333 L 17.3333,81.3333 L 16,78.6667 L 16,70.6667 L 17.3333,68" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-1" d="M 31.3333,68 L 24.6667,68 L 24.6667,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-2" d="M 24.6667,74.6667 L 30,74.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-3" d="M 40,68 L 33.3333,68 L 33.3333,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-4" d="M 33.3333,74.6667 L 38.6667,74.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-5" d="M 48.6667,69.3333 L 47.3333,68 L 43.3333,68 L 42,69.3333 L 42,73.3333 L 43.3333,74.6667 L 47.3333,74.6667 L 48.6667,76 L 48.6667,80 L 47.3333,81.3333 L 43.3333,81.3333 L 42,80" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-6" d="M 57.3333,68 L 50.6667,68 L 50.6667,81.3333 L 57.3333,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-7" d="M 50.6667,74.6667 L 56,74.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-8" d="M 59.3333,68 L 66,68" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-9" d="M 62.6667,68 L 62.6667,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-0" d="M 242,71.3333 L 252,71.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-1" d="M 255,61.3333 L 265,61.3333 L 257,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-2" d="M 291,63.3333 L 289,61.3333 L 283,61.3333 L 281,63.3333 L 281,69.3333 L 283,71.3333 L 289,71.3333 L 291,73.3333 L 291,79.3333 L 289,81.3333 L 283,81.3333 L 281,79.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-3" d="M 294,61.3333 L 304,61.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="value-1-4" d="M 299,61.3333 L 299,81.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-2-0" d="M 16,96 L 22.6667,96" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-1" d="M 19.3333,96 L 19.3333,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-2" d="M 24.6667,96 L 31.3333,96" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-3" d="M 28,96 L 28,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-4" d="M 24.6667,109.3333 L 31.3333,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-5" d="M 33.3333,109.3333 L 33.3333,96 L 36.6667,102.6667 L 40,96 L 40,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-6" d="M 48.6667,96 L 42,96 L 42,109.3333 L 48.6667,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-7" d="M 42,102.6667 L 47.3333,102.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-0" d="M 239,99.3333 L 231,99.3333 L 229,97.3333 L 229,91.3333 L 231,89.3333 L 237,89.3333 L 239,91.3333 L 239,103.3333 L 235,109.3333 L 229,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-1" d="M 252,99.3333 L 244,99.3333 L 242,97.3333 L 242,91.3333 L 244,89.3333 L 250,89.3333 L 252,91.3333 L 252,103.3333 L 248,109.3333 L 242,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-2" d="M 265,99.3333 L 257,99.3333 L 255,97.3333 L 255,91.3333 L 257,89.3333 L 263,89.3333 L 265,91.3333 L 265,103.3333 L 261,109.3333 L 255,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-3" d="M 281,109.3333 L 281,89.3333 L 286,99.3333 L 291,89.3333 L 291,109.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="value-2-4" d="M 304,91.3333 L 302,89.3333 L 296,89.3333 L 294,91.3333 L 294,97.3333 L 296,99.3333 L 302,99.3333 L 304,101.3333 L 304,107.3333 L 302,109.3333 L 296,109.3333 L 294,107.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-3-0" d="M 16,137.3333 L 16,124 L 19.3333,130.6667 L 22.6667,124 L 22.6667,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-1" d="M 24.6667,124 L 31.3333,124" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-2" d="M 28,124 L 28,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-3" d="M 24.6667,137.3333 L 31.3333,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-4" d="M 33.3333,137.3333 L 33.3333,124 L 40,137.3333 L 40,124" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-5" d="M 45.3333,126.6667 L 45.3333,128" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-6" d="M 45.3333,133.3333 L 45.3333,134.6667" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-7" d="M 57.3333,125.3333 L 56,124 L 52,124 L 50.6667,125.3333 L 50.6667,129.3333 L 52,130.6667 L 56,130.6667 L 57.3333,132 L 57.3333,136 L 56,137.3333 L 52,137.3333 L 50.6667,136" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-8" d="M 66,124 L 59.3333,124 L 59.3333,137.3333 L 66,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-9" d="M 59.3333,130.6667 L 64.6667,130.6667" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="name-3-10" d="M 74.6667,125.3333 L 73.3333,124 L 69.3333,124 L 68,125.3333 L 68,136 L 69.3333,137.3333 L 73.3333,137.3333 L 74.6667,136" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-0" d="M 244,117.3333 L 250,117.3333 L 252,121.3333 L 252,133.3333 L 250,137.3333 L 244,137.3333 L 242,133.3333 L 242,121.3333 L 244,117.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-1" d="M 256,121.3333 L 260,117.3333 L 260,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-2" d="M 255,137.3333 L 265,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-3" d="M 273,121.3333 L 273,123.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-4" d="M 273,131.3333 L 273,133.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-5" d="M 281,121.3333 L 281,119.3333 L 283,117.3333 L 289,117.3333 L 291,119.3333 L 291,123.3333 L 281,137.3333 L 291,137.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="value-3-6" d="M 302,137.3333 L 302,117.3333 L 294,131.3333 L 304,131.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/></svg>

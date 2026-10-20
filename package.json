@@ -1,0 +1,14 @@
+{
+  "name": "squarewave-op1-design-kit",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "precommit": "python3 tools/check_public_assets.py && gitleaks git --pre-commit --staged --redact --no-banner && git diff --cached --check",
+    "check:assets": "python3 tools/check_public_assets.py --all",
+    "check:secrets": "gitleaks git --redact --no-banner",
+    "test:guards": "python3 -m unittest discover -s tests"
+  },
+  "devDependencies": {
+    "husky": "9.1.7"
+  }
+}

@@ -1,0 +1,24 @@
+build/
+out/
+.work/
+.private/
+__pycache__/
+.DS_Store
+*.op1
+*.op1p
+*.elf
+*.o
+
+
+# Proprietary resources and local-only derived font data are never public assets.
+opfont.svg
+kerntable.db
+colors.svg
+*.private.inc
+*font-atlas*
+*.knl
+*.op1font.json
+
+node_modules/
+
+.vectimus/

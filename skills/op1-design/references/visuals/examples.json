@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "scope": "Original host pattern demonstrations; not stock screens or native implementations",
+  "fontModes": {
+    "png": "stock-local / optical-v1",
+    "svg": "original schematic alphabet",
+    "scene": "semantic text records plus original schematic geometry"
+  },
+  "patterns": [
+    {
+      "id": "context",
+      "title": "Context Beside Detail",
+      "task": "Keep the whole phrase visible while editing a selected span.",
+      "stockReference": "Synth sampler overview and magnified regions",
+      "fixed": [
+        "Overview frame",
+        "Detail frame",
+        "Whole waveform"
+      ],
+      "changes": [
+        "Selected span",
+        "Detail waveform"
+      ],
+      "encoders": {
+        "blue": "start boundary",
+        "green": "end boundary"
+      },
+      "checks": [
+        "Both views refer to the same sample interval",
+        "Markers remain visible at the interval limits"
+      ],
+      "states": [
+        {
+          "id": "context-first",
+          "title": "First Span",
+          "state": {
+            "selection": [
+              0.2,
+              0.45
+            ]
+          },
+          "png": "context-first.png",
+          "svg": "context-first.svg",
+          "scene": "context-first.json"
+        },
+        {
+          "id": "context-next",
+          "title": "Later Span",
+          "state": {
+            "selection": [
+              0.55,
+              0.8
+            ]
+          },
+          "png": "context-next.png",
+          "svg": "context-next.svg",
+          "scene": "context-next.json"
+        }
+      ]
+    },
+    {
+      "id": "focus",
+      "title": "Edit Focus And Playback",
+      "task": "Show where the next edit applies independently of playback.",
+      "stockReference": "Pattern live edit",
+      "fixed": [
+        "Stored notes",
+        "Edit outline at step 3"
+      ],
+      "changes": [
+        "Playback triangle"
+      ],
+      "encoders": {
+        "blue": "editing position"
+      },
+      "checks": [
+        "Outline and triangle remain distinguishable at coincidence",
+        "Playback does not move editing focus"
+      ],
+      "states": [
+        {
+          "id": "focus-apart",
+          "title": "Apart",
+          "state": {
+            "edit": 3,
+            "playback": 6
+          },
+          "png": "focus-apart.png",
+          "svg": "focus-apart.svg",
+          "scene": "focus-apart.json"
+        },
+        {
+          "id": "focus-together",
+          "title": "Coincident",
+          "state": {
+            "edit": 3,
+            "playback": 3
+          },
+          "png": "focus-together.png",
+          "svg": "focus-together.svg",
+          "scene": "focus-together.json"
+        }
+      ]
+    },
+    {
+      "id": "browser",
+      "title": "Category And Choice",
+      "task": "Choose an item without losing category context.",
+      "stockReference": "Preset browser",
+      "fixed": [
+        "Two list regions",
+        "Blue bank and Green patch ownership"
+      ],
+      "changes": [
+        "Category choice",
+        "Available items",
+        "Item choice"
+      ],
+      "encoders": {
+        "blue": "bank",
+        "green": "patch"
+      },
+      "checks": [
+        "The new category has an explicit valid item choice",
+        "Handle an empty category and long names without reducing text size"
+      ],
+      "fixtures": {
+        "emptyCategory": {
+          "category": "EMPTY",
+          "items": [],
+          "selected": null
+        },
+        "longName": {
+          "value": "LONG RESONATOR VARIATION",
+          "policy": "Fixed-size scrolling name window or another detail page; no auto-shrink"
+        }
+      },
+      "states": [
+        {
+          "id": "browser-metal",
+          "title": "Metal Bank",
+          "state": {
+            "category": "METAL",
+            "item": "BELL"
+          },
+          "png": "browser-metal.png",
+          "svg": "browser-metal.svg",
+          "scene": "browser-metal.json"
+        },
+        {
+          "id": "browser-wood",
+          "title": "Wood Bank",
+          "state": {
+            "category": "WOOD",
+            "item": "KNOCK"
+          },
+          "png": "browser-wood.png",
+          "svg": "browser-wood.svg",
+          "scene": "browser-wood.json"
+        }
+      ]
+    },
+    {
+      "id": "shift",
+      "title": "Alternate Presentation",
+      "task": "Reveal the function available while Shift is held.",
+      "stockReference": "Drum sampler alternate Orange readout",
+      "fixed": [
+        "Waveform",
+        "Boundaries",
+        "Orange ownership",
+        "Both underlying parameter values"
+      ],
+      "changes": [
+        "Mode arrow becomes level number",
+        "Name and unit"
+      ],
+      "encoders": {
+        "orange": "playback mode",
+        "shiftOrange": "level in dB"
+      },
+      "checks": [
+        "Releasing Shift returns to the normal scene without parameter changes"
+      ],
+      "states": [
+        {
+          "id": "shift-normal",
+          "title": "Normal",
+          "state": {
+            "shift": false,
+            "mode": "FWD",
+            "levelDb": -6
+          },
+          "png": "shift-normal.png",
+          "svg": "shift-normal.svg",
+          "scene": "shift-normal.json"
+        },
+        {
+          "id": "shift-held",
+          "title": "Held Shift",
+          "state": {
+            "shift": true,
+            "mode": "FWD",
+            "levelDb": -6
+          },
+          "png": "shift-held.png",
+          "svg": "shift-held.svg",
+          "scene": "shift-held.json"
+        }
+      ]
+    },
+    {
+      "id": "route",
+      "title": "Configuration And Activity",
+      "task": "Explain a modulation route while showing independent signal activity.",
+      "stockReference": "Signal Flow and LFO route compositions",
+      "fixed": [
+        "Configured route",
+        "Labels",
+        "Values",
+        "Destination"
+      ],
+      "changes": [
+        "Small activity diamond"
+      ],
+      "encoders": {
+        "blue": "rate in Hz",
+        "green": "amount in percent",
+        "white": "destination"
+      },
+      "checks": [
+        "Activity is not a selection affordance",
+        "No selection action is implied for explanatory nodes"
+      ],
+      "states": [
+        {
+          "id": "route-idle",
+          "title": "Inactive",
+          "state": {
+            "rateHz": 2,
+            "amountPercent": 34,
+            "destination": "CUT",
+            "active": false
+          },
+          "png": "route-idle.png",
+          "svg": "route-idle.svg",
+          "scene": "route-idle.json"
+        },
+        {
+          "id": "route-active",
+          "title": "Active",
+          "state": {
+            "rateHz": 2,
+            "amountPercent": 34,
+            "destination": "CUT",
+            "active": true
+          },
+          "png": "route-active.png",
+          "svg": "route-active.svg",
+          "scene": "route-active.json"
+        }
+      ]
+    },
+    {
+      "id": "formats",
+      "title": "Readout Formats",
+      "task": "Format categorical, signed, duration and position values deliberately.",
+      "stockReference": "Play Mode, Tempo and Clock reading tasks",
+      "fixed": [
+        "Font profiles",
+        "Label positions",
+        "Right readout edges"
+      ],
+      "changes": [
+        "Sign",
+        "Duration unit",
+        "Position"
+      ],
+      "encoders": {
+        "blue": "mode",
+        "green": "offset",
+        "white": "time",
+        "orange": "position"
+      },
+      "checks": [
+        "The widest intermediate string fits",
+        "Unit transitions preserve the right anchor",
+        "This is a readout study, not one proposed instrument"
+      ],
+      "states": [
+        {
+          "id": "formats-first",
+          "title": "Before Transition",
+          "state": {
+            "offset": -7,
+            "time": "999 MS",
+            "position": "01:24"
+          },
+          "png": "formats-first.png",
+          "svg": "formats-first.svg",
+          "scene": "formats-first.json"
+        },
+        {
+          "id": "formats-next",
+          "title": "After Transition",
+          "state": {
+            "offset": 7,
+            "time": "1.00 S",
+            "position": "01:25"
+          },
+          "png": "formats-next.png",
+          "svg": "formats-next.svg",
+          "scene": "formats-next.json"
+        }
+      ]
+    },
+    {
+      "id": "motion",
+      "title": "Meaningful Event Response",
+      "task": "Show a struck membrane responding while controls and camera remain fixed.",
+      "stockReference": "Tombola demonstrates motion with musical consequences; this example uses original Membrane artwork",
+      "fixed": [
+        "Rim",
+        "Shell",
+        "Camera",
+        "Control values",
+        "Readout anchors"
+      ],
+      "changes": [
+        "Contact fills at the strike point",
+        "One local ripple on the skin"
+      ],
+      "encoders": {
+        "blue": "tension",
+        "green": "strike position",
+        "white": "damping",
+        "orange": "shell"
+      },
+      "checks": [
+        "A real strike starts the response",
+        "Response settles back to rest",
+        "Test empty, stopped and rapidly retriggered states"
+      ],
+      "transition": [
+        "rest",
+        "strike",
+        "rest"
+      ],
+      "implementation": "Static poses only. No animation timing, native physics or CPU result is implied.",
+      "states": [
+        {
+          "id": "motion-rest",
+          "title": "At Rest",
+          "state": {
+            "state": "rest"
+          },
+          "png": "motion-rest.png",
+          "svg": "motion-rest.svg",
+          "scene": "motion-rest.json"
+        },
+        {
+          "id": "motion-strike",
+          "title": "Strike",
+          "state": {
+            "state": "strike"
+          },
+          "png": "motion-strike.png",
+          "svg": "motion-strike.svg",
+          "scene": "motion-strike.json"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="browser-row-0" d="M 16,23.3333 L 16,10 L 20,10 L 22.6667,12.6667 L 22.6667,14 L 20,16.6667 L 16,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-1" d="M 20,16.6667 L 22.6667,19.3333 L 22.6667,20.6667 L 20,23.3333 L 16,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-2" d="M 24.6667,23.3333 L 24.6667,10 L 28.6667,10 L 31.3333,12.6667 L 31.3333,14 L 28.6667,16.6667 L 24.6667,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-3" d="M 27.3333,16.6667 L 31.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-4" d="M 34.6667,10 L 38.6667,10 L 40,12.6667 L 40,20.6667 L 38.6667,23.3333 L 34.6667,23.3333 L 33.3333,20.6667 L 33.3333,12.6667 L 34.6667,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-5" d="M 42,10 L 43.3333,23.3333 L 45.3333,18 L 47.3333,23.3333 L 48.6667,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-6" d="M 57.3333,11.3333 L 56,10 L 52,10 L 50.6667,11.3333 L 50.6667,15.3333 L 52,16.6667 L 56,16.6667 L 57.3333,18 L 57.3333,22 L 56,23.3333 L 52,23.3333 L 50.6667,22" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-7" d="M 66,10 L 59.3333,10 L 59.3333,23.3333 L 66,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-8" d="M 59.3333,16.6667 L 64.6667,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-9" d="M 68,23.3333 L 68,10 L 72,10 L 74.6667,12.6667 L 74.6667,14 L 72,16.6667 L 68,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-10" d="M 70.6667,16.6667 L 74.6667,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-11" d="M 85.3333,23.3333 L 85.3333,10 L 89.3333,10 L 92,12.6667 L 92,14 L 89.3333,16.6667 L 85.3333,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-12" d="M 88,16.6667 L 92,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-13" d="M 95.3333,10 L 99.3333,10 L 100.6667,12.6667 L 100.6667,20.6667 L 99.3333,23.3333 L 95.3333,23.3333 L 94,20.6667 L 94,12.6667 L 95.3333,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="browser-row-14" d="M 102.6667,10 L 104,23.3333 L 106,18 L 108,23.3333 L 109.3333,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-0" d="M 16,59 L 16,39 L 22,39 L 26,43 L 26,45 L 22,49 L 16,49" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-1" d="M 20,49 L 26,59" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-2" d="M 39,39 L 29,39 L 29,59 L 39,59" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-3" d="M 29,49 L 37,49" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-4" d="M 42,59 L 47,39 L 52,59" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-5" d="M 44,51 L 50,51" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-6" d="M 55,39 L 61,39 L 65,43 L 65,55 L 61,59 L 55,59 L 55,39" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-7" d="M 70,39 L 76,39 L 78,43 L 78,55 L 76,59 L 70,59 L 68,55 L 68,43 L 70,39" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-8" d="M 81,39 L 81,55 L 83,59 L 89,59 L 91,55 L 91,39" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-9" d="M 94,39 L 104,39" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="parameter-value-10" d="M 99,39 L 99,59" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-0" d="M 22.6667,74.3333 L 21.3333,73 L 17.3333,73 L 16,74.3333 L 16,85 L 17.3333,86.3333 L 21.3333,86.3333 L 22.6667,85" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-1" d="M 24.6667,73 L 24.6667,86.3333 L 31.3333,86.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-2" d="M 34.6667,73 L 38.6667,73 L 40,75.6667 L 40,83.6667 L 38.6667,86.3333 L 34.6667,86.3333 L 33.3333,83.6667 L 33.3333,75.6667 L 34.6667,73" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-3" d="M 48.6667,74.3333 L 47.3333,73 L 43.3333,73 L 42,74.3333 L 42,85 L 43.3333,86.3333 L 47.3333,86.3333 L 48.6667,85" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-4" d="M 50.6667,73 L 50.6667,86.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-caption-5" d="M 57.3333,73 L 50.6667,79.6667 L 57.3333,86.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="clock-number-0" d="M 32.1252,136.313 L 32.1252,96 L 16,124.2191 L 36.1565,124.2191" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path id="clock-number-1" d="M 46.2348,96 L 58.3287,96 L 62.36,104.0626 L 62.36,128.2504 L 58.3287,136.313 L 46.2348,136.313 L 42.2035,128.2504 L 42.2035,104.0626 L 46.2348,96" fill="none" stroke="#ffffff" stroke-width="2"/>
+<path id="mixer-caption-0" d="M 210,58 L 210,71.3333 L 216.6667,71.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-1" d="M 225.3333,58 L 218.6667,58 L 218.6667,71.3333 L 225.3333,71.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-2" d="M 218.6667,64.6667 L 224,64.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-3" d="M 227.3333,58 L 230.6667,71.3333 L 234,58" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-4" d="M 242.6667,58 L 236,58 L 236,71.3333 L 242.6667,71.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-5" d="M 236,64.6667 L 241.3333,64.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-caption-6" d="M 244.6667,58 L 244.6667,71.3333 L 251.3333,71.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-level-0" d="M 236.6715,84 L 210,84 L 210,110.6715 L 231.3372,110.6715 L 236.6715,116.0058 L 236.6715,132.0087 L 231.3372,137.343 L 210,137.343" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-level-1" d="M 244.673,84 L 271.3444,84 L 260.6759,110.6715 L 271.3444,121.3401 L 271.3444,132.0087 L 266.0102,137.343 L 244.673,137.343" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mixer-level-2" d="M 250.0072,110.6715 L 260.6759,110.6715" fill="none" stroke="#ffffff" stroke-width="1.5"/></svg>

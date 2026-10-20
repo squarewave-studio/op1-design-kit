@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160">
+<rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<g id="base">
+<path id="frame" d="M 48,110 L 272,110" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="frameleft" d="M 64,110 L 64,45" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="frameright" d="M 256,110 L 256,45" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+</g>
+<g id="idlepose">
+<path id="idleline" d="M 64,76 L 256,76" fill="none" stroke="#698eff" stroke-width="1"/>
+</g>
+<g id="activepose">
+<path id="activeline" d="M 64,76 C 100,40 116,112 160,76 C 204,40 220,112 256,76" fill="none" stroke="#00ed95" stroke-width="1"/>
+</g>
+<g id="live">
+<circle id="point" cx="160" cy="76" r="3" fill="none" stroke="#ffffff" stroke-width="1"/>
+</g>
+<g id="front">
+<path id="frontedge" d="M 48,112 L 272,112" fill="none" stroke="#ffffff" stroke-width="1"/>
+</g>
+</svg>

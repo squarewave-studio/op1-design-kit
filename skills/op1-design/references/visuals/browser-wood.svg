@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="bank-label-0" d="M 16,23.3333 L 16,10 L 20,10 L 22.6667,12.6667 L 22.6667,14 L 20,16.6667 L 16,16.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-1" d="M 20,16.6667 L 22.6667,19.3333 L 22.6667,20.6667 L 20,23.3333 L 16,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-2" d="M 24.6667,23.3333 L 28,10 L 31.3333,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-3" d="M 26,18 L 30,18" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-4" d="M 33.3333,23.3333 L 33.3333,10 L 40,23.3333 L 40,10" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-5" d="M 42,10 L 42,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-label-6" d="M 48.6667,10 L 42,16.6667 L 48.6667,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="patch-label-0" d="M 180,23.3333 L 180,10 L 184,10 L 186.6667,12.6667 L 186.6667,14 L 184,16.6667 L 180,16.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-1" d="M 188.6667,23.3333 L 192,10 L 195.3333,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-2" d="M 190,18 L 194,18" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-3" d="M 197.3333,10 L 204,10" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-4" d="M 200.6667,10 L 200.6667,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-5" d="M 212.6667,11.3333 L 211.3333,10 L 207.3333,10 L 206,11.3333 L 206,22 L 207.3333,23.3333 L 211.3333,23.3333 L 212.6667,22" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-6" d="M 214.6667,10 L 214.6667,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-7" d="M 221.3333,10 L 221.3333,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-label-8" d="M 214.6667,16.6667 L 221.3333,16.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="bank-0-0" d="M 28,55.3333 L 28,42 L 31.3333,48.6667 L 34.6667,42 L 34.6667,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-1" d="M 43.3333,42 L 36.6667,42 L 36.6667,55.3333 L 43.3333,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-2" d="M 36.6667,48.6667 L 42,48.6667" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-3" d="M 45.3333,42 L 52,42" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-4" d="M 48.6667,42 L 48.6667,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-5" d="M 54,55.3333 L 57.3333,42 L 60.6667,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-6" d="M 55.3333,50 L 59.3333,50" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-0-7" d="M 62.6667,42 L 62.6667,55.3333 L 69.3333,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-1-0" d="M 28,67 L 29.3333,80.3333 L 31.3333,75 L 33.3333,80.3333 L 34.6667,67" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-1-1" d="M 38,67 L 42,67 L 43.3333,69.6667 L 43.3333,77.6667 L 42,80.3333 L 38,80.3333 L 36.6667,77.6667 L 36.6667,69.6667 L 38,67" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-1-2" d="M 46.6667,67 L 50.6667,67 L 52,69.6667 L 52,77.6667 L 50.6667,80.3333 L 46.6667,80.3333 L 45.3333,77.6667 L 45.3333,69.6667 L 46.6667,67" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-1-3" d="M 54,67 L 58,67 L 60.6667,69.6667 L 60.6667,77.6667 L 58,80.3333 L 54,80.3333 L 54,67" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-2-0" d="M 34.6667,93.3333 L 33.3333,92 L 29.3333,92 L 28,93.3333 L 28,97.3333 L 29.3333,98.6667 L 33.3333,98.6667 L 34.6667,100 L 34.6667,104 L 33.3333,105.3333 L 29.3333,105.3333 L 28,104" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-1" d="M 36.6667,92 L 36.6667,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-2" d="M 43.3333,92 L 36.6667,98.6667 L 43.3333,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-3" d="M 45.3333,92 L 52,92" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-4" d="M 48.6667,92 L 48.6667,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-5" d="M 45.3333,105.3333 L 52,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-2-6" d="M 54,105.3333 L 54,92 L 60.6667,105.3333 L 60.6667,92" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-0" d="M 184,42 L 184,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-1" d="M 190.6667,42 L 190.6667,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-2" d="M 184,48.6667 L 190.6667,48.6667" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-3" d="M 194,42 L 198,42 L 199.3333,44.6667 L 199.3333,52.6667 L 198,55.3333 L 194,55.3333 L 192.6667,52.6667 L 192.6667,44.6667 L 194,42" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-4" d="M 201.3333,42 L 201.3333,55.3333 L 208,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-5" d="M 210,42 L 210,55.3333 L 216.6667,55.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-6" d="M 220,42 L 224,42 L 225.3333,44.6667 L 225.3333,52.6667 L 224,55.3333 L 220,55.3333 L 218.6667,52.6667 L 218.6667,44.6667 L 220,42" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-0-7" d="M 227.3333,42 L 228.6667,55.3333 L 230.6667,50 L 232.6667,55.3333 L 234,42" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-1-0" d="M 184,67 L 184,80.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-1" d="M 190.6667,67 L 184,73.6667 L 190.6667,80.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-2" d="M 192.6667,80.3333 L 192.6667,67 L 199.3333,80.3333 L 199.3333,67" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-3" d="M 202.6667,67 L 206.6667,67 L 208,69.6667 L 208,77.6667 L 206.6667,80.3333 L 202.6667,80.3333 L 201.3333,77.6667 L 201.3333,69.6667 L 202.6667,67" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-4" d="M 216.6667,68.3333 L 215.3333,67 L 211.3333,67 L 210,68.3333 L 210,79 L 211.3333,80.3333 L 215.3333,80.3333 L 216.6667,79" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-5" d="M 218.6667,67 L 218.6667,80.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-1-6" d="M 225.3333,67 L 218.6667,73.6667 L 225.3333,80.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-2-0" d="M 184,105.3333 L 184,92 L 188,92 L 190.6667,94.6667 L 190.6667,96 L 188,98.6667 L 184,98.6667" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-1" d="M 188,98.6667 L 190.6667,101.3333 L 190.6667,102.6667 L 188,105.3333 L 184,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-2" d="M 192.6667,92 L 192.6667,105.3333 L 199.3333,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-3" d="M 202.6667,92 L 206.6667,92 L 208,94.6667 L 208,102.6667 L 206.6667,105.3333 L 202.6667,105.3333 L 201.3333,102.6667 L 201.3333,94.6667 L 202.6667,92" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-4" d="M 216.6667,93.3333 L 215.3333,92 L 211.3333,92 L 210,93.3333 L 210,104 L 211.3333,105.3333 L 215.3333,105.3333 L 216.6667,104" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-5" d="M 218.6667,92 L 218.6667,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="patch-2-6" d="M 225.3333,92 L 218.6667,98.6667 L 225.3333,105.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="bank-choice" d="M 12 61 L 140 61 L 140 85 L 12 85 Z" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="patch-choice" d="M 168 61 L 307 61 L 307 85 L 168 85 Z" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="column-divider" d="M 154,34 L 154,113" fill="none" stroke="#625d77" stroke-width="1"/>
+<path id="bank-position-0" d="M 16,127.6667 L 16,126.3333 L 17.3333,125 L 21.3333,125 L 22.6667,126.3333 L 22.6667,129 L 16,138.3333 L 22.6667,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-1" d="M 24.6667,138.3333 L 31.3333,125" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-2" d="M 33.3333,125 L 40,125 L 37.3333,131.6667 L 40,134.3333 L 40,137 L 38.6667,138.3333 L 33.3333,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="bank-position-3" d="M 34.6667,131.6667 L 37.3333,131.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="patch-position-0" d="M 280,127.6667 L 280,126.3333 L 281.3333,125 L 285.3333,125 L 286.6667,126.3333 L 286.6667,129 L 280,138.3333 L 286.6667,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-1" d="M 288.6667,138.3333 L 295.3333,125" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-2" d="M 297.3333,125 L 304,125 L 301.3333,131.6667 L 304,134.3333 L 304,137 L 302.6667,138.3333 L 297.3333,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="patch-position-3" d="M 298.6667,131.6667 L 301.3333,131.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/></svg>

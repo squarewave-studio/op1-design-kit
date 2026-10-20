@@ -1,0 +1,51 @@
+{
+  "Reference reading: OP-1 Manual 1.2, §17.1, FM, PDF page 42.": {
+    "file": "fm.png",
+    "name": "FM",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=42",
+    "section": "§17.1",
+    "page": 42
+  },
+  "Reference reading: OP-1 Manual 1.2, §17.1, String, PDF page 41.": {
+    "file": "string.png",
+    "name": "String",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=41",
+    "section": "§17.1",
+    "page": 41
+  },
+  "Reference reading: OP-1 Manual 1.2, §17.1, Digital, PDF page 41.": {
+    "file": "digital.png",
+    "name": "Digital",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=41",
+    "section": "§17.1",
+    "page": 41
+  },
+  "Reference reading: OP-1 Manual 1.2, §6.7, DBOX, PDF page 16.": {
+    "file": "dbox.png",
+    "name": "DBOX",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=16",
+    "section": "§6.7",
+    "page": 16
+  },
+  "Reference reading: OP-1 Manual 1.2, §5.3, Synth Envelope, PDF page 12.": {
+    "file": "envelope.png",
+    "name": "Synth Envelope",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=12",
+    "section": "§5.3",
+    "page": 12
+  },
+  "Reference reading: OP-1 Manual 1.2, §9.3, Mixer, PDF page 25.": {
+    "file": "mixer.png",
+    "name": "Mixer",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=25",
+    "section": "§9.3",
+    "page": 25
+  },
+  "Reference reading: OP-1 Manual 1.2, §10.1, Tempo, PDF page 27.": {
+    "file": "tempo.png",
+    "name": "Tempo",
+    "url": "https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf#page=27",
+    "section": "§10.1",
+    "page": 27
+  }
+}

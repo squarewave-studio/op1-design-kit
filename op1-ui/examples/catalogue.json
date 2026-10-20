@@ -1,0 +1,58 @@
+[
+  {
+    "id": "engine-study",
+    "title": "Grouped Engine Controls"
+  },
+  {
+    "id": "membrane-rest",
+    "title": "Membrane: At Rest"
+  },
+  {
+    "id": "membrane-changed",
+    "title": "Membrane: Controls Changed"
+  },
+  {
+    "id": "membrane-tension",
+    "title": "Membrane: tension only"
+  },
+  {
+    "id": "membrane-position",
+    "title": "Membrane: position only"
+  },
+  {
+    "id": "membrane-damping",
+    "title": "Membrane: damping only"
+  },
+  {
+    "id": "membrane-strike",
+    "title": "Membrane: Struck"
+  },
+  {
+    "id": "envelope-study",
+    "title": "Envelope Composition Study"
+  },
+  {
+    "id": "transient-rest",
+    "title": "Transient: Default Shape"
+  },
+  {
+    "id": "transient-changed",
+    "title": "Transient: Controls Changed"
+  },
+  {
+    "id": "transient-attack",
+    "title": "Transient: attack only"
+  },
+  {
+    "id": "transient-body",
+    "title": "Transient: body only"
+  },
+  {
+    "id": "transient-tail",
+    "title": "Transient: tail only"
+  },
+  {
+    "id": "transient-strike",
+    "title": "Transient: Musical Event"
+  }
+]

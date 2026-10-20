@@ -1,0 +1,81 @@
+name: Design Kit Pages
+on:
+  pull_request:
+    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.husky/**']
+  push:
+    branches: [main]
+    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.husky/**']
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy after checks (main only, requires ENABLE_DESIGN_KIT_PAGES)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: design-kit-pages-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+jobs:
+  safety:
+    uses: ./.github/workflows/public-assets.yml
+  build:
+    needs: safety
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python3 -m pip install Markdown==3.7
+      - name: Check maintained sources and portable skill
+        run: |
+          python3 op1-ui/tools/sync_tokens.py --check
+          python3 op1-ui/tools/sync_skill.py --check
+          node --test op1-ui/tests/*.test.mjs
+          python3 -m unittest discover -s op1-ui/tests
+          node op1-ui/tools/check_layout.mjs
+          python3 op1-ui/tools/check_svg.py op1-ui/examples/*.svg
+          python3 op1-ui/tools/check_svg.py skills/op1-design/references/visuals/*.svg
+      - name: Check original example exports
+        run: |
+          node op1-ui/tools/export_examples.mjs
+          node op1-ui/tools/export_interactions.mjs
+          git diff --exit-code -- op1-ui/examples skills/op1-design/references/visuals
+      - name: Build and check the static site
+        run: |
+          python3 op1-ui/tools/build_site.py
+          python3 op1-ui/tools/check_site.py
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: out/pages
+          retention-days: 7
+  deploy:
+    if: >-
+      github.repository == 'squarewave-studio/op1-design-kit' &&
+      github.ref == 'refs/heads/main' &&
+      vars.ENABLE_DESIGN_KIT_PAGES == 'true' &&
+      (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.deploy))
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read Pages configuration
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+        with:
+          enablement: false
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

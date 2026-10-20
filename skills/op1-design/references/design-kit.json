@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "name": "OP-1 Design Kit",
+  "version": "0.1.0",
+  "status": "draft",
+  "source": "skills/op1-design/references/design-kit.json",
+  "tokens": {
+    "version": "0.1.0",
+    "status": "draft",
+    "target": "original-op1",
+    "coordinateSpace": {
+      "width": 320,
+      "height": 160,
+      "unit": "logical-pixel"
+    },
+    "safeArea": {
+      "left": 8,
+      "top": 8,
+      "right": 8,
+      "bottom": 16,
+      "criticalContentBottom": 140,
+      "status": "proposed-default-not-measured-bezel"
+    },
+    "type": {
+      "browserRow": {
+        "nominalHeight": 13.333333333333334,
+        "lineHeight": 18,
+        "strokeWidth": 1.5,
+        "role": "preset-browser rows",
+        "reference": {
+          "screen": "presetbrowser.svg",
+          "template": "preset1",
+          "geometricHeight": 13.334,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      },
+      "parameterValue": {
+        "nominalHeight": 20,
+        "lineHeight": 26,
+        "strokeWidth": 1.5,
+        "role": "short parameter readouts",
+        "reference": {
+          "screen": "sampler.svg",
+          "template": "gain",
+          "geometricHeight": 20,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      },
+      "tempoCompact": {
+        "nominalHeight": 35.826,
+        "lineHeight": 44,
+        "strokeWidth": 1.5,
+        "role": "compact BPM layout",
+        "reference": {
+          "screen": "tempo.svg",
+          "template": "bpmS",
+          "geometricHeight": 35.826,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      },
+      "clockNumber": {
+        "nominalHeight": 40.313,
+        "lineHeight": 48,
+        "strokeWidth": 2,
+        "role": "dominant time numerals",
+        "reference": {
+          "screen": "clock.svg",
+          "template": "hour",
+          "geometricHeight": 40.313,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      },
+      "tempoMedium": {
+        "nominalHeight": 42.805,
+        "lineHeight": 52,
+        "strokeWidth": 1.5,
+        "role": "intermediate BPM layout",
+        "reference": {
+          "screen": "tempo.svg",
+          "template": "bpmM",
+          "geometricHeight": 42.805,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      },
+      "mixerLevel": {
+        "nominalHeight": 53.343,
+        "lineHeight": 64,
+        "strokeWidth": 1.5,
+        "role": "large lane level numerals",
+        "reference": {
+          "screen": "mixer.svg",
+          "template": "lev1",
+          "geometricHeight": 53.343,
+          "measurement": "approximate-centreline-bounds",
+          "mapping": "host-reference-height-not-native-api-size"
+        }
+      }
+    },
+    "color": {
+      "background": "#000000",
+      "blue": "#698eff",
+      "green": "#00ed95",
+      "white": "#ffffff",
+      "orange": "#ff423f",
+      "secondary": "#b9b9c9",
+      "decorative": "#625d77"
+    },
+    "encoderOrder": [
+      "blue",
+      "green",
+      "white",
+      "orange"
+    ],
+    "space": {
+      "layoutGrid": 8,
+      "unit": 4,
+      "related": 4,
+      "group": 8,
+      "section": 12
+    },
+    "stroke": {
+      "fine": 0.85,
+      "normal": 1.5,
+      "emphasis": 2,
+      "alignment": "center",
+      "status": "proposed-artwork-defaults-not-a-renderer-minimum"
+    },
+    "artwork": {
+      "targetBytes": 8192,
+      "maxDecimals": 4,
+      "status": "community-budget-not-renderer-limit"
+    },
+    "provenance": {
+      "type": "Representative stock OP-1 text-template geometry and reading tasks. No fixed size count. Geometric heights, native constructor sizes and rendered ink are separate metrics.",
+      "color": "Kit palette op1-kit-v1; consistent preview tokens, not calibrated OLED colours or a claim of exact stock values.",
+      "safeArea": "Proposed 8/8/16/8 top/right/bottom/left insets; maxaw reports 147 usable units and popcorp suggests critical content above y140. Neither is a universal measured boundary."
+    },
+    "layout": {
+      "encoderColumnLeft": [
+        9,
+        89,
+        169,
+        249
+      ],
+      "playLeftAnchor": 9,
+      "playRightAnchor": 311,
+      "valueUnitGap": 4,
+      "status": "proposed-reference-layout",
+      "textArtworkGap": 2,
+      "gridOrigin": [
+        0,
+        0
+      ],
+      "gridPolicy": "Align layout regions and repeated anchors; preserve optical text alignment and fractional curve geometry. Not a measured TE grid.",
+      "spacingMeasure": "visible-ink-bounds-including-strokes",
+      "fitPolicy": "Reserve complete labels, signed values, units and moving bounds; reflow or reformat rather than auto-shrink."
+    },
+    "colorProfile": {
+      "id": "op1-kit-v1",
+      "scope": "Kit preview palette and encoder ownership; secondary and decorative support hierarchy."
+    },
+    "nativeText": {
+      "observedConstructorHeights": [
+        12,
+        16,
+        18,
+        20
+      ],
+      "unit": "native-constructor-height",
+      "mapping": "Not automatically equal to preview profile height or visible ink; qualify the matching native adapter."
+    },
+    "typeAliases": {
+      "xs": "browserRow",
+      "s": "parameterValue",
+      "m": "tempoCompact",
+      "l": "clockNumber",
+      "xl": "tempoMedium",
+      "xxl": "mixerLevel"
+    },
+    "typeUsage": {
+      "xs": {
+        "contexts": [
+          "parameter name",
+          "unit",
+          "browser row",
+          "key caption"
+        ],
+        "examples": [
+          "TENSION",
+          "MS",
+          "KIT 07"
+        ]
+      },
+      "s": {
+        "contexts": [
+          "short editable readout"
+        ],
+        "examples": [
+          "64",
+          "145 MS",
+          "-6 DB"
+        ]
+      },
+      "m": {
+        "contexts": [
+          "compact dominant number with surrounding controls"
+        ],
+        "examples": [
+          "120 BPM"
+        ]
+      },
+      "l": {
+        "contexts": [
+          "dominant time or short performance readout"
+        ],
+        "examples": [
+          "12:34"
+        ]
+      },
+      "xl": {
+        "contexts": [
+          "prominent rate with more available space"
+        ],
+        "examples": [
+          "120 BPM"
+        ]
+      },
+      "xxl": {
+        "contexts": [
+          "large lane level",
+          "single main number"
+        ],
+        "examples": [
+          "02",
+          "34",
+          "45",
+          "23"
+        ]
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "stock-typography",
+      "guidance": "Choose a stock-derived typography profile for the reading task. Do not impose a fixed size count or auto-shrink overflowing text. Distinguish template geometry, native constructor arguments and rendered ink."
+    },
+    {
+      "id": "font-provenance",
+      "guidance": "Faithful host typography uses a local stock font with its hash, available glyphs and named spacing profile; schematic mode cannot validate stock typography."
+    },
+    {
+      "id": "glyph-ids",
+      "guidance": "Map Latin text to lowercase SVG IDs; uppercase IDs are icons. Reject missing glyphs explicitly."
+    },
+    {
+      "id": "layout",
+      "guidance": "Author at 320x160 logical units on an 8-unit grid with 4-unit subdivisions. Use proposed top/right/bottom/left insets 8/8/16/8 and keep critical ink at or above y140; distinguish physical output and framework offsets."
+    },
+    {
+      "id": "encoder-ownership",
+      "guidance": "Use Blue, Green, White and Orange in physical order, reinforced by labels and positions; document normal, Shift and page maps."
+    },
+    {
+      "id": "alignment",
+      "guidance": "Parameter names and values share a deliberate edge anchor; editor columns preserve encoder order. Measure value and unit as one baseline-aligned group in the selected font."
+    },
+    {
+      "id": "composition-grid",
+      "guidance": "Choose the musical composition before columns. Use the proposed grid for regions and repeated anchors, measure spacing between complete ink bounds and reserve all value and movement extremes. Four encoder lanes do not require four equal visual columns."
+    },
+    {
+      "id": "context-and-focus",
+      "guidance": "Give overview and detail distinct jobs. Keep category, item choice, editing focus and playback activity distinguishable; define their relationship when they coincide or change."
+    },
+    {
+      "id": "alternate-presentation",
+      "guidance": "A secondary control function should reveal the appropriate label, value, unit or graphic while preserving ownership. Distinguish Shift fine adjustment from a different function and verify the actual input contract."
+    },
+    {
+      "id": "state-truth",
+      "guidance": "Keep selected, current, draft, applied and saved states distinct; show complete destructive targets and only real recovery actions."
+    },
+    {
+      "id": "svg-profile",
+      "guidance": "Use original explicit supported SVG geometry, stable checked IDs and separate filled contours; no browser-only features in native assets."
+    },
+    {
+      "id": "retained-blocks",
+      "guidance": "Prefer prebuilt named blocks, visibility changes and small live layers; publish mutations only when state changes and stop cosmetic updates at idle."
+    },
+    {
+      "id": "cache-cost",
+      "guidance": "Retained geometry is not pixel caching. Use pixel caches only where the exact runtime supports their lifetime and paint-order contract."
+    },
+    {
+      "id": "smooth-edges",
+      "guidance": "Separate antialiasing, curve tessellation and temporal smoothing. Preserve useful curves and subpixel geometry; host smoothing does not qualify native output."
+    },
+    {
+      "id": "cpu",
+      "guidance": "Measure native peak GUI/audio deadline cost separately from host counts; keep graphics out of audio and interrupt callbacks."
+    },
+    {
+      "id": "assets",
+      "guidance": "Keep TE code, firmware, fonts, glyph geometry, kerning databases and extracted stock artwork out of public source and hosted files. For additional design examples, consult the owner’s existing original OP-1 firmware locally or TE’s official original OP-1 manual as an external reference. Do not bundle manual pages or illustrations with the skill or its machine-readable rules. Website quotations remain separately attributed, outside MIT and beside their analysis."
+    },
+    {
+      "id": "creative-exploration",
+      "guidance": "For an open brief, explore sound-related metaphors and meaningfully different compositions with the user. Use stock-derived relationships as a visual vocabulary, not prescribed layouts; develop a chosen direction without restarting ideation or imposing extra approval gates."
+    },
+    {
+      "id": "pattern-first",
+      "guidance": "Choose the musical relationship and visual pattern before arranging components. Use stock composition studies as references and original instrument applications as examples; do not replace every screen with a common four-column template."
+    },
+    {
+      "id": "meaningful-motion",
+      "guidance": "Preserve expressive motion that explains sound or musical progress. Specify its trigger, moving parts, fixed references, rest behaviour and measured cost; do not remove useful motion just to simplify a preview."
+    },
+    {
+      "id": "text-clearance",
+      "guidance": "Keep text clear of other text and artwork, including stroke extents and changing states. Use the kit’s proposed 2-unit text-to-artwork gap, remeasure values and units together in the selected font, and repeat native checks with actual ink bounds."
+    },
+    {
+      "id": "host-verification",
+      "guidance": "Use the project’s actual preview and available capture tools. Check relevant boundary and interaction states, save and visually inspect host PNGs in the selected font mode, fix issues and report the renderer, scale and limitations. Portable font, SVG and scene checks supplement image inspection; they do not qualify native rendering, hardware legibility or CPU/audio cost."
+    },
+    {
+      "id": "input-navigation-contract",
+      "guidance": "Pair a proposed screen’s visual states with the actual primary/Shift inputs, detail and return routes, state retained on return and discoverability for unlabelled controls. Mark unimplemented bindings as proposed and test the real input route; a graphic does not establish an interaction."
+    }
+  ]
+}

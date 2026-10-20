@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="name-0-0" d="M 43.6667,25.3333 L 43.6667,12 L 47.6667,12 L 50.3333,14.6667 L 50.3333,16 L 47.6667,18.6667 L 43.6667,18.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-1" d="M 46.3333,18.6667 L 50.3333,25.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-2" d="M 52.3333,25.3333 L 55.6667,12 L 59,25.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-3" d="M 53.6667,20 L 57.6667,20" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-4" d="M 61,12 L 67.6667,12" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-5" d="M 64.3333,12 L 64.3333,25.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-6" d="M 76.3333,12 L 69.6667,12 L 69.6667,25.3333 L 76.3333,25.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-0-7" d="M 69.6667,18.6667 L 75,18.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="name-1-0" d="M 127,25.3333 L 130.3333,12 L 133.6667,25.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-1" d="M 128.3333,20 L 132.3333,20" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-2" d="M 135.6667,25.3333 L 135.6667,12 L 139,18.6667 L 142.3333,12 L 142.3333,25.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-3" d="M 145.6667,12 L 149.6667,12 L 151,14.6667 L 151,22.6667 L 149.6667,25.3333 L 145.6667,25.3333 L 144.3333,22.6667 L 144.3333,14.6667 L 145.6667,12" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-4" d="M 153,12 L 153,22.6667 L 154.3333,25.3333 L 158.3333,25.3333 L 159.6667,22.6667 L 159.6667,12" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-5" d="M 161.6667,25.3333 L 161.6667,12 L 168.3333,25.3333 L 168.3333,12" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-6" d="M 170.3333,12 L 177,12" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-1-7" d="M 173.6667,12 L 173.6667,25.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="name-2-0" d="M 241.6667,12 L 245.6667,12 L 248.3333,14.6667 L 248.3333,22.6667 L 245.6667,25.3333 L 241.6667,25.3333 L 241.6667,12" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-1" d="M 257,12 L 250.3333,12 L 250.3333,25.3333 L 257,25.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-2" d="M 250.3333,18.6667 L 255.6667,18.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-3" d="M 265.6667,13.3333 L 264.3333,12 L 260.3333,12 L 259,13.3333 L 259,17.3333 L 260.3333,18.6667 L 264.3333,18.6667 L 265.6667,20 L 265.6667,24 L 264.3333,25.3333 L 260.3333,25.3333 L 259,24" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-4" d="M 267.6667,12 L 274.3333,12" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="name-2-5" d="M 271,12 L 271,25.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="source-frame" d="M 28 53 L 92 53 L 92 93 L 28 93 Z" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="source-cycle" d="M 36 73 C 44 53 50 53 58 73 C 66 93 72 93 82 73" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="source-amount" d="M 93,73 L 126,73" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="source-arrow" d="M 119 69 L 126 73 L 119 77" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="amount" d="M 133 52 L 170 73 L 133 94 Z" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-target" d="M 171,73 L 218,73" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="target-arrow" d="M 210 69 L 217 73 L 210 77" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="destination" d="M 225 53 L 302 53 L 302 93 L 225 93 Z" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="destination-name-0" d="M 258.1667,67.3333 L 256.8333,66 L 252.8333,66 L 251.5,67.3333 L 251.5,78 L 252.8333,79.3333 L 256.8333,79.3333 L 258.1667,78" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="destination-name-1" d="M 260.1667,66 L 260.1667,76.6667 L 261.5,79.3333 L 265.5,79.3333 L 266.8333,76.6667 L 266.8333,66" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="destination-name-2" d="M 268.8333,66 L 275.5,66" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="destination-name-3" d="M 272.1667,66 L 272.1667,79.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="rate-value-0" d="M 35.5,117 L 35.5,115 L 37.5,113 L 43.5,113 L 45.5,115 L 45.5,119 L 35.5,133 L 45.5,133" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="rate-value-1" d="M 61.5,113 L 61.5,133" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="rate-value-2" d="M 71.5,113 L 71.5,133" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="rate-value-3" d="M 61.5,123 L 71.5,123" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="rate-value-4" d="M 74.5,113 L 84.5,113 L 74.5,133 L 84.5,133" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="amount-value-0" d="M 134,113 L 144,113 L 140,123 L 144,127 L 144,131 L 142,133 L 134,133" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-value-1" d="M 136,123 L 140,123" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-value-2" d="M 155,133 L 155,113 L 147,127 L 157,127" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-value-3" d="M 160,133 L 170,113" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-value-4" d="M 160,113 L 162,113 L 162,117 L 160,117 L 160,113" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="amount-value-5" d="M 168,129 L 170,129 L 170,133 L 168,133 L 168,129" fill="none" stroke="#00ed95" stroke-width="1.5"/></svg>

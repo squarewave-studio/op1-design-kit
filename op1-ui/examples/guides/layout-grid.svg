@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 222" role="img" aria-labelledby="title desc">
+  <title id="title">OP-1 layout construction grid</title>
+  <desc id="desc">A 320 by 160 logical canvas. Cyan bounds are x8 to312 and y8 to144. Orange marks y140, the cautious bottom guide for critical content. An eight-unit grid starts at the canvas origin.</desc>
+  <defs>
+    <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M4 0V8M0 4H8" fill="none" stroke="#292c30" stroke-width="0.4"/>
+      <path d="M8 0H0V8" fill="none" stroke="#444" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="222" fill="#f4f5f6"/>
+  <g fill="#30343a" font-family="system-ui,sans-serif" font-size="9">
+    <text x="40" y="17">0</text><text x="348" y="17">320</text>
+    <text x="13" y="32">0</text><text x="6" y="191">160</text>
+    <text x="104" y="17">320 × 160 logical canvas</text>
+  </g>
+  <g transform="translate(40 28)">
+    <rect width="320" height="160" fill="#101216"/>
+    <rect width="320" height="160" fill="url(#grid)"/>
+    <rect x="8" y="8" width="304" height="136" fill="none" stroke="#38d9e6" stroke-width="1"/>
+    <path d="M8 140H312" stroke="#ffab70" stroke-width="1" stroke-dasharray="3 3"/>
+    <g fill="#e8edf2" font-family="system-ui,sans-serif" font-size="9">
+      <text x="20" y="27">8-unit grid / 4-unit subdivisions</text>
+      <text x="20" y="43">8 top / 8 left / 8 right / 16 bottom</text>
+    </g>
+  </g>
+  <g fill="#30343a" font-family="system-ui,sans-serif" font-size="8">
+    <path d="M352 168H361L365 157M352 172H361L365 179" fill="none" stroke="#626970" stroke-width="0.6"/>
+    <text x="366" y="159">y140</text>
+    <text x="366" y="182">y144</text>
+  </g>
+  <g font-family="system-ui,sans-serif" font-size="9">
+    <path d="M42 205H54" stroke="#087e8b" stroke-width="2"/>
+    <text x="59" y="208" fill="#30343a">Proposed safe rectangle</text>
+    <path d="M210 205H222" stroke="#a84400" stroke-width="2" stroke-dasharray="3 3"/>
+    <text x="227" y="208" fill="#30343a">Critical content: y ≤ 140</text>
+  </g>
+</svg>

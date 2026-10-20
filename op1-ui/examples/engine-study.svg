@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="160" viewBox="0 0 320 160"><rect x="0" y="0" width="320" height="160" fill="#000000"/>
+<path id="pitch-label-0-0" d="M 12,23.3333 L 12,10 L 16,10 L 18.6667,12.6667 L 18.6667,14 L 16,16.6667 L 12,16.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-1" d="M 20.6667,10 L 27.3333,10" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-2" d="M 24,10 L 24,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-3" d="M 20.6667,23.3333 L 27.3333,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-4" d="M 29.3333,10 L 36,10" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-5" d="M 32.6667,10 L 32.6667,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-6" d="M 44.6667,11.3333 L 43.3333,10 L 39.3333,10 L 38,11.3333 L 38,22 L 39.3333,23.3333 L 43.3333,23.3333 L 44.6667,22" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-7" d="M 46.6667,10 L 46.6667,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-8" d="M 53.3333,10 L 53.3333,23.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-0-9" d="M 46.6667,16.6667 L 53.3333,16.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="shape-label-0-0" d="M 72.6667,11.3333 L 71.3333,10 L 67.3333,10 L 66,11.3333 L 66,15.3333 L 67.3333,16.6667 L 71.3333,16.6667 L 72.6667,18 L 72.6667,22 L 71.3333,23.3333 L 67.3333,23.3333 L 66,22" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-1" d="M 74.6667,10 L 74.6667,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-2" d="M 81.3333,10 L 81.3333,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-3" d="M 74.6667,16.6667 L 81.3333,16.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-4" d="M 83.3333,23.3333 L 86.6667,10 L 90,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-5" d="M 84.6667,18 L 88.6667,18" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-6" d="M 92,23.3333 L 92,10 L 96,10 L 98.6667,12.6667 L 98.6667,14 L 96,16.6667 L 92,16.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-7" d="M 107.3333,10 L 100.6667,10 L 100.6667,23.3333 L 107.3333,23.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-0-8" d="M 100.6667,16.6667 L 106,16.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="decay-label-0-0" d="M 137,10 L 141,10 L 143.6667,12.6667 L 143.6667,20.6667 L 141,23.3333 L 137,23.3333 L 137,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-1" d="M 152.3333,10 L 145.6667,10 L 145.6667,23.3333 L 152.3333,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-2" d="M 145.6667,16.6667 L 151,16.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-3" d="M 161,11.3333 L 159.6667,10 L 155.6667,10 L 154.3333,11.3333 L 154.3333,22 L 155.6667,23.3333 L 159.6667,23.3333 L 161,22" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-4" d="M 163,23.3333 L 166.3333,10 L 169.6667,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-5" d="M 164.3333,18 L 168.3333,18" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-6" d="M 171.6667,10 L 175,16.6667 L 178.3333,10" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-0-7" d="M 175,16.6667 L 175,23.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="source-number-0-0" d="M 198.3333,16.6667 L 201,14 L 201,27.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="source-number-0-1" d="M 197.6667,27.3333 L 204.3333,27.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="source-identity-0" d="M 190 9 L 212 9 L 212 34 L 190 34 Z" fill="none" stroke="#b9b9c9" stroke-width="1"/>
+<path id="pitch-dial-0" d="M 46 41 C 46 48.1797 40.1797 54 33 54 C 25.8203 54 20 48.1797 20 41 C 20 33.8203 25.8203 28 33 28 C 40.1797 28 46 33.8203 46 41" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-pointer-0" d="M 33,41 L 33,31" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="pitch-value-0-0" d="M 31,63 L 35,63 L 36.3333,65.6667 L 36.3333,73.6667 L 35,76.3333 L 31,76.3333 L 29.6667,73.6667 L 29.6667,65.6667 L 31,63" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="source-wave-0" d="M 66 44 C 78 32 86 32 94 44 C 102 56 110 56 122 44" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-value-0-0" d="M 90.6667,65.6667 L 90.6667,64.3333 L 92,63 L 96,63 L 97.3333,64.3333 L 97.3333,67 L 90.6667,76.3333 L 97.3333,76.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="decay-value-0-0" d="M 138,31 L 142,27 L 142,47" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-value-0-1" d="M 137,47 L 147,47" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-value-0-2" d="M 150,31 L 150,29 L 152,27 L 158,27 L 160,29 L 160,33 L 150,47 L 160,47" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-value-0-3" d="M 165,27 L 171,27 L 173,31 L 173,43 L 171,47 L 165,47 L 163,43 L 163,31 L 165,27" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="source-envelope-0" d="M 137 66 L 145 52 C 154 60 169 65 190 66" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="pitch-label-1-0" d="M 12,93.3333 L 12,80 L 16,80 L 18.6667,82.6667 L 18.6667,84 L 16,86.6667 L 12,86.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-1" d="M 20.6667,80 L 27.3333,80" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-2" d="M 24,80 L 24,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-3" d="M 20.6667,93.3333 L 27.3333,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-4" d="M 29.3333,80 L 36,80" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-5" d="M 32.6667,80 L 32.6667,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-6" d="M 44.6667,81.3333 L 43.3333,80 L 39.3333,80 L 38,81.3333 L 38,92 L 39.3333,93.3333 L 43.3333,93.3333 L 44.6667,92" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-7" d="M 46.6667,80 L 46.6667,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-8" d="M 53.3333,80 L 53.3333,93.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-label-1-9" d="M 46.6667,86.6667 L 53.3333,86.6667" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="shape-label-1-0" d="M 72.6667,81.3333 L 71.3333,80 L 67.3333,80 L 66,81.3333 L 66,85.3333 L 67.3333,86.6667 L 71.3333,86.6667 L 72.6667,88 L 72.6667,92 L 71.3333,93.3333 L 67.3333,93.3333 L 66,92" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-1" d="M 74.6667,80 L 74.6667,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-2" d="M 81.3333,80 L 81.3333,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-3" d="M 74.6667,86.6667 L 81.3333,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-4" d="M 83.3333,93.3333 L 86.6667,80 L 90,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-5" d="M 84.6667,88 L 88.6667,88" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-6" d="M 92,93.3333 L 92,80 L 96,80 L 98.6667,82.6667 L 98.6667,84 L 96,86.6667 L 92,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-7" d="M 107.3333,80 L 100.6667,80 L 100.6667,93.3333 L 107.3333,93.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-label-1-8" d="M 100.6667,86.6667 L 106,86.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="decay-label-1-0" d="M 137,80 L 141,80 L 143.6667,82.6667 L 143.6667,90.6667 L 141,93.3333 L 137,93.3333 L 137,80" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-1" d="M 152.3333,80 L 145.6667,80 L 145.6667,93.3333 L 152.3333,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-2" d="M 145.6667,86.6667 L 151,86.6667" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-3" d="M 161,81.3333 L 159.6667,80 L 155.6667,80 L 154.3333,81.3333 L 154.3333,92 L 155.6667,93.3333 L 159.6667,93.3333 L 161,92" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-4" d="M 163,93.3333 L 166.3333,80 L 169.6667,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-5" d="M 164.3333,88 L 168.3333,88" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-6" d="M 171.6667,80 L 175,86.6667 L 178.3333,80" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-label-1-7" d="M 175,86.6667 L 175,93.3333" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="source-number-1-0" d="M 197.6667,86.6667 L 197.6667,85.3333 L 199,84 L 203,84 L 204.3333,85.3333 L 204.3333,88 L 197.6667,97.3333 L 204.3333,97.3333" fill="none" stroke="#b9b9c9" stroke-width="1.5"/>
+<path id="source-identity-1" d="M 190 79 L 212 79 L 212 104 L 190 104 Z" fill="none" stroke="#b9b9c9" stroke-width="1"/>
+<path id="pitch-dial-1" d="M 45 109 C 45 115.6274 39.6274 121 33 121 C 26.3726 121 21 115.6274 21 109 C 21 102.3726 26.3726 97 33 97 C 39.6274 97 45 102.3726 45 109" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="pitch-pointer-1" d="M 33,109 L 42,99" fill="none" stroke="#698eff" stroke-width="1"/>
+<path id="pitch-value-1-0" d="M 29.6667,125 L 36.3333,125 L 31,138.3333" fill="none" stroke="#698eff" stroke-width="1.5"/>
+<path id="source-wave-1" d="M 66 114 C 78 107 86 107 94 114 C 102 121 110 121 122 114" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-value-1-0" d="M 90.6667,125 L 97.3333,125 L 94.6667,131.6667 L 97.3333,134.3333 L 97.3333,137 L 96,138.3333 L 90.6667,138.3333" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="shape-value-1-1" d="M 92,131.6667 L 94.6667,131.6667" fill="none" stroke="#00ed95" stroke-width="1.5"/>
+<path id="decay-value-1-0" d="M 137,101 L 137,99 L 139,97 L 145,97 L 147,99 L 147,103 L 137,117 L 147,117" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-value-1-1" d="M 158,117 L 158,97 L 150,111 L 160,111" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="decay-value-1-2" d="M 165,97 L 171,97 L 173,101 L 173,113 L 171,117 L 165,117 L 163,113 L 163,101 L 165,97" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="source-envelope-1" d="M 137 136 L 145 122 C 154 130 169 135 190 136" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+<path id="mode-0" d="M 237.6667,23.3333 L 237.6667,10 L 241,16.6667 L 244.3333,10 L 244.3333,23.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-1" d="M 247.6667,10 L 251.6667,10 L 253,12.6667 L 253,20.6667 L 251.6667,23.3333 L 247.6667,23.3333 L 246.3333,20.6667 L 246.3333,12.6667 L 247.6667,10" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-2" d="M 255,10 L 259,10 L 261.6667,12.6667 L 261.6667,20.6667 L 259,23.3333 L 255,23.3333 L 255,10" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-3" d="M 270.3333,10 L 263.6667,10 L 263.6667,23.3333 L 270.3333,23.3333" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-4" d="M 263.6667,16.6667 L 269,16.6667" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-ring" d="M 291 76 C 291 96.4345 274.4345 113 254 113 C 233.5655 113 217 96.4345 217 76 C 217 55.5655 233.5655 39 254 39 C 274.4345 39 291 55.5655 291 76" fill="none" stroke="#ff423f" stroke-width="1.5"/>
+<path id="mode-tick-0" d="M 285,76 L 289,76" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-1" d="M 275.9203,97.9203 L 278.7487,100.7487" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-2" d="M 254,107 L 254,111" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-3" d="M 232.0797,97.9203 L 229.2513,100.7487" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-4" d="M 223,76 L 219,76" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-5" d="M 232.0797,54.0797 L 229.2513,51.2513" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-6" d="M 254,45 L 254,41" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-tick-7" d="M 275.9203,54.0797 L 278.7487,51.2513" fill="none" stroke="#ff423f" stroke-width="1"/>
+<path id="mode-pointer" d="M 254,76 L 273,57" fill="none" stroke="#ff423f" stroke-width="2"/>
+<path id="mode-value-0" d="M 257,138 L 257,118 L 249,132 L 259,132" fill="none" stroke="#ff423f" stroke-width="1.5"/></svg>

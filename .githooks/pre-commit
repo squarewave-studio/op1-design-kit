@@ -1,0 +1,4 @@
+#!/bin/sh
+# Compatibility for checkouts still configured with the previous hooks path.
+set -eu
+npm run precommit
