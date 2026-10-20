@@ -1,10 +1,10 @@
 name: Design Kit Pages
 on:
   pull_request:
-    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.husky/**']
+    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.githooks/**']
   push:
     branches: [main]
-    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.husky/**']
+    paths: ['op1-ui/**', 'skills/op1-design/**', 'design-kit.json', 'CONTRIBUTING.md', 'LICENSE', '.github/workflows/pages.yml', '.github/workflows/public-assets.yml', 'tools/**', 'tests/**', 'package*.json', '.githooks/**']
   workflow_dispatch:
     inputs:
       deploy:

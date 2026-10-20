@@ -29,8 +29,9 @@ do not paste GPL SDK code into this MIT kit.
 ## Local Commit Checks
 
 Use Node 22 or later, Python 3 and [gitleaks](https://github.com/gitleaks/gitleaks#installing).
-Run `npm ci` once after cloning. The pinned [Husky](https://typicode.github.io/husky/)
-dependency installs the local pre-commit hook through npm's `prepare` script.
+Run `npm ci` once after cloning. Its `prepare` script installs the tracked
+`.githooks/` dispatcher in Git's shared hooks directory.
+
 Every commit checks staged files for private resources, scans staged changes
 with gitleaks and checks whitespace. A missing gitleaks executable stops the commit.
 

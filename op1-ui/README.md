@@ -107,10 +107,6 @@ python3 op1-ui/tools/preview.py
 # Open http://127.0.0.1:8765/out/pages/
 ```
 
-The Pages Action tests and builds on pull requests and relevant pushes to `main`.
-Deployment requires `ENABLE_DESIGN_KIT_PAGES=true`, Pages configured for GitHub
-Actions and the `github-pages` environment. Manual runs default to build only.
-See [Publishing](docs/PUBLISHING.md) for the setup, deployment and rollback steps.
 The normal build has no private asset input. Seven credited, screen-only manual
 quotations sit beside their analysis on the website, outside the portable skill. No analytics, cookies
 or trackers are included.

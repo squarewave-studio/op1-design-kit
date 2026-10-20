@@ -28,7 +28,6 @@ PAGES = {'start.html': ('Start Building', SOURCE / 'README.md'),
          'agents.html': ('For Agents', SOURCE / 'docs/AGENT-SKILL.md'),
          'credits.html': ('Sources And Credits', SOURCE / 'docs/SOURCES.md'),
          'contributing.html': ('Contributing', ROOT / 'CONTRIBUTING.md'),
-         'publishing.html': ('Site Publishing', SOURCE / 'docs/PUBLISHING.md'),
          'licence.html': ('MIT Licence', ROOT / 'LICENSE')}
 
 DOC_GROUPS = [
@@ -37,8 +36,8 @@ DOC_GROUPS = [
     ('Patterns', [('stock.html','Stock Screen Families'),('examples.html','Patterns And Screen Examples')]),
     ('Components', [('components.html','Component Reference')]),
     ('Integration', [('fonts.html','Stock Font Setup'),('icons.html','Icons And Symbols'),('graphics.html','Graphics And CPU'),('agents.html','For Agents')]),
-    ('Sources', [('credits.html','Credits'),('contributing.html','Contributing'),('publishing.html','Site Publishing'),('licence.html','MIT Licence')])]
-READING_ORDER = ['start.html','stock.html','examples.html','spec.html','components.html','fonts.html','icons.html','graphics.html','agents.html','credits.html','contributing.html','publishing.html','licence.html']
+    ('Sources', [('credits.html','Credits'),('contributing.html','Contributing'),('licence.html','MIT Licence')])]
+READING_ORDER = ['start.html','stock.html','examples.html','spec.html','components.html','fonts.html','icons.html','graphics.html','agents.html','credits.html','contributing.html','licence.html']
 DESCRIPTIONS = {
     'Start Building': 'Use the OP-1 Design Kit to build readable synth, effect and utility screens with original graphics.',
     'Spec': 'Text roles, encoder colours, layout clearances and alignment rules for original OP-1 screens.',
@@ -50,7 +49,6 @@ DESCRIPTIONS = {
     'Stock Screen Families': 'Explore the design relationships behind OP-1 instruments, effects, sequencers and utility screens.',
     'Sources And Credits': 'Community sources behind the kit’s typography, graphics and design guidance, with licence notes.',
     'Contributing': 'Suggest a pattern, improve an example or contribute a tested change to the OP-1 Design Kit.',
-    'Site Publishing': 'Build, test and publish the OP-1 Design Kit to SquareWave Studio’s GitHub Pages site with gated deployments.',
     'MIT Licence': 'MIT licence for the original code and guidance by Photon Consulting Limited, trading as SquareWave Studio.',
     'For Agents': 'Install the portable op1-design skill and use the shared rules and design-kit.json in your project.'
 }
