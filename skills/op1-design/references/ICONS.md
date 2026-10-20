@@ -8,7 +8,7 @@ selection, activity and bypass state. Colour alone should not carry the meaning.
 
 The local `content/display/opfont.svg` contains a symbol namespace as well as
 letters. The IDs below are the documented stock mappings. Check them in the
-owner’s actual font with the bundled inspector before using a symbol. The catalogue lists
+local font with the bundled inspector before using a symbol. The catalogue lists
 names and meanings; the symbol artwork stays in your local font.
 
 | SVG ID | Meaning | Documented Appearance |
@@ -39,7 +39,7 @@ API’s ability to draw symbols. Source credit: [op1hacks](https://github.com/op
 
 ## Load A Symbol Deliberately
 
-1. Locate the owner’s font using [Stock Font Setup](FONTS.md). Keep it outside
+1. Find your local font using [Fonts And Previews](FONTS.md). Keep it outside
    the repository and inspect its actual IDs.
 2. Use the matching SDK’s documented symbol service or named-node binding.
    Preserve the exact uppercase symbol ID. Do not pass it through a helper

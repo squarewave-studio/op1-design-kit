@@ -26,7 +26,8 @@ once. Read the matching visual contract, then open the relevant state pair.
 | See original examples and their state contracts | [Visual Reference Index](references/VISUALS.md) |
 | Set typography, encoder colours, alignment, margins or grid | [Design Specification](references/SPEC.md) |
 | Use the bundled Iosevka preview font and exact variants | [Host Preview Font](references/PREVIEW-FONT.md) |
-| Find opfont.svg, check stock characters or load a private font | [Stock Font Setup](references/FONTS.md) |
+| Locate the user’s firmware or explain how to obtain a local stock font | [Local Stock Resources](references/LOCAL-RESOURCES.md) |
+| Check stock characters, spacing or private font loading | [Fonts And Previews](references/FONTS.md) |
 | Choose stock symbol IDs or design an original icon | [Icons And Symbols](references/ICONS.md) |
 | Author SVG blocks, smoothing or bounded graphical updates | [Graphics And CPU](references/GRAPHICS.md) |
 | Check a design, capture host evidence and report limits | [Verification](references/VERIFICATION.md) |
@@ -34,8 +35,10 @@ once. Read the matching visual contract, then open the relevant state pair.
 | Find more stock firmware or manual examples | [Finding More Stock Examples](references/STOCK.md#finding-more-stock-examples) |
 | Check attribution, source scope or licences | [Sources](references/SOURCES.md) |
 
-The Spec and JSON in references are the maintained sources for the website
-and code constants. Visual PNGs, schematic SVGs and state data live in
+The Spec, JSON and shared technical references supply the website’s design
+rules and code constants. Local Resources, Ideation and Verification contain
+agent workflows; they are linked from this index rather than copied into the
+web guides. Visual PNGs, schematic SVGs and state data live in
 `references/visuals/`; their contracts explain what stays fixed and changes.
 The version above is the kit version, not a firmware compatibility promise.
 
@@ -54,8 +57,8 @@ choice without restarting the exploration or imposing extra approval stages.
 2. Choose the font mode. Use the bundled Iosevka Thin profile for shareable
    host previews, following [Host Preview Font](references/PREVIEW-FONT.md).
    For stock lettering checks, use the owner's private
-   `content/display/opfont.svg`. Read Fonts for acquisition, glyph IDs and
-   spacing limits. Schematic lettering cannot qualify stock typography.
+   `content/display/opfont.svg`. Use [Local Stock Resources](references/LOCAL-RESOURCES.md) to locate it or
+   explain unpacking. Read Fonts for glyph IDs and spacing limits. Schematic lettering cannot qualify stock typography.
 3. Use the matching visual example as a relationship to adapt. Preserve
    encoder ownership, stable text anchors and room for complete values and
    moving artwork. Do not copy a stock drawing or infer a control from art.

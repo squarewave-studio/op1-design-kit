@@ -1,8 +1,8 @@
 # For Agents
 
 The kit includes **op1-design**, an installable skill that gives your coding
-agent the screen rules, bundled preview font, stock-font setup and original visual examples. Use it
-with Claude Code, Cursor, Pi or OpenCode through the
+agent the screen rules, bundled preview font, stock-font setup and original
+visual examples. Use it with Claude Code, Cursor, Pi or OpenCode through the
 [Skills CLI](https://github.com/vercel-labs/skills#install-a-skill).
 
 ## Install From GitHub
@@ -35,8 +35,9 @@ Ask your agent to use **op1-design** for the task. For example:
 The skill opens with a short reference index. It loads the guidance and visual
 pair relevant to the task rather than every document at once. It also explains
 where to look in your existing local firmware or TE’s official manual when
-more stock design examples are useful. The Iosevka preview font and its OFL licence are included. Firmware, stock
-font resources and manual images are not bundled.
+more stock design examples are useful. The Iosevka preview font and its OFL
+licence are included. Firmware, stock font resources and manual images are
+not bundled.
 
 ## Explore And Verify A Design
 
@@ -53,6 +54,7 @@ checkers. It uses your project’s preview and the agent’s available capture t
 
 ## What Is Included
 
+- [Local-resource instructions for your agent](../../skills/op1-design/references/LOCAL-RESOURCES.md): finding a private firmware folder and explaining unpacking when needed.
 - [The skill entrypoint](../../skills/op1-design/SKILL.md), with its reference index and version.
 - [Design rules](../../skills/op1-design/references/SPEC.md) and [design-kit.json](../../design-kit.json), shared with the site and code constants.
 - [Bundled preview font](../../skills/op1-design/references/PREVIEW-FONT.md), with browser and static rendering helpers.

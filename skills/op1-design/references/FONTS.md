@@ -8,35 +8,39 @@ SIL Open Font License 1.1.
 
 For a separate stock-lettering check, choose `opfont.svg` from your own firmware
 files. It stays on your machine. Nothing is uploaded, included or served here.
-Check a native capture before claiming device legibility or exact spacing.
+Use a native capture to check device legibility and exact spacing.
 
-## Where `opfont.svg` comes from
+## Find Your Stock Font
 
-The vector UI font is a resource in the owner's **locally unpacked original
-OP-1 firmware**, at package-relative **`content/display/opfont.svg`**. It is not
-a downloadable web font or a file normally visible in the OP-1's USB sounds/tape
-disk. Source checkouts and the standalone Kennel SDK are not a reliable source
-of the proprietary font. The boot/console bitmap text is a different font system.
+The vector UI font is part of the **original OP-1 firmware**. After unpacking
+it locally, you will find the font at **`content/display/opfont.svg`** within
+the unpacked package. It is not a web font or a file normally visible on the
+OP-1’s USB sounds/tape disk. The boot/console bitmap text uses a different
+font system.
 
-Prefer an existing lawful local unpacked tree. Ask the user for its location if
-it is not known. Check filenames locally rather than downloading somebody's
-extracted font. For example:
+If you already have an unpacked copy of your firmware, look for that path.
+You can also search your private working folder by filename:
 
 ```sh
 rg --files --hidden --no-ignore /absolute/private/firmware-work \
   -g opfont.svg -g kerntable.db
 ```
 
-If the user has no unpacked tree, explain the supported route: obtain their own
-original OP-1 firmware from [TE's official downloads](https://teenage.engineering/downloads/op-1)
-and follow [op1repacker's documented setup and unpack procedure](https://github.com/op1hacks/op1repacker#usage).
-Use the unpacker’s own documentation for setup, commands and the output path.
-Keep the unpacked tree outside this repository. The kit does not download,
-unpack or repack firmware, install tools or operate a device.
+Replace `/absolute/private/firmware-work` with the folder containing your
+unpacked firmware.
 
-Keep the font and its derived data outside the public repository. Use a private
-absolute path. `OP1_FONT_PATH` is the portable configuration name, not a fixed
-machine-specific installation location. `.gitignore` is a backstop, not a licence.
+If you have not unpacked your firmware, download your own original OP-1
+firmware from [TE’s official downloads](https://teenage.engineering/downloads/op-1).
+Then follow [op1repacker’s setup and unpacking instructions](https://github.com/op1hacks/op1repacker#usage).
+That guide explains which tools you need, the commands to run and where to
+find the unpacked files. The kit does not unpack firmware for you. Source
+checkouts and the standalone Kennel SDK do not supply the stock font.
+
+Keep the firmware, unpacked files and any derived font data in a private folder
+outside this public repository. Use that folder when loading or inspecting
+the font; do not download somebody else’s extracted copy. In the command
+examples below, `OP1_FONT_PATH` means the full path to your local `opfont.svg`,
+not a fixed installation folder or web address.
 
 ## Preview With Your Font
 
@@ -48,8 +52,8 @@ font cache or font-bearing export button. Reloading clears the loaded font.
 an HTTP route or hosting configuration.
 
 The following adapter is part of the repository checkout. The installed skill
-includes the metadata inspector, guidance and examples, but no browser font
-loader or preview runtime. In a separate project, use its existing loader or
+includes the metadata inspector, guidance and examples, but no stock-font
+browser loader. Its Iosevka preview loader is separate. In a separate project, use its existing loader or
 write an adapter following the safety and spacing rules below.
 
 For another browser host working from a repository checkout:
@@ -112,8 +116,8 @@ inventory. Never infer their presence from a renderer that draws replacements.
 Use `US` if that is the chosen understandable unit label; label a custom glyph
 adapter and its licence separately when a symbol is genuinely needed.
 
-Report these independently: present in SVG → accepted by the adapter → drawn
-by the native text route → readable at the selected size. GIN's working subset
+Check each step separately: the glyph is present in the SVG, the adapter
+accepts it, the native text route draws it and it is readable at the selected size. GIN's working subset
 and fallback punctuation are not a complete stock character catalogue.
 
 ### Metrics Across Hosts
@@ -152,7 +156,7 @@ silently feed these nominal heights to a native size constructor.
 
 Use actual stock measurement to re-check layout; schematic fixed-width checks
 are insufficient. The workbench reports stock overflow separately. It does not
-shrink overflowing text. A faithful native report still needs native captures.
+shrink overflowing text. Use native captures to check the final spacing and legibility.
 Preserve a fixed-size editable-name window and visible cursor rather than
 scaling a long name. Handle unsupported characters explicitly.
 
@@ -164,7 +168,7 @@ Do not commit `opfont.svg`, `kerntable.db`, extracted geometry, generated
 The kit’s public example images use the bundled Iosevka placeholder. The
 editable SVG sources keep the original schematic alphabet. The MIT licence
 covers the kit’s original adapters; Iosevka retains OFL and MIT grants no
-rights to the owner’s stock assets.
+rights to stock assets.
 
 ## Render Example Images
 

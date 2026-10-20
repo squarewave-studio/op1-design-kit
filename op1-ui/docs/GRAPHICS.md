@@ -193,7 +193,7 @@ parameter smoothing are different problems. Do not fix one by changing another.
   are host settings, not proven native SVG features.
 - Rasterise host images at their final intended output resolution. An optional
   supersampled/downsampled design view can help inspect curves, but label it and
-  keep a direct final-resolution comparison. Nearest-neighbor enlargement is
+  keep a direct final-resolution comparison. Nearest-neighbour enlargement is
   useful to examine existing pixels, not to demonstrate smooth on-device edges.
   Do not put a blur/glow filter or high-resolution raster workaround into the
   device pipeline without separate support and cost evidence.

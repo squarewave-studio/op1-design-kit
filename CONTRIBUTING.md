@@ -8,7 +8,7 @@ and documented device observations are welcome. Use clear, plain English.
 
 For a screen change, describe its purpose, encoder mapping and important states.
 Include a render at its intended size. Keep names and values clearly separated,
-including when they share a baseline. Say whether the image uses schematic or
+including when they share a baseline. Say whether the image uses Iosevka, schematic or
 locally loaded stock lettering and whether it was checked on hardware.
 Link sources and preserve third-party licence notices. Original contributions
 are offered under the repository’s [MIT licence](LICENSE).
@@ -57,7 +57,11 @@ local font inputs outside the public checkout.
 Read [Design](op1-ui/docs/DESIGN.md), [Patterns](op1-ui/docs/EXAMPLES.md),
 [Fonts](op1-ui/docs/FONTS.md) and [Graphics](op1-ui/docs/GRAPHICS.md).
 Keep `skills/op1-design/SKILL.md` as the short reference index. Edit detailed
-guidance in its references, token values in `references/design-kit.json` and
+guidance in its references, keeping shared design rules separate from
+agent-only workflow instructions. Write the web guides directly to the person
+designing the screen. Keep instructions for communicating with the user in the
+skill entrypoint or its Local Resources, Ideation and Verification references.
+Edit token values in `references/design-kit.json` and
 visual source in `op1-ui/src/interaction-examples.mjs`, then run:
 
 ```sh

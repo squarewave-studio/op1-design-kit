@@ -38,7 +38,7 @@ visual references, font guidance and portable checking tools.
 - [Sources And Credits](op1-ui/docs/SOURCES.md): community work behind the guidance.
 
 The guide needs no font setup. Iosevka Thin, its OFL licence and the selected
-variant profile are bundled in the skill. See [Host Preview Font](skills/op1-design/references/PREVIEW-FONT.md). For stock-lettering checks, use your own firmware
+variant profile are bundled in the skill. See [Host Preview Font](op1-ui/docs/PREVIEW-FONT.md). For stock-lettering checks, use your own firmware
 locally; no firmware resources are included or served here.
 
 See the kit in a real instrument: [GIN](https://github.com/squarewave-studio/op1-mods/tree/main/mods/gin).

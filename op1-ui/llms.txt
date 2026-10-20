@@ -3,6 +3,7 @@
 Draft original-OP-1 design kit; not a Teenage Engineering specification.
 Start with ../skills/op1-design/SKILL.md, the progressive reference index.
 
+- ../skills/op1-design/references/LOCAL-RESOURCES.md: agent workflow for locating the user’s private font or explaining unpacking
 - ../skills/op1-design/references/IDEATION.md: creative exploration with the user, original metaphors and composition choices
 - ../skills/op1-design/references/VERIFICATION.md: portable checks, host captures, image inspection and evidence limits
 - README.md: quick start, components, preview and validation commands
@@ -15,10 +16,10 @@ Start with ../skills/op1-design/SKILL.md, the progressive reference index.
 - docs/SOURCES.md: primary references, pins, attribution and evidence limits
 - ../CONTRIBUTING.md and ../LICENSE: contribution and MIT terms
 
-No TE code, fonts, glyph geometry or firmware is bundled. Stock-font fidelity
+No TE code, stock font files, stock glyph geometry or firmware is bundled. Stock-font fidelity
 requires the user's local resource; schematic previews do not qualify it.
 
 Patterns, composition studies and original applications: docs/EXAMPLES.md
 Screen families and design relationships: docs/STOCK.md
 
-Bundled Iosevka Thin preview font: skills/op1-design/references/PREVIEW-FONT.md. Includes OFL assets and host adapters; no stock font is distributed.
+Bundled Iosevka Thin preview font: ../skills/op1-design/references/PREVIEW-FONT.md. Includes OFL assets and host adapters; no stock font is distributed.

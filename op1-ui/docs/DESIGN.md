@@ -103,7 +103,7 @@ For a single value or list, keep its size and anchor steady as content changes.
 If the full range will not fit, choose an explicit layout or number-format
 variant in advance. Do not quietly shrink the current value until it fits.
 
-For builders and agents, a useful starting combination is **XS name + S value +
+A useful starting combination is **XS name + S value +
 XS unit**. Use L or XXL only when the number is meant to dominate the screen.
 Keep the exact source profile attached to the alias, measure the actual stock
 font and check minimum, maximum, sign, decimal and unit changes. A short default
@@ -127,7 +127,7 @@ native API without checking that adapter's mapping.
 
 Public PNGs use the [Iosevka Thin host placeholder](PREVIEW-FONT.md), sized
 to the stock-reference profiles including their stroke. The editable native SVG
-renderer keeps the original schematic lettering. Stock-local previews scale the owner's local glyphs to the same
+renderer keeps the original schematic lettering. Stock-local previews scale locally supplied stock glyphs to the same
 reference height with approximate spacing. Measure the resulting ink, bearings
 and advances again for each renderer. Neither host route certifies native
 kerning, projection or physical legibility. See [Fonts](FONTS.md).

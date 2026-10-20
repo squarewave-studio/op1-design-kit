@@ -6,9 +6,10 @@ It does not reproduce the stock OP-1 font’s outlines, spacing, icons or native
 text behaviour. The typography roles and sizes still come from the stock
 interface; changing the preview font does not change those references.
 
-## Files In This Skill
+## Bundled Font Files
 
-Paths below are relative to the installed `op1-design` skill folder:
+The files are in `skills/op1-design/` in this repository. If you installed the
+skill separately, use its `op1-design/` folder instead. Paths below start there:
 
 | File | Use |
 | --- | --- |
@@ -114,7 +115,7 @@ IDs are a separate namespace and are not Iosevka characters.
 The rounded 6 and diagonal 9 follow the intended construction, while the 9’s
 loop, several bowls, proportions and spacing remain visibly different from
 stock. A clear Iosevka preview establishes composition under that font only.
-For stock lettering, use the owner’s private font locally as described in
-[Stock Font Setup](FONTS.md), then check native captures separately. Never
+For stock lettering, load your own stock font locally as described in
+[Fonts And Previews](FONTS.md), then check native captures separately. Never
 publish the private font, its geometry or a stock-lettering export from that
 check.

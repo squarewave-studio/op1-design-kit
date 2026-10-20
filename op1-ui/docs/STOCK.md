@@ -56,7 +56,7 @@ screens and stack on phones. They are host renders of original kit artwork,
 not stock screenshots or implemented plugins. PNGs use the bundled Iosevka Thin placeholder. Iosevka is included under OFL; stock font resources are not included.
 
 The [visual index](../../skills/op1-design/references/VISUALS.md) includes the editable schematic SVGs, control
-maps, state descriptions and boundary checks. Open only the relevant pair.
+maps, state descriptions and boundary checks. Choose a pattern and compare its two states.
 
 ### Keep Context Beside Detail
 
@@ -189,10 +189,10 @@ and [Graphics](https://squarewave-studio.github.io/op1-design-kit/graphics.html)
 Use these sources when the kit’s original examples do not answer a specific
 composition, typography or interaction question:
 
-- **Existing local firmware:** use the owner’s original OP-1 firmware and its
+- **Existing local firmware:** use your own original OP-1 firmware and its
   unpacked `content/display/` resources. Establish the firmware version and
   inspect the relevant screen family, text templates and element groups.
-  [Stock Font Setup](FONTS.md) explains the local resource location and links
+  [Fonts And Previews](FONTS.md) explains the local resource location and links
   to op1repacker’s unpacking documentation. Keep the firmware and extracted
   resources private; they are reference inputs, not assets to add to a project.
 - **Official manual:** go to [TE’s original OP-1 guide](https://teenage.engineering/guides/op-1/original)
@@ -201,7 +201,7 @@ composition, typography or interaction question:
   provides sampler and DBOX examples, [Sequencers](https://teenage.engineering/guides/op-1/original/sequencers)
   explains edit and playback relationships and [Shift](https://teenage.engineering/guides/op-1/original/shift-key)
   explains alternate functions. Use the manual as an external reference;
-  its pages and illustrations are not included in this skill.
+  the portable skill links to the manual without bundling its pages or illustrations.
 
 For each relevant example, identify the reading order, parameter ownership,
 text roles, aligned anchors, empty space and what changes with input. State
@@ -223,7 +223,8 @@ here. The website’s separately labelled manual quotations are attributed
 reference excerpts, not reusable kit artwork. No manual images are bundled
 with the skill.
 Public PNG examples use original geometry and the bundled Iosevka Thin placeholder.
-The font file and reusable glyph vectors are not supplied. The kit palette
+Iosevka and its OFL licence are included. Stock font files and stock glyph
+vectors are not supplied. The kit palette
 is a set of named design tokens, not a promise of exact stock colours or OLED
 calibration. See [Spec](https://squarewave-studio.github.io/op1-design-kit/spec.html).
 
