@@ -23,6 +23,15 @@ already in the repo; CI does not need firmware or a stock font. The artifact
 includes the installed skill files and separately noticed website references.
 It does not include the checkout, private inputs or local test output.
 
+The share image uses the kit title, SquareWave mark and four encoder colours.
+Rebuild it with `python3 op1-ui/tools/render_share.py`, using the pinned font
+requirements and `rsvg-convert` from librsvg. It writes the 1200×630 PNG and
+editable SVG source from the bundled Archivo font and original geometry.
+`og-design-kit.png` is the current metadata URL; `og.png` keeps the same image
+for older links. The build adds image dimensions, alt text and large-card
+metadata to every page. Sharing sites control their own layout and caching,
+so an existing post may keep an older preview until it is fetched again.
+
 Deployment runs only in this repository, from `main`, after a successful build
 and with `ENABLE_DESIGN_KIT_PAGES=true`. Pull requests never deploy. Manual
 runs default to **build only**, even when the repository variable is enabled.

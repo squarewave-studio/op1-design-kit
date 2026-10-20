@@ -14,6 +14,12 @@ BASE = 'https://squarewave-studio.github.io/op1-design-kit/'
 REPO = 'https://github.com/squarewave-studio/op1-design-kit/blob/main/'
 MANUAL = 'https://teenage.engineering/_img/54b7f9bf8681400300255cab_original.pdf'
 MANUAL_REFERENCES = {'fm':('FM',42),'string':('String',41),'digital':('Digital',41),'dbox':('DBOX',16),'envelope':('Synth Envelope',12),'mixer':('Mixer',25),'tempo':('Tempo',27)}
+SHARE_IMAGE = 'og-design-kit.png'
+SHARE_ALT = 'OP-1 Design Kit by SquareWave Studio, with Blue, Green, White and Orange encoder marks.'
+
+def share_metadata():
+    return f'<meta property="og:image" content="{BASE}{SHARE_IMAGE}"><meta property="og:image:type" content="image/png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{SHARE_ALT}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{BASE}{SHARE_IMAGE}"><meta name="twitter:image:alt" content="{SHARE_ALT}">'
+
 DISCLAIMER = 'Unofficial. Not affiliated with, authorised by or endorsed by Teenage Engineering AB.'
 FOOTER = f'''<footer><p>Maintained by <a href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit">SquareWave Studio</a> with the OP-1 community.</p><p>{DISCLAIMER}</p><p><a href="licence.html">MIT Licence</a> · <a href="contributing.html">Contributing</a> · <a href="https://github.com/squarewave-studio/op1-design-kit">GitHub</a></p></footer>'''
 
@@ -88,7 +94,7 @@ def render_page(title, body, current):
     nav=documentation_navigation(current)
     # Keep the opening text together before the local contents list.
     body=re.sub(r'(</h1>(?:\s*<p>(?!<img).*?</p>)+)',lambda m:m[1]+page_contents(body),body,count=1,flags=re.S)
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · OP-1 Design Kit</title><meta name="description" content="{html.escape(description)}"><meta property="og:title" content="{html.escape(title)} · OP-1 Design Kit"><meta property="og:description" content="{html.escape(description)}"><meta property="og:image" content="{BASE}og.png"><meta property="og:type" content="website"><link rel="stylesheet" href="preview.css"></head><body class="docs"><a class="skip-link" href="#content">Skip To Content</a>{masthead()}<details class="mobile-contents"><summary>Kit Contents</summary>{nav}</details><div class="docs-layout"><aside class="docs-sidebar">{nav}</aside><main class="document" id="content">{body}{edit_link(current)}{reading_links(current)}</main></div>{FOOTER}</body></html>'''
+    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · OP-1 Design Kit</title><meta name="description" content="{html.escape(description)}"><meta property="og:title" content="{html.escape(title)} · OP-1 Design Kit"><meta property="og:description" content="{html.escape(description)}">{share_metadata()}<meta property="og:type" content="website"><link rel="stylesheet" href="preview.css"></head><body class="docs"><a class="skip-link" href="#content">Skip To Content</a>{masthead()}<details class="mobile-contents"><summary>Kit Contents</summary>{nav}</details><div class="docs-layout"><aside class="docs-sidebar">{nav}</aside><main class="document" id="content">{body}{edit_link(current)}{reading_links(current)}</main></div>{FOOTER}</body></html>'''
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -109,6 +115,7 @@ def main():
     for name in ('preview.css', 'index.html', 'llms.txt'):
         shutil.copy2(SOURCE / name, out / name)
     home=(out / 'index.html').read_text()
+    home=re.sub(r'<meta property="og:image"[^>]*>',share_metadata(),home,count=1)
     home=re.sub(r'<header class="masthead">.*?</header>',masthead(),home,flags=re.S)
     home=re.sub(r'<nav class="links".*?</nav>', '', home, flags=re.S)
     home=re.sub(r'<footer>.*?</footer>', FOOTER, home, flags=re.S)
@@ -117,7 +124,8 @@ def main():
     # Published index uses URLs relative to the Pages root, not the source folder.
     (out / 'llms.txt').write_text('''# OP-1 Design Kit\n\nDraft guidance for the original OP-1.\n\n- skills/op1-design/SKILL.md: portable skill and reference index\n- start.html: getting started\n- spec.html: typography, colours, layout and grid\n- stock.html: screen families and interaction patterns\n- examples.html: original screen studies\n- fonts.html: preview fonts and private stock-font setup\n- preview-font.html: bundled Iosevka font and host adapters\n- icons.html: symbol IDs and loading\n- graphics.html: SVG, smoothing and CPU\n- agents.html: skill installation\n- design-kit.json: machine-readable rules\n- credits.html: sources and notices\n- contributing.html: contributing and checks\n- licence.html: MIT and third-party exclusions\n\nNo firmware or stock font files are served. Iosevka Thin is bundled under OFL.\n''')
     shutil.copy2(ROOT / 'design-kit.json', out / 'design-kit.json')
-    shutil.copy2(SOURCE / 'og.png', out / 'og.png')
+    for name in ('og.png', SHARE_IMAGE):
+        shutil.copy2(SOURCE / name, out / name)
     shutil.copytree(ROOT / 'skills/op1-design', out / 'skills/op1-design', dirs_exist_ok=True, ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '*.pyo'))
     page_by_source = {p.resolve(): name for name, (_, p) in PAGES.items()}
     for filename, (_, source) in PAGES.items():

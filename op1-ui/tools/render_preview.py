@@ -10,6 +10,7 @@ import tempfile
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT/'skills/op1-design/scripts'))
 from preview_font import PreviewFont
+from render_share import render_share
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
@@ -42,7 +43,7 @@ def main():
                 target=ROOT/'op1-ui/examples/renders'/(name+'.png')
                 if not target.exists():target=ROOT/'skills/op1-design/references/visuals'/(name+'.png')
                 target.write_bytes((staging/(name+'.png')).read_bytes())
-            subprocess.run(['rsvg-convert','-w','1200','-h','600','-o',str(ROOT/'op1-ui/og.png')],input=rendered['membrane-rest'],check=True)
+            render_share()
     print(f'Rendered {len(rendered)} Iosevka preview PNGs. Bounds, readout groups and artwork clearance passed. No private input used.')
 
 if __name__=='__main__':main()
