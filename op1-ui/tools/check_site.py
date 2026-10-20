@@ -21,7 +21,7 @@ def main():
     args = parser.parse_args()
     root = args.folder.resolve(); errors = []
     for path in root.rglob('*'):
-        if path.is_file() and (path.name.lower() in {'opfont.svg', 'kerntable.db', 'colors.svg', 'agents.md', 'claude.md'} or path.name.endswith('.private.inc')):
+        if path.is_file() and (path.name.lower() in {'opfont.svg', 'kerntable.db', 'colors.svg', 'agents.md', 'claude.md'} or path.name.endswith('.private.inc') or path.suffix.lower() in {'.pyc','.pyo'}):
             errors.append(f'Forbidden asset: {path.relative_to(root)}')
         if path.is_file() and path.suffix.lower() in {'.png','.jpg','.svg'} and path.is_relative_to(root/'skills') and path.name in {'fm.png','string.png','digital.png','dbox.png','envelope.png','mixer.png','tempo.png'}:
             errors.append(f'Manual quotation must stay outside skill: {path.relative_to(root)}')

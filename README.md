@@ -12,8 +12,8 @@ CPU considerations, with original examples and a portable agent skill.
 
 ![Original Membrane instrument concept](op1-ui/examples/renders/membrane-rest.png)
 
-*Original artwork rendered locally with the stock OP-1 font. Host spacing is
-approximate. The font file and reusable glyph vectors are not included.*
+*Original artwork rendered with the bundled Iosevka Thin placeholder.
+Stock lettering and native spacing need a separate local check.*
 
 ## Install The Skill
 
@@ -32,12 +32,13 @@ visual references, font guidance and portable checking tools.
 
 - [Spec](op1-ui/docs/DESIGN.md): stock-derived text sizes, colours, layout and grid guidance.
 - [Screen Families](op1-ui/docs/STOCK.md): design and interaction patterns from the original interface.
-- [Fonts](op1-ui/docs/FONTS.md) and [Icons](op1-ui/docs/ICONS.md): local stock resources, character IDs and host previews.
+- [Fonts](op1-ui/docs/FONTS.md) and [Icons](op1-ui/docs/ICONS.md): the bundled Iosevka placeholder, private stock resources and character IDs.
 - [Graphics And CPU](op1-ui/docs/GRAPHICS.md): SVG blocks, visibility, smoothing and bounded live work.
 - [Components](op1-ui/docs/COMPONENTS.md): reference helpers and target integration.
 - [Sources And Credits](op1-ui/docs/SOURCES.md): community work behind the guidance.
 
-The guide needs no font setup. For stock-lettering checks, use your own firmware
+The guide needs no font setup. Iosevka Thin, its OFL licence and the selected
+variant profile are bundled in the skill. See [Host Preview Font](skills/op1-design/references/PREVIEW-FONT.md). For stock-lettering checks, use your own firmware
 locally; no firmware resources are included or served here.
 
 See the kit in a real instrument: [GIN](https://github.com/squarewave-studio/op1-mods/tree/main/mods/gin).

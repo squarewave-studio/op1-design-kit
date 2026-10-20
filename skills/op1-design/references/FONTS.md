@@ -1,10 +1,14 @@
-# Stock fonts and host previews
+# Fonts And Previews
 
-Use the stock font when checking how your screen will look on the instrument.
-The example images already use stock lettering, so you can read the kit
-without loading a font. For a closer
-local preview, choose `opfont.svg` from your own firmware files. It stays on your
-machine and nothing is uploaded, included or served here.
+Use the bundled **Iosevka Thin** placeholder for shareable host previews. The
+kit’s example PNGs already use it, so no stock font setup is needed to read the
+guide. [Host Preview Font](PREVIEW-FONT.md) gives the files, exact numeral
+variants, sizing, character set and rendering helpers. The font keeps its own
+SIL Open Font License 1.1.
+
+For a separate stock-lettering check, choose `opfont.svg` from your own firmware
+files. It stays on your machine. Nothing is uploaded, included or served here.
+Check a native capture before claiming device legibility or exact spacing.
 
 ## Where `opfont.svg` comes from
 
@@ -122,7 +126,7 @@ fixed limit on the number of sizes. Record these separately:
 | Field | Meaning |
 | --- | --- |
 | Font checksum | Identify which local font file you checked |
-| Font mode | `stock-local` or `schematic`; never an unlabelled fallback |
+| Font mode | `open-font-preview`, `stock-local` or `schematic`; label the mode |
 | Nominal height | Selected stock-reference geometry target, not a native constructor parameter |
 | Ink bounds | Geometry bounds plus stroke/overhang, after placement |
 | Advance | Cursor movement, which may be narrower than visible ink |
@@ -157,24 +161,18 @@ scaling a long name. Handle unsupported characters explicitly.
 Commit loaders, tests with invented glyphs, schema and metadata-only notes.
 Do not commit `opfont.svg`, `kerntable.db`, extracted geometry, generated
 `font.private.inc`, font atlases, baked stock-lettering SVGs or firmware.
-The kit’s example images are raster renders made with a locally supplied stock
-font. Only the PNGs are included; they contain no font resource or reusable
-glyph vectors. The editable SVG sources keep the original schematic alphabet.
-The MIT licence covers our loader, not the asset the user supplies.
+The kit’s public example images use the bundled Iosevka placeholder. The
+editable SVG sources keep the original schematic alphabet. The MIT licence
+covers the kit’s original adapters; Iosevka retains OFL and MIT grants no
+rights to the owner’s stock assets.
 
 ## Render Example Images
 
-The repository-only renderer uses Inkscape for glyph bounds and librsvg for
-PNG output. It is not bundled with the installed skill; use your project’s
-renderer and [Verification](VERIFICATION.md) for the portable checking workflow.
-It reads the font from a path outside the repository and passes font-bearing
-vectors between the processes in memory. It saves PNGs only, after checking
-font widths, readout groups and text clearance. GitHub Actions uses the saved
-images and does not need firmware or a font file.
+Use the bundled open font for public examples. See [Host Preview Font](PREVIEW-FONT.md)
+for the reproducible renderer and exact settings.
 
-```sh
-python3 op1-ui/tools/render_stock.py --font "$OP1_FONT_PATH" --og op1-ui/og.png
-```
-
-The profile is `stock-local / optical-v1`: actual stock curves with approximate
-host spacing. A successful host render is not native text or OLED validation.
+`op1-ui/tools/render_stock.py` remains a private checking tool. Its default
+output is `out/stock-font-preview`, which is ignored. Keep its stock-lettering
+captures local and do not use them as public kit images. The adapter uses
+stock geometry with approximate optical-v1 host spacing; a host render does
+not establish native text layout or OLED legibility.

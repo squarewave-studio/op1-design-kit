@@ -333,5 +333,15 @@
       "id": "input-navigation-contract",
       "guidance": "Pair a proposed screen\u2019s visual states with the actual primary/Shift inputs, detail and return routes, state retained on return and discoverability for unlabelled controls. Mark unimplemented bindings as proposed and test the real input route; a graphic does not establish an interaction."
     }
-  ]
+  ],
+  "previewFont": {
+    "mode": "open-font-preview",
+    "id": "iosevka-thin-op1-preview-v1",
+    "family": "Iosevka",
+    "version": "34.9.0",
+    "weight": 100,
+    "profile": "assets/fonts/profile.json",
+    "pathBase": "skill-root",
+    "scope": "Host placeholder only. Stock-derived size profiles and native font checks remain separate."
+  }
 }

@@ -10,7 +10,7 @@ share what you learn. Version **0.1.0 is a draft**; it is not a TE specification
 
 ![Original Membrane instrument concept](examples/renders/membrane-rest.png)
 
-*Original artwork rendered with a local stock OP-1 font. The font file and glyph vectors are not included. Host spacing is approximate.*
+*Original artwork rendered with the bundled Iosevka Thin preview font. Iosevka is included under OFL; no stock font is distributed.*
 
 ## Start Here
 
@@ -40,7 +40,7 @@ python3 op1-ui/tools/preview.py
 # Open http://127.0.0.1:8765/op1-ui/workbench.html
 ```
 
-It starts in labelled schematic-font mode. If you need faithful typography,
+It starts with the bundled Iosevka Thin placeholder. For a separate stock-lettering check,
 choose your own `opfont.svg` with the file picker. The browser reads it on your
 machine and uploads nothing. The kit does not serve TE assets.
 
@@ -82,7 +82,7 @@ required. See [Installation And Usage](docs/AGENT-SKILL.md).
 Or copy the whole `skills/op1-design` folder into your
 tool's skills directory. It follows the [Agent Skills format](https://agentskills.io/specification)
 and includes its references and local font inspector. Ask it to design an
-original OP-1 screen with your local stock font and stock-derived typography profiles.
+original OP-1 screen with the bundled Iosevka preview and stock-derived typography profiles.
 
 [`SKILL.md`](../skills/op1-design/SKILL.md) indexes the portable references.
 The maintained [Spec](../skills/op1-design/references/SPEC.md) and

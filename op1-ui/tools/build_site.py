@@ -19,7 +19,8 @@ FOOTER = f'''<footer><p>Maintained by <a href="https://squarewave.studio/?utm_so
 
 PAGES = {'start.html': ('Start Building', SOURCE / 'README.md'),
          'spec.html': ('Spec', SOURCE / 'docs/DESIGN.md'),
-         'fonts.html': ('Stock Font Setup', SOURCE / 'docs/FONTS.md'),
+         'fonts.html': ('Fonts And Previews', SOURCE / 'docs/FONTS.md'),
+         'preview-font.html': ('Host Preview Font', SOURCE / 'docs/PREVIEW-FONT.md'),
          'icons.html': ('Icons And Symbols', SOURCE / 'docs/ICONS.md'),
          'graphics.html': ('Graphics And CPU', SOURCE / 'docs/GRAPHICS.md'),
          'components.html': ('Components', SOURCE / 'docs/COMPONENTS.md'),
@@ -35,14 +36,15 @@ DOC_GROUPS = [
     ('Foundations', [('spec.html','Spec'),('spec.html#typography-from-the-original-op-1','Typography'),('spec.html#four-encoder-lanes','Encoder Colours'),('spec.html#coordinates-and-the-window','Canvas And Clearance'),('spec.html#layout-and-grid','Layout And Grid')]),
     ('Patterns', [('stock.html','Stock Screen Families'),('examples.html','Patterns And Screen Examples')]),
     ('Components', [('components.html','Component Reference')]),
-    ('Integration', [('fonts.html','Stock Font Setup'),('icons.html','Icons And Symbols'),('graphics.html','Graphics And CPU'),('agents.html','For Agents')]),
+    ('Integration', [('fonts.html','Fonts And Previews'),('preview-font.html','Host Preview Font'),('icons.html','Icons And Symbols'),('graphics.html','Graphics And CPU'),('agents.html','For Agents')]),
     ('Sources', [('credits.html','Credits'),('contributing.html','Contributing'),('licence.html','MIT Licence')])]
-READING_ORDER = ['start.html','stock.html','examples.html','spec.html','components.html','fonts.html','icons.html','graphics.html','agents.html','credits.html','contributing.html','licence.html']
+READING_ORDER = ['start.html','stock.html','examples.html','spec.html','components.html','fonts.html','preview-font.html','icons.html','graphics.html','agents.html','credits.html','contributing.html','licence.html']
 DESCRIPTIONS = {
     'Start Building': 'Use the OP-1 Design Kit to build readable synth, effect and utility screens with original graphics.',
     'Spec': 'Text roles, encoder colours, layout clearances and alignment rules for original OP-1 screens.',
     'Patterns And Screen Examples': 'Learn OP-1 design language through composition studies and original instrument examples in several states.',
-    'Stock Font Setup': 'Find your own local OP-1 font, check its characters and use it in a host preview without uploading it.',
+    'Fonts And Previews': 'Use the bundled Iosevka preview font and check stock lettering privately with your own local OP-1 font.',
+    'Host Preview Font': 'Load the bundled Iosevka Thin font, apply its digit variants and measure text in host previews.',
     'Icons And Symbols': 'Stock symbol IDs, icon loading and clear original icon design for original OP-1 interfaces.',
     'Graphics And CPU': 'Use expressive vector graphics, retained blocks and meaningful motion within an instrument’s graphics budget.',
     'Components': 'Use the kit’s layout, text and vector helpers with clear native integration contracts.',
@@ -57,7 +59,7 @@ def masthead():
 
 def edit_link(current):
     source=PAGES[current][1].relative_to(ROOT) if current in PAGES else Path('skills/op1-design/SKILL.md')
-    reference={'DESIGN':'SPEC','EXAMPLES':'PATTERNS','FONTS':'FONTS','ICONS':'ICONS','GRAPHICS':'GRAPHICS','STOCK':'STOCK','SOURCES':'SOURCES'}.get(source.stem)
+    reference={'DESIGN':'SPEC','EXAMPLES':'PATTERNS','FONTS':'FONTS','PREVIEW-FONT':'PREVIEW-FONT','ICONS':'ICONS','GRAPHICS':'GRAPHICS','STOCK':'STOCK','SOURCES':'SOURCES'}.get(source.stem)
     if reference: source=Path('skills/op1-design/references')/(reference+'.md')
     return f'<p class="edit-link"><a href="https://github.com/squarewave-studio/op1-design-kit/edit/main/{source}">Edit this page on GitHub</a></p>'
 
@@ -113,11 +115,14 @@ def main():
     home=home.replace('</header>', '</header><details class="mobile-contents"><summary>Kit Contents</summary>'+documentation_navigation('index.html')+'</details>',1)
     (out / 'index.html').write_text(home)
     # Published index uses URLs relative to the Pages root, not the source folder.
-    (out / 'llms.txt').write_text('''# OP-1 Design Kit\n\nDraft guidance for the original OP-1.\n\n- skills/op1-design/SKILL.md: portable skill and reference index\n- start.html: getting started\n- spec.html: typography, colours, layout and grid\n- stock.html: screen families and interaction patterns\n- examples.html: original screen studies\n- fonts.html: local stock-font setup\n- icons.html: symbol IDs and loading\n- graphics.html: SVG, smoothing and CPU\n- agents.html: skill installation\n- design-kit.json: machine-readable rules\n- credits.html: sources and notices\n- contributing.html: contributing and checks\n- licence.html: MIT and third-party exclusions\n\nNo firmware or font files are served.\n''')
+    (out / 'llms.txt').write_text('''# OP-1 Design Kit\n\nDraft guidance for the original OP-1.\n\n- skills/op1-design/SKILL.md: portable skill and reference index\n- start.html: getting started\n- spec.html: typography, colours, layout and grid\n- stock.html: screen families and interaction patterns\n- examples.html: original screen studies\n- fonts.html: preview fonts and private stock-font setup\n- preview-font.html: bundled Iosevka font and host adapters\n- icons.html: symbol IDs and loading\n- graphics.html: SVG, smoothing and CPU\n- agents.html: skill installation\n- design-kit.json: machine-readable rules\n- credits.html: sources and notices\n- contributing.html: contributing and checks\n- licence.html: MIT and third-party exclusions\n\nNo firmware or stock font files are served. Iosevka Thin is bundled under OFL.\n''')
     shutil.copy2(ROOT / 'design-kit.json', out / 'design-kit.json')
     shutil.copy2(SOURCE / 'og.png', out / 'og.png')
-    shutil.copytree(ROOT / 'skills/op1-design', out / 'skills/op1-design', dirs_exist_ok=True)
+    shutil.copytree(ROOT / 'skills/op1-design', out / 'skills/op1-design', dirs_exist_ok=True, ignore=shutil.ignore_patterns('__pycache__', '*.pyc', '*.pyo'))
     page_by_source = {p.resolve(): name for name, (_, p) in PAGES.items()}
+    for filename, (_, source) in PAGES.items():
+        ref={'DESIGN':'SPEC','EXAMPLES':'PATTERNS'}.get(source.stem,source.stem)
+        page_by_source[(ROOT/'skills/op1-design/references'/(ref+'.md')).resolve()]=filename
     def rewrite(body, source):
         quotations=json.loads((SOURCE / 'references/manual/quotations.json').read_text())
         for label,quote in quotations.items():
@@ -141,13 +146,13 @@ def main():
         return re.sub(r'\[([^\]]+)\]\(([^)]+)\)', link, body)
     for filename, (title, source) in PAGES.items():
         body = source.read_text()
-        if source.name == 'LICENSE': body = '# MIT Licence\n\nThe MIT licence covers original kit code and guidance. TE manual reference illustrations and the Inter and Archivo web fonts retain their own rights and notices. See [Credits](credits.html) and the [reference notice](references/manual/NOTICE.md).\n\n```text\n' + body + '\n```'
+        if source.name == 'LICENSE': body = '# MIT Licence\n\nThe MIT licence covers original kit code and guidance. TE manual reference illustrations and the Iosevka, Inter and Archivo fonts retain their own rights and notices. See [Credits](credits.html) and the [reference notice](references/manual/NOTICE.md).\n\n```text\n' + body + '\n```'
         body = rewrite(body, source)
         result = markdown.markdown(body, extensions=['tables', 'fenced_code', 'toc'])
         result=re.sub(r'(<table>.*?</table>)',r'<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable table">\1</div>',result,flags=re.S)
         (out / filename).write_text(render_page(title, result, filename))
     # Only the allowlisted kit is copied, never the repository's .git or private inputs.
-    forbidden = [p for p in out.rglob('*') if p.name.lower() in {'opfont.svg', 'kerntable.db', 'colors.svg', 'agents.md', 'claude.md'} or p.suffix.lower() in {'.op1', '.op1p', '.knl', '.elf'}]
+    forbidden = [p for p in out.rglob('*') if p.name.lower() in {'opfont.svg', 'kerntable.db', 'colors.svg', 'agents.md', 'claude.md'} or p.suffix.lower() in {'.op1', '.op1p', '.knl', '.elf', '.pyc', '.pyo'}]
     if forbidden: raise SystemExit('Forbidden build inputs: ' + ', '.join(str(p.relative_to(out)) for p in forbidden))
     for page in out.glob('*.html'):
         text = page.read_text()

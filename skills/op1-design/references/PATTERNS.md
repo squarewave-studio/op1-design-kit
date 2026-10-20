@@ -3,9 +3,9 @@
 An OP-1 screen can help explain how an instrument sounds and responds. Each
 pattern below starts with a stock screen, then applies its lesson to an
 original instrument idea. The example images use original artwork rendered
-with a locally supplied stock OP-1 font.
-The font file and glyph vectors are not included or served. Host letter spacing
-is an approximation, so native typography still needs its own check.
+with the bundled Iosevka Thin placeholder.
+Iosevka and its open licence are included. No stock font resources are served.
+Check native text fit separately with your own local stock font.
 
 [Stock Synth Screens](#stock-synth-screens) ·
 [Mechanisms](#1-draw-the-instrument-as-a-mechanism) ·
@@ -261,7 +261,7 @@ to an arbitrary smaller size.
 and changing geometry, not just the text anchor. Check text against other text
 and against the graphic in rest, changed and event states. A clear default
 screen is insufficient if a moving point later crosses a label. The kit checks
-the example renders with the stock font’s measured widths and a 2-unit
+the example renders with the Iosevka profile’s full measured ink bounds and a 2-unit
 text-to-artwork gap. Native integrations must repeat the check with their
 actual ink bounds.
 

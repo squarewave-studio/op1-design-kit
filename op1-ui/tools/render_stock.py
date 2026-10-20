@@ -105,11 +105,14 @@ def render_scene(scene,glyphs,cap,tokens):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--font',required=True,type=Path)
-    parser.add_argument('--output',type=Path,default=ROOT/'op1-ui/examples/renders')
+    parser.add_argument('--output',type=Path,default=ROOT/'out/stock-font-preview')
     parser.add_argument('--scale',type=int,default=3,choices=[1,2,3,4])
     parser.add_argument('--og',type=Path)
     parser.add_argument('--only',nargs='+',help='Render only these named example states')
     args=parser.parse_args()
+    for output in [args.output,args.og]:
+        if output is not None and output.resolve().is_relative_to(ROOT) and not any(output.resolve().is_relative_to(ROOT/name) for name in ('out','.work','.private')):
+            parser.error('Stock-lettering checks must stay in ignored output or outside the repository')
     glyphs,cap=load_font(args.font)
     scenes=json.loads(node(['node','--input-type=module','-e',"import {exampleScenes} from './op1-ui/src/example-scenes.mjs'; console.log(JSON.stringify(exampleScenes));"],cwd=ROOT))
     if args.only:

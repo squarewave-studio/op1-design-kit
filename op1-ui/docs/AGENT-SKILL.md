@@ -1,7 +1,7 @@
 # For Agents
 
 The kit includes **op1-design**, an installable skill that gives your coding
-agent the screen rules, stock-font setup and original visual examples. Use it
+agent the screen rules, bundled preview font, stock-font setup and original visual examples. Use it
 with Claude Code, Cursor, Pi or OpenCode through the
 [Skills CLI](https://github.com/vercel-labs/skills#install-a-skill).
 
@@ -29,13 +29,14 @@ Ask your agent to use **op1-design** for the task. For example:
 
 > Use op1-design to design an original OP-1 resonator screen. Keep encoder
 > ownership clear, reserve space for complete values and show the rest and
-> active states. Use the stock font I supply locally for the final preview.
+> active states. Use the bundled Iosevka font for shareable previews and check
+> text boundaries in each state.
 
 The skill opens with a short reference index. It loads the guidance and visual
 pair relevant to the task rather than every document at once. It also explains
 where to look in your existing local firmware or TE’s official manual when
-more stock design examples are useful. Firmware, font files and manual images
-are not bundled with the skill.
+more stock design examples are useful. The Iosevka preview font and its OFL licence are included. Firmware, stock
+font resources and manual images are not bundled.
 
 ## Explore And Verify A Design
 
@@ -54,6 +55,7 @@ checkers. It uses your project’s preview and the agent’s available capture t
 
 - [The skill entrypoint](../../skills/op1-design/SKILL.md), with its reference index and version.
 - [Design rules](../../skills/op1-design/references/SPEC.md) and [design-kit.json](../../design-kit.json), shared with the site and code constants.
+- [Bundled preview font](../../skills/op1-design/references/PREVIEW-FONT.md), with browser and static rendering helpers.
 - [Font setup](../../skills/op1-design/references/FONTS.md), [icons](../../skills/op1-design/references/ICONS.md) and [graphics guidance](../../skills/op1-design/references/GRAPHICS.md).
 - [Original visual examples](../../skills/op1-design/references/VISUALS.md) and [state contracts](../../skills/op1-design/references/visuals/examples.json), with local PNGs, schematic SVGs and scene data.
 

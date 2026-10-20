@@ -1,6 +1,6 @@
 ---
 name: op1-design
-description: Brainstorm, design and review original OP-1 synth, effect and utility screens with stock-derived composition patterns, local stock-font previews and supported SVG guidance. OP-1 Field and OP-XY need separate device profiles.
+description: Brainstorm, design and review original OP-1 synth, effect and utility screens with stock-derived composition patterns, bundled Iosevka previews, private stock-font checks and supported SVG guidance. OP-1 Field and OP-XY need separate device profiles.
 license: MIT
 metadata:
   author: SquareWave Studio
@@ -25,7 +25,8 @@ once. Read the matching visual contract, then open the relevant state pair.
 | Apply overview/detail, browser, focus, Shift or routing patterns | [Stock Interaction Patterns](references/STOCK.md) |
 | See original examples and their state contracts | [Visual Reference Index](references/VISUALS.md) |
 | Set typography, encoder colours, alignment, margins or grid | [Design Specification](references/SPEC.md) |
-| Find opfont.svg, check characters or load a host font | [Stock Font Setup](references/FONTS.md) |
+| Use the bundled Iosevka preview font and exact variants | [Host Preview Font](references/PREVIEW-FONT.md) |
+| Find opfont.svg, check stock characters or load a private font | [Stock Font Setup](references/FONTS.md) |
 | Choose stock symbol IDs or design an original icon | [Icons And Symbols](references/ICONS.md) |
 | Author SVG blocks, smoothing or bounded graphical updates | [Graphics And CPU](references/GRAPHICS.md) |
 | Check a design, capture host evidence and report limits | [Verification](references/VERIFICATION.md) |
@@ -50,7 +51,9 @@ choice without restarting the exploration or imposing extra approval stages.
 1. Establish the actual framework, control map and reading task. Choose a
    pattern before arranging components; four encoder colours do not require
    four visual columns.
-2. Choose the font mode. For faithful lettering, use the owner's private
+2. Choose the font mode. Use the bundled Iosevka Thin profile for shareable
+   host previews, following [Host Preview Font](references/PREVIEW-FONT.md).
+   For stock lettering checks, use the owner's private
    `content/display/opfont.svg`. Read Fonts for acquisition, glyph IDs and
    spacing limits. Schematic lettering cannot qualify stock typography.
 3. Use the matching visual example as a relationship to adapt. Preserve
@@ -85,9 +88,9 @@ characters explicitly. Run the bundled inspector when checking a local font:
 python3 scripts/inspect_font.py /absolute/private/path/opfont.svg --text 'ALL LABELS'
 ```
 
-The bundled visual PNGs use original artwork and locally rendered stock
-lettering. Editable SVGs use the kit's original schematic alphabet. Neither
-includes the font file or reusable stock glyph geometry. The scene files linked from
+The bundled visual PNGs use original artwork and the openly licensed Iosevka
+Thin placeholder. The font, its licence and selected-variant profile are bundled
+in `assets/fonts/`. Editable SVGs use the kit's original schematic alphabet. No stock font file or stock glyph geometry is included. The scene files linked from
 `references/visuals/examples.json` preserve text sizes and anchors for re-rendering.
 Link to the official manual when further reference is useful. Keep its images
 and text outside the skill package; study the design relationships and create

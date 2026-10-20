@@ -14,7 +14,9 @@ unavailable content where the actual instrument supports them. For movement,
 inspect the widest pose and any point where artwork approaches text. A clean
 rest image does not establish clearance throughout the motion.
 
-Keep the font, values, renderer and scale explicit. Use the actual local stock
+Keep the font, values, renderer and scale explicit. For shareable previews, use
+the bundled [Iosevka profile](PREVIEW-FONT.md) and label the result. A pass under
+that placeholder cannot establish stock text fit. Use the actual local stock
 font for a stock-lettering claim. Schematic captures remain useful for early
 composition, but label them as schematic and check stock text again later.
 

@@ -76,3 +76,9 @@ Inspect the preview at its intended size and enlarged. Check long values,
 missing glyphs, unit changes and the states affected by your change. Report
 native performance with relevant device measurements; smaller files or faster
 host renders alone do not establish a device improvement.
+
+For font checks and public example rendering, install the pinned Python
+dependencies from `op1-ui/tools/requirements-preview.txt` in your environment.
+Rebuild public PNGs with `python3 op1-ui/tools/render_preview.py`; it uses only
+the bundled Iosevka font. Keep its OFL notice and profile with the font. Stock
+lettering renders are private checking output and must not replace public PNGs.

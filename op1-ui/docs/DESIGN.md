@@ -35,7 +35,7 @@ hierarchy and leave room around the complete lettering, including its stroke.
 
 ![Original lettering specimens using stock-derived profiles](https://squarewave-studio.github.io/op1-design-kit/examples/renders/type-scale.png)
 
-*Original code render with the stock font: browser-row lettering, a short
+*Original code render with the Iosevka Thin placeholder: browser-row lettering, a short
 readout, clock-sized numerals and mixer-sized numerals. These are specimens,
 not stock screen captures. “40” and “53” are sample values, not size labels.*
 
@@ -125,8 +125,9 @@ construction also uses integer heights such as 12, 16, 18 and 20. These are
 visible ink; do not mix them into one size table or pass preview heights to a
 native API without checking that adapter's mapping.
 
-The reference renderer scales its own schematic lettering to the selected
-profile. Stock-local previews scale the owner's local glyphs to the same
+Public PNGs use the [Iosevka Thin host placeholder](PREVIEW-FONT.md), sized
+to the stock-reference profiles including their stroke. The editable native SVG
+renderer keeps the original schematic lettering. Stock-local previews scale the owner's local glyphs to the same
 reference height with approximate spacing. Measure the resulting ink, bearings
 and advances again for each renderer. Neither host route certifies native
 kerning, projection or physical legibility. See [Fonts](FONTS.md).
