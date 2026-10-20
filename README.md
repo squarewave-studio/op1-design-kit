@@ -46,11 +46,11 @@ and firmware-mod projects separately.
 
 ## Develop And Contribute
 
-Use Node 22 or later, Python 3 and gitleaks. `npm ci` installs the Husky
-pre-commit hook. See [Contributing](CONTRIBUTING.md) for the checks and
+Use Node 22 or later, Python 3 and gitleaks. `npm ci` installs the tracked
+maintainer pre-commit hook. See [Contributing](CONTRIBUTING.md) for the checks and
 [local setup](op1-ui/README.md) for preview and build commands.
-The site builds with GitHub Actions; [Publishing](op1-ui/docs/PUBLISHING.md)
-explains the Pages setup and deployment gate.
+The site builds with GitHub Actions. Maintainer-only
+[Publishing](op1-ui/docs/PUBLISHING.md) notes stay in the repo.
 
 ## Licence
 

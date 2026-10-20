@@ -2,13 +2,11 @@
   "name": "squarewave-op1-design-kit",
   "private": true,
   "scripts": {
-    "prepare": "husky",
+    "prepare": "node .githooks/install.mjs",
     "precommit": "python3 tools/check_public_assets.py && gitleaks git --pre-commit --staged --redact --no-banner && git diff --cached --check",
     "check:assets": "python3 tools/check_public_assets.py --all",
     "check:secrets": "gitleaks git --redact --no-banner",
-    "test:guards": "python3 -m unittest discover -s tests"
-  },
-  "devDependencies": {
-    "husky": "9.1.7"
+    "test:guards": "python3 -m unittest discover -s tests",
+    "setup:hooks": "node .githooks/install.mjs"
   }
 }

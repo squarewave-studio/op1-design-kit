@@ -79,3 +79,14 @@ After the source is published, the CLI can discover `skills/op1-design/SKILL.md`
 and install its references and local checking tools. The Pages workflow checks
 that same package; it does not publish a separate npm package or skill registry
 release. See [installation and usage](AGENT-SKILL.md).
+
+## Local Maintainer Checks
+
+Use `npm ci` to install the tracked `.githooks/` dispatcher into Git’s shared
+hooks directory. It uses the current checkout’s checks, so linked worktrees
+run their own branch checks. Existing pre-commit hooks are preserved and chained;
+an unrelated custom hooks path needs to be resolved before installation.
+
+The maintainer hook checks staged public assets, requires local gitleaks and
+checks whitespace. Gitleaks does not run in CI. `npm run setup:hooks` reinstalls
+the dispatcher. The public-asset guard also runs on pull requests.

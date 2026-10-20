@@ -1,4 +1,16 @@
 #!/bin/sh
-# Compatibility for checkouts still configured with the previous hooks path.
+# op1-design-kit shared hook dispatcher
 set -eu
-npm run precommit
+root=$(git rev-parse --show-toplevel)
+if [ -f "$root/.githooks/checks/pre-commit" ]; then
+  sh -e "$root/.githooks/checks/pre-commit" "$@"
+elif [ -f "$root/.githooks/pre-commit" ] && ! grep -Fq '# op1-design-kit shared hook dispatcher' "$root/.githooks/pre-commit"; then
+  sh -e "$root/.githooks/pre-commit" "$@"
+else
+  echo 'pre-commit: this checkout has no supported checks' >&2
+  exit 1
+fi
+common=$(git rev-parse --git-common-dir)
+if [ -x "$common/hooks/pre-commit.local" ]; then
+  "$common/hooks/pre-commit.local" "$@"
+fi

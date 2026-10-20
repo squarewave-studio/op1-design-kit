@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+python3 tools/check_public_assets.py
+if ! command -v gitleaks >/dev/null 2>&1; then
+  echo 'pre-commit: gitleaks is required for the maintainer hook' >&2
+  exit 1
+fi
+gitleaks git --pre-commit --staged --redact --no-banner
+git diff --cached --check
