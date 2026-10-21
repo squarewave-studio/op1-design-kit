@@ -1,11 +1,8 @@
 {
-  "id": "iosevka-thin-op1-preview-v1",
+  "id": "iosevka-op1-preview-v2",
   "family": "Iosevka",
   "version": "34.9.0",
-  "weight": 100,
-  "file": "Iosevka-Thin.woff2",
   "license": "Iosevka-OFL.md",
-  "sha256": "273de62b3dd42f5c47407cf2150cf0bc1c44b13bd217ad08009e9ef34bc351b2",
   "unitsPerEm": 1000,
   "capHeight": 735,
   "features": {
@@ -23,7 +20,37 @@
   },
   "spacing": "font advances; visible-ink anchors; no synthetic weight, stretching or extra tracking",
   "source": "https://github.com/be5invis/Iosevka/tree/v34.9.0",
-  "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-Thin.2pbn6cyy-tq5l.woff2",
   "scope": "Openly licensed host placeholder. Not stock lettering, stock metrics or a device font.",
-  "textCharacters": " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#%*+,-./:;<=>?_"
+  "textCharacters": " ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!\"#%*+,-./:;<=>?_",
+  "fonts": {
+    "100": {
+      "file": "Iosevka-Thin.woff2",
+      "sha256": "273de62b3dd42f5c47407cf2150cf0bc1c44b13bd217ad08009e9ef34bc351b2",
+      "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-Thin.2pbn6cyy-tq5l.woff2"
+    },
+    "200": {
+      "file": "Iosevka-ExtraLight.woff2",
+      "sha256": "38230d6c2b0f8744a1358636a615e1e2025588c5e88f9d2915f2c60f98cc9fb2",
+      "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-ExtraLight.2wv-oxgzncagq.woff2"
+    },
+    "300": {
+      "file": "Iosevka-Light.woff2",
+      "sha256": "88e418ee51fada3c7578bd0d3b533c9f517dfcb97733751c854b3fa2f1b2a690",
+      "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-Light.0ztkofae2nln-.woff2"
+    },
+    "400": {
+      "file": "Iosevka-Regular.woff2",
+      "sha256": "139d7477bd76ed89d496045e2e7f888bac9c0106aa2ad199b70c5cc869efc2b2",
+      "download": "https://typeof.net/Iosevka/_next/static/media/Iosevka-Regular.0z41ckxsdcyjj.woff2"
+    }
+  },
+  "weightsBySize": {
+    "xs": 400,
+    "s": 300,
+    "m": 200,
+    "l": 200,
+    "xl": 100,
+    "xxl": 100
+  },
+  "weightScope": "Host preview mapping only. Select by logical text size, never output scaling; native stock typography is separate."
 }

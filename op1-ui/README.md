@@ -6,7 +6,7 @@ community sources and a review of the stock user interface.
 Use the screen examples to work out what your instrument should show and how
 its controls should feel. The kit covers stock-derived text sizes, encoder
 colours, layout and practical graphics advice. Adapt it to your instrument and
-share what you learn. Version **0.1.0 is a draft**; it is not a TE specification.
+share what you learn. Version **0.2.0 is a draft**; it is not a TE specification.
 
 ![Original Membrane instrument concept](examples/renders/membrane-rest.png)
 
@@ -40,7 +40,7 @@ python3 op1-ui/tools/preview.py
 # Open http://127.0.0.1:8765/op1-ui/workbench.html
 ```
 
-It starts with the bundled Iosevka Thin placeholder. For a separate stock-lettering check,
+It starts with the bundled Iosevka placeholder. For a separate stock-lettering check,
 choose your own `opfont.svg` with the file picker. The browser reads it on your
 machine and uploads nothing. The kit does not serve TE assets.
 

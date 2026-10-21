@@ -53,7 +53,7 @@ alternative states together, so it cannot establish when each state appears.
 Original example renders below show how to apply each relationship. Each image
 is a complete 320×160 logical screen. Paired states sit side by side on wider
 screens and stack on phones. They are host renders of original kit artwork,
-not stock screenshots or implemented plugins. PNGs use the bundled Iosevka Thin placeholder. Iosevka is included under OFL; stock font resources are not included.
+not stock screenshots or implemented plugins. PNGs use the bundled Iosevka placeholder. Iosevka is included under OFL; stock font resources are not included.
 
 The [visual index](VISUALS.md) includes the editable schematic SVGs, control
 maps, state descriptions and boundary checks. Choose a pattern and compare its two states.
@@ -222,7 +222,7 @@ Use your own firmware locally. No firmware resources are included or served
 here. The website’s separately labelled manual quotations are attributed
 reference excerpts, not reusable kit artwork. No manual images are bundled
 with the skill.
-Public PNG examples use original geometry and the bundled Iosevka Thin placeholder.
+Public PNG examples use original geometry and the bundled Iosevka placeholder.
 Iosevka and its OFL licence are included. Stock font files and stock glyph
 vectors are not supplied. The kit palette
 is a set of named design tokens, not a promise of exact stock colours or OLED

@@ -8,5 +8,6 @@
     "check:secrets": "gitleaks git --redact --no-banner",
     "test:guards": "python3 -m unittest discover -s tests",
     "setup:hooks": "node .githooks/install.mjs"
-  }
+  },
+  "version": "0.2.0"
 }

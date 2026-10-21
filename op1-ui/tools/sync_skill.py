@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[2]
 def outputs():
     skill = ROOT / 'skills/op1-design'
     result = {}
+    result[ROOT / 'op1-ui/tools/requirements-preview.txt'] = (skill / 'scripts/requirements-preview.txt').read_text()
     # Share design guidance only. LOCAL-RESOURCES, IDEATION and VERIFICATION
     # remain agent workflows, linked through SKILL.md rather than made into pages.
     for name in ('PREVIEW-FONT', 'FONTS', 'ICONS', 'GRAPHICS', 'SOURCES', 'STOCK'):
@@ -15,6 +16,7 @@ def outputs():
         body=body.replace('(visuals/', '(../../skills/op1-design/references/visuals/')
         for reference in ('VISUALS','IDEATION','VERIFICATION','PREVIEW-FONT'):
             body=body.replace(f'({reference}.md)', f'(../../skills/op1-design/references/{reference}.md)')
+            body=body.replace(f'({reference}.md#', f'(../../skills/op1-design/references/{reference}.md#')
         if name=='SOURCES':
             body+='\n'+(ROOT/'op1-ui/references/manual/CREDITS.md').read_text()+'\n'+(ROOT/'op1-ui/references/COMMUNITY.md').read_text()
         result[ROOT / f'op1-ui/docs/{name}.md'] = body

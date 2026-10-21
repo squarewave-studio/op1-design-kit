@@ -30,7 +30,8 @@ Ask your agent to use **op1-design** for the task. For example:
 > Use op1-design to design an original OP-1 resonator screen. Keep encoder
 > ownership clear, reserve space for complete values and show the rest and
 > active states. Use the bundled Iosevka font for shareable previews and check
-> text boundaries in each state.
+> text boundaries in each state. Apply the kit’s font weight for each text size,
+> keeping it unchanged when enlarging a capture.
 
 The skill opens with a short reference index. It loads the guidance and visual
 pair relevant to the task rather than every document at once. It also explains

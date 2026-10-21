@@ -21,11 +21,11 @@ def element(name, attrs):
 def number(value):
     return f'{value:.6f}'.rstrip('0').rstrip('.') if isinstance(value,float) else str(value)
 
-class PreviewFont:
-    def __init__(self):
-        self.profile = json.loads((ASSETS/'profile.json').read_text())
-        path=ASSETS/self.profile['file']
-        if hashlib.sha256(path.read_bytes()).hexdigest()!=self.profile['sha256']:
+class PreviewFace:
+    def __init__(self, profile, asset):
+        self.profile = profile
+        path=ASSETS/asset['file']
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=asset['sha256']:
             raise ValueError('Preview font checksum mismatch')
         self.font=TTFont(path)
         self.glyphs=self.font.getGlyphSet()
@@ -100,8 +100,30 @@ class PreviewFont:
             for cursor,path in m['placed']:
                 svg.append(element('path',{'d':path,'fill':tokens['color'][t['tone']],
                     'transform':f'translate({number(x+(cursor-m["left"])*m["scale"])} {number(baseline)}) scale({number(m["scale"])} {number(-m["scale"])})'}))
-            t.update(x=x,width=m['width'],inkBounds=ink)
+            t.update(x=x,width=m['width'],inkBounds=ink,previewWeight=m['weight'])
         return ET.tostring(svg),measured
+
+
+class PreviewFont(PreviewFace):
+    def __init__(self):
+        self.profile=json.loads((ASSETS/'profile.json').read_text())
+        self.tokens=json.loads((ASSETS.parents[1]/'references/design-kit.json').read_text())['tokens']
+        self.faces={int(weight):PreviewFace(self.profile,asset) for weight,asset in self.profile['fonts'].items()}
+
+    def weight_for_size(self,size):
+        alias=size if size in self.tokens['typeAliases'] else next((a for a,name in self.tokens['typeAliases'].items() if name==size),None)
+        if alias not in self.profile['weightsBySize']: raise ValueError(f'Unknown preview text size: {size}')
+        return self.profile['weightsBySize'][alias]
+
+    def layout(self,value,style):
+        if isinstance(style,str):
+            size=style
+            style=self.tokens['type'][self.tokens['typeAliases'].get(size,size)]
+        else:
+            size=next((name for name,item in self.tokens['type'].items() if item['nominalHeight']==style['nominalHeight'] and item['strokeWidth']==style['strokeWidth']),None)
+            if size is None: raise ValueError('Use a named kit text size for preview lettering')
+        weight=self.weight_for_size(size)
+        return {**self.faces[weight].layout(value,style),'weight':weight}
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)

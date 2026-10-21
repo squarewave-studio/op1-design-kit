@@ -4,7 +4,7 @@ Original static examples for seven stock-derived relationships. Choose a row,
 read its contract, then open its images. Each state is a complete 320×160
 logical screen. The site shows the same pairs beside the guidance.
 
-PNG: open-font-preview / iosevka-thin-op1-preview-v1 lettering with its own advances. SVG: original
+PNG: open-font-preview / iosevka-op1-preview-v2 lettering with its own advances. SVG: original
 schematic alphabet. Neither is a native rendering or performance result.
 Stock font files and reusable stock glyph geometry are not included.
 
@@ -166,3 +166,18 @@ Show a struck membrane responding while controls and camera remain fixed.
 **Check:** A real strike starts the response; Response settles back to rest; Test empty, stopped and rapidly retriggered states.
 
 **Transition:** rest → strike → rest.
+
+## Typography Size And Weight
+
+These original code renders show the bundled Iosevka mapping in context.
+They are static typography studies, not stock captures or interaction demos.
+Open the relevant image and its scene data rather than the whole set.
+
+| Study | Image | Scene Data | What To Check |
+| --- | --- | --- | --- |
+| Labels and values | [Readout PNG](visuals/typography-readouts.png) | [Scene](visuals/typography-readouts.json) | XS/400 names, S/300 values, sign and unit gaps |
+| Mixed sizes | [Scale PNG](visuals/typography-scale.png) | [Scene](visuals/typography-scale.json) | XS/400, S/300, L/200 and XXL/100 together |
+| Rate layouts | [Tempo PNG](visuals/typography-tempo.png) | [Scene](visuals/typography-tempo.json) | M/200 and XL/100 with stable labels |
+
+Use the same weight mapping in the browser and Python adapters. Inspect at
+320 × 160 as well as enlarged. See [Host Preview Font](PREVIEW-FONT.md).

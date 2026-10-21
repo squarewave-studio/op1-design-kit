@@ -1,13 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {previewTextLayout} from '../../skills/op1-design/assets/fonts/preview-font.mjs';
+import {previewTextLayout,previewWeight} from '../../skills/op1-design/assets/fonts/preview-font.mjs';
 import {tokens} from '../src/tokens.mjs';
 const base=new URL('../../skills/op1-design/assets/fonts/',import.meta.url);
 const font={profile:JSON.parse(readFileSync(new URL('profile.json',base))),metrics:JSON.parse(readFileSync(new URL('metrics.json',base)))};
 test('browser preview uses visible ink for final I and 1',()=>{
   for(const char of ['I','1']){
-    const result=previewTextLayout(font,char,tokens.type.browserRow),glyph=font.metrics.glyphs[char];
+    const result=previewTextLayout(font,char,tokens.type.browserRow),glyph=font.metrics.weights[result.weight].glyphs[char];
     assert.equal(result.width,(glyph.bounds[2]-glyph.bounds[0])*result.scale);
     assert.ok(result.width<glyph.advance*result.scale);
   }
@@ -26,4 +26,16 @@ test('collision checker uses descender ink beyond the cap cell',()=>{
   assert.ok(checkLayout(s).some(x=>x.includes('too close to artwork line')));
   s.texts[0].inkBounds.height=NaN;
   assert.ok(checkLayout(s).some(x=>x.includes('invalid measured ink bounds')));
+});
+
+test('logical size selects its real weight independently of output scale',()=>{
+  const expected={xs:400,s:300,m:200,l:200,xl:100,xxl:100};
+  for(const [alias,weight]of Object.entries(expected)){
+    assert.equal(previewWeight(font,alias),weight);
+    assert.equal(previewWeight(font,tokens.typeAliases[alias]),weight);
+    const result=previewTextLayout(font,'169I',alias);
+    assert.equal(result.weight,weight);
+    assert.equal(result.width,previewTextLayout(font,'169I',tokens.type[tokens.typeAliases[alias]]).width);
+  }
+  assert.throws(()=>previewWeight(font,'invented'),/Unsupported kit preview size/);
 });

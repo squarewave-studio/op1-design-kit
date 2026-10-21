@@ -48,6 +48,6 @@ async function setFont(source) {
   draw();
 }
 $('font-file').addEventListener('change', async e => { try { if (e.target.files[0]) await setFont(await e.target.files[0].text()); } catch (error) { $('font-status').textContent = error.message; } });
-$('clear-font').addEventListener('click', () => { font = null; $('font-file').value = ''; $('font-status').textContent = 'Iosevka Thin preview. Stock lettering needs a separate local check.'; $('glyphs').textContent = 'Iosevka preview set: A–Z, 0–9 and the punctuation documented in Fonts. Stock icons remain separate.'; draw(); });
+$('clear-font').addEventListener('click', () => { font = null; $('font-file').value = ''; $('font-status').textContent = 'Iosevka size-matched preview. Stock lettering needs a separate local check.'; $('glyphs').textContent = 'Iosevka preview set: A–Z, 0–9 and the punctuation documented in Fonts. Stock icons remain separate.'; draw(); });
 draw();
-loadPreviewFont().then(loaded=>{previewFont=loaded;if(!font){$('font-status').textContent='Iosevka Thin preview. Stock lettering needs a separate local check.';draw();}}).catch(error=>{$('font-status').textContent=`Iosevka unavailable: ${error.message}. Schematic lettering shown.`;});
+loadPreviewFont().then(loaded=>{previewFont=loaded;if(!font){$('font-status').textContent='Iosevka size-matched preview. Stock lettering needs a separate local check.';draw();}}).catch(error=>{$('font-status').textContent=`Iosevka unavailable: ${error.message}. Schematic lettering shown.`;});

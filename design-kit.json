@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "name": "OP-1 Design Kit",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "status": "draft",
   "source": "skills/op1-design/references/design-kit.json",
   "tokens": {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "status": "draft",
     "target": "original-op1",
     "coordinateSpace": {
@@ -336,12 +336,19 @@
   ],
   "previewFont": {
     "mode": "open-font-preview",
-    "id": "iosevka-thin-op1-preview-v1",
+    "id": "iosevka-op1-preview-v2",
     "family": "Iosevka",
     "version": "34.9.0",
-    "weight": 100,
     "profile": "assets/fonts/profile.json",
     "pathBase": "skill-root",
-    "scope": "Host placeholder only. Stock-derived size profiles and native font checks remain separate."
+    "scope": "Host-generated previews and public examples use the bundled Iosevka weights by logical size. Scaling output does not change weight. Emulator and hardware screens use their stock text route with the owner\u2019s firmware; no stock font asset is bundled.",
+    "weightsBySize": {
+      "xs": 400,
+      "s": 300,
+      "m": 200,
+      "l": 200,
+      "xl": 100,
+      "xxl": 100
+    }
   }
 }

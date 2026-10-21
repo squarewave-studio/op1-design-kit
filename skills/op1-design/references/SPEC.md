@@ -35,7 +35,7 @@ hierarchy and leave room around the complete lettering, including its stroke.
 
 ![Original lettering specimens using stock-derived profiles](https://squarewave-studio.github.io/op1-design-kit/examples/renders/type-scale.png)
 
-*Original code render with the Iosevka Thin placeholder: browser-row lettering, a short
+*Original code render with the Iosevka placeholder: browser-row lettering, a short
 readout, clock-sized numerals and mixer-sized numerals. These are specimens,
 not stock screen captures. “40” and “53” are sample values, not size labels.*
 
@@ -116,6 +116,16 @@ text(screen, { id: 'value', value: '64', x: 311, y: 17.3333, size: 's', tone: 'b
 // Name and value share a bottom baseline, with a measured horizontal gap.
 ```
 
+### Weights For Host Previews
+
+Iosevka weight follows the kit’s logical text size: **XS 400, S 300, M/L 200 and
+XL/XXL 100**. The role determines which size is useful; it does not select an
+independent weight. Scaling a whole screenshot leaves that mapping unchanged.
+These are open-font preview choices, separate from stock size and stroke data.
+See [Host Preview Font](PREVIEW-FONT.md#match-weight-to-text-size) for the table,
+rendered examples and loading instructions. Emulator and hardware screens use
+the platform’s stock text route with the owner’s firmware.
+
 ### Native Text And Host Metrics
 
 Stock text is created both directly and from named SVG templates. The native
@@ -125,7 +135,7 @@ construction also uses integer heights such as 12, 16, 18 and 20. These are
 visible ink; do not mix them into one size table or pass preview heights to a
 native API without checking that adapter's mapping.
 
-Public PNGs use the [Iosevka Thin host placeholder](PREVIEW-FONT.md), sized
+Public PNGs use the [Iosevka host placeholder](PREVIEW-FONT.md), sized
 to the stock-reference profiles including their stroke. The editable native SVG
 renderer keeps the original schematic lettering. Stock-local previews scale locally supplied stock glyphs to the same
 reference height with approximate spacing. Measure the resulting ink, bearings

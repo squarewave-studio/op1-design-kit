@@ -15,12 +15,18 @@ inspect the widest pose and any point where artwork approaches text. A clean
 rest image does not establish clearance throughout the motion.
 
 Keep the font, values, renderer and scale explicit. For shareable previews, use
-the bundled [Iosevka profile](PREVIEW-FONT.md) and label the result. A pass under
+the bundled [Iosevka profile](PREVIEW-FONT.md) and label the result. Check
+that the logical size selects the prescribed weight, including when a whole
+capture is enlarged: XS 400, S 300, M/L 200 and XL/XXL 100. A pass under
 that placeholder cannot establish stock text fit. Use the actual local stock
 font for a stock-lettering claim. Schematic captures remain useful for early
 composition, but label them as schematic and check stock text again later.
 
 ## Run The Portable Checks
+
+For measured Iosevka renders, use [Font Tools](FONT-TOOLS.md) to choose the
+browser or Python route and check its dependencies. The lightweight checks
+below have different requirements from the open-font renderer.
 
 From the installed `op1-design` skill folder:
 

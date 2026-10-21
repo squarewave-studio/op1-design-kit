@@ -22,4 +22,4 @@ requires the user's local resource; schematic previews do not qualify it.
 Patterns, composition studies and original applications: docs/EXAMPLES.md
 Screen families and design relationships: docs/STOCK.md
 
-Bundled Iosevka Thin preview font: ../skills/op1-design/references/PREVIEW-FONT.md. Includes OFL assets and host adapters; no stock font is distributed.
+Bundled Iosevka size-matched preview font: ../skills/op1-design/references/PREVIEW-FONT.md. Includes OFL assets and host adapters; no stock font is distributed.

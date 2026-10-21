@@ -50,7 +50,7 @@ DESCRIPTIONS = {
     'Spec': 'Text roles, encoder colours, layout clearances and alignment rules for original OP-1 screens.',
     'Patterns And Screen Examples': 'Learn OP-1 design language through composition studies and original instrument examples in several states.',
     'Fonts And Previews': 'Use the bundled Iosevka preview font and check stock lettering privately with your own local OP-1 font.',
-    'Host Preview Font': 'Load the bundled Iosevka Thin font, apply its digit variants and measure text in host previews.',
+    'Host Preview Font': 'Load the bundled Iosevka fonts, apply its digit variants and measure text in host previews.',
     'Icons And Symbols': 'Stock symbol IDs, icon loading and clear original icon design for original OP-1 interfaces.',
     'Graphics And CPU': 'Use expressive vector graphics, retained blocks and meaningful motion within an instrument’s graphics budget.',
     'Components': 'Use the kit’s layout, text and vector helpers with clear native integration contracts.',
@@ -61,7 +61,7 @@ DESCRIPTIONS = {
     'For Agents': 'Install the portable op1-design skill and use the shared rules and design-kit.json in your project.'
 }
 def masthead():
-    return '<header class="masthead"><div class="kit-identity"><a class="kit-title" href="index.html">OP-1 Design Kit</a><a class="kit-maintainer" href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit"><span>by</span><img src="assets/squarewave-mark.svg" width="18" height="18" alt=""><span>SquareWave Studio</span></a></div><nav class="masthead-actions" aria-label="Project"><span class="kit-version">v0.1 · DRAFT</span><a href="contributing.html">Contribute</a><a href="https://github.com/squarewave-studio/op1-design-kit">GitHub ↗</a></nav></header>'
+    return '<header class="masthead"><div class="kit-identity"><a class="kit-title" href="index.html">OP-1 Design Kit</a><a class="kit-maintainer" href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit"><span>by</span><img src="assets/squarewave-mark.svg" width="18" height="18" alt=""><span>SquareWave Studio</span></a></div><nav class="masthead-actions" aria-label="Project"><span class="kit-version">v0.2 · DRAFT</span><a href="contributing.html">Contribute</a><a href="https://github.com/squarewave-studio/op1-design-kit">GitHub ↗</a></nav></header>'
 
 def edit_link(current):
     source=PAGES[current][1].relative_to(ROOT) if current in PAGES else Path('skills/op1-design/SKILL.md')
@@ -122,7 +122,7 @@ def main():
     home=home.replace('</header>', '</header><details class="mobile-contents"><summary>Kit Contents</summary>'+documentation_navigation('index.html')+'</details>',1)
     (out / 'index.html').write_text(home)
     # Published index uses URLs relative to the Pages root, not the source folder.
-    (out / 'llms.txt').write_text('''# OP-1 Design Kit\n\nDraft guidance for the original OP-1.\n\n- skills/op1-design/SKILL.md: portable skill and reference index\n- start.html: getting started\n- spec.html: typography, colours, layout and grid\n- stock.html: screen families and interaction patterns\n- examples.html: original screen studies\n- fonts.html: preview fonts and private stock-font setup\n- preview-font.html: bundled Iosevka font and host adapters\n- icons.html: symbol IDs and loading\n- graphics.html: SVG, smoothing and CPU\n- agents.html: skill installation\n- design-kit.json: machine-readable rules\n- credits.html: sources and notices\n- contributing.html: contributing and checks\n- licence.html: MIT and third-party exclusions\n\nNo firmware or stock font files are served. Iosevka Thin is bundled under OFL.\n''')
+    (out / 'llms.txt').write_text('''# OP-1 Design Kit\n\nDraft guidance for the original OP-1.\n\n- skills/op1-design/SKILL.md: portable skill and reference index\n- start.html: getting started\n- spec.html: typography, colours, layout and grid\n- stock.html: screen families and interaction patterns\n- examples.html: original screen studies\n- fonts.html: preview fonts and private stock-font setup\n- preview-font.html: bundled Iosevka font and host adapters\n- icons.html: symbol IDs and loading\n- graphics.html: SVG, smoothing and CPU\n- agents.html: skill installation\n- design-kit.json: machine-readable rules\n- credits.html: sources and notices\n- contributing.html: contributing and checks\n- licence.html: MIT and third-party exclusions\n\nNo firmware or stock font files are served. Iosevka is bundled under OFL.\n''')
     shutil.copy2(ROOT / 'design-kit.json', out / 'design-kit.json')
     for name in ('og.png', SHARE_IMAGE):
         shutil.copy2(SOURCE / name, out / name)
