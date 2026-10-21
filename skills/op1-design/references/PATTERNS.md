@@ -3,7 +3,7 @@
 An OP-1 screen can help explain how an instrument sounds and responds. Each
 pattern below starts with a stock screen, then applies its lesson to an
 original instrument idea. The example images use original artwork rendered
-with the bundled Iosevka Thin placeholder.
+with the bundled Iosevka placeholder.
 Iosevka and its open licence are included. No stock font resources are served.
 Check native text fit separately with your own local stock font.
 

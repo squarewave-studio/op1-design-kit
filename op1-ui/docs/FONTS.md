@@ -1,10 +1,16 @@
 # Fonts And Previews
 
-Use the bundled **Iosevka Thin** placeholder for shareable host previews. The
+Use the bundled **Iosevka** placeholder for shareable host previews. The
 kit’s example PNGs already use it, so no stock font setup is needed to read the
 guide. [Host Preview Font](../../skills/op1-design/references/PREVIEW-FONT.md) gives the files, exact numeral
 variants, sizing, character set and rendering helpers. The font keeps its own
-SIL Open Font License 1.1.
+SIL Open Font License 1.1. Its weight follows the selected logical text size:
+XS 400, S 300, M/L 200 and XL/XXL 100.
+
+Use Iosevka for ordinary host-generated previews and shared screenshots. On
+the emulator or hardware, use the platform’s stock text route with your own
+firmware. The optional local stock-font tools below are for private typography
+research; they do not make the font or its exports redistributable.
 
 For a separate stock-lettering check, choose `opfont.svg` from your own firmware
 files. It stays on your machine. Nothing is uploaded, included or served here.

@@ -21,24 +21,36 @@ class PreviewFontTests(unittest.TestCase):
     def test_profile_and_browser_metrics_match_the_bundled_font(self):
         font=self.font
         metrics=json.loads((MODULE.ASSETS/'metrics.json').read_text())
-        self.assertEqual(metrics['fontSHA256'],font.profile['sha256'])
         self.assertEqual(metrics['profile'],font.profile['id'])
-        self.assertEqual(set(metrics['glyphs']),set(font.profile['textCharacters']))
-        for char,glyph in metrics['glyphs'].items():
-            name,bounds,_,advance=font.glyph(char)
-            self.assertEqual(glyph,{'name':name,'bounds':list(bounds) if bounds else None,'advance':advance},char)
-        self.assertEqual(font.font['OS/2'].usWeightClass,100)
-        self.assertEqual(font.font['head'].unitsPerEm,font.profile['unitsPerEm'])
-        self.assertEqual(font.font['OS/2'].sCapHeight,font.profile['capHeight'])
-        for char in '169I':
-            source=font.cmap[ord(char)]
-            self.assertIn(source,font.selected)
-            self.assertEqual(font.glyph(char)[0],font.selected[source])
+        self.assertEqual(set(metrics['weights']),set(font.profile['fonts']))
+        for weight,face in font.faces.items():
+            measured=metrics['weights'][str(weight)]
+            self.assertEqual(measured['fontSHA256'],font.profile['fonts'][str(weight)]['sha256'])
+            self.assertEqual(set(measured['glyphs']),set(font.profile['textCharacters']))
+            for char,glyph in measured['glyphs'].items():
+                name,bounds,_,advance=face.glyph(char)
+                self.assertEqual(glyph,{'name':name,'bounds':list(bounds) if bounds else None,'advance':advance},(weight,char))
+            self.assertEqual(face.font['OS/2'].usWeightClass,weight)
+            self.assertEqual(face.font['head'].unitsPerEm,font.profile['unitsPerEm'])
+            self.assertEqual(face.font['OS/2'].sCapHeight,font.profile['capHeight'])
+            for char in '169I':
+                self.assertIn(face.cmap[ord(char)],face.selected)
+                self.assertEqual(face.glyph(char)[0],face.selected[face.cmap[ord(char)]])
+
+    def test_size_mapping_preserves_preview_weights_when_scaling_output(self):
+        expected={'xs':400,'s':300,'m':200,'l':200,'xl':100,'xxl':100}
+        for alias,weight in expected.items():
+            profile=self.tokens['typeAliases'][alias]
+            self.assertEqual(self.font.weight_for_size(alias),weight)
+            self.assertEqual(self.font.weight_for_size(profile),weight)
+            self.assertEqual(self.font.layout('169I',alias)['weight'],weight)
+        with self.assertRaisesRegex(ValueError,'Unknown preview text size'):
+            self.font.weight_for_size('invented')
 
     def test_narrow_last_character_uses_ink_instead_of_full_advance(self):
         style=self.tokens['type']['browserRow']
         for char in '1I':
-            _,bounds,_,advance=self.font.glyph(char)
+            _,bounds,_,advance=self.font.faces[400].glyph(char)
             measured=self.font.layout(char,style)
             self.assertAlmostEqual(measured['width'],(bounds[2]-bounds[0])*measured['scale'])
             self.assertLess(measured['width'],advance*measured['scale'])

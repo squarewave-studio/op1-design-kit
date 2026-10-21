@@ -18,6 +18,10 @@ def main():
     parser.add_argument('--check',action='store_true',help='Check every scene without rasterising or writing files')
     args=parser.parse_args()
     scenes=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {exampleScenes} from './op1-ui/src/example-scenes.mjs'; console.log(JSON.stringify(exampleScenes));"],cwd=ROOT))
+    guide_sources={'typography-readouts':'formats-first','typography-scale':'type-scale','typography-tempo':'type-tempo'}
+    for name,source in guide_sources.items():
+        scene=scenes[source]
+        scenes[name]={**scene,'nodes':[node for node in scene['nodes'] if not node.get('textId')]}
     tokens=json.loads((ROOT/'op1-ui/tokens/op1-ui.json').read_text())
     font=PreviewFont(); rendered={};measured={}
     for name,scene in scenes.items():
@@ -29,6 +33,9 @@ def main():
     result=subprocess.run(['node','--input-type=module','-e',check],input=json.dumps(measured).encode(),cwd=ROOT,capture_output=True)
     if result.returncode: raise ValueError(result.stderr.decode())
     if args.check:
+        for name in guide_sources:
+            path=ROOT/'skills/op1-design/references/visuals'/(name+'.json')
+            if json.loads(path.read_text())!=scenes[name]: raise ValueError(f'{name}: stale typography scene export')
         print(f'Checked {len(rendered)} Iosevka scenes: bounds, readouts and artwork clearance pass.');return
     with tempfile.TemporaryDirectory(prefix='op1-open-font-') as folder:
         staging=Path(folder)
@@ -43,6 +50,8 @@ def main():
                 target=ROOT/'op1-ui/examples/renders'/(name+'.png')
                 if not target.exists():target=ROOT/'skills/op1-design/references/visuals'/(name+'.png')
                 target.write_bytes((staging/(name+'.png')).read_bytes())
+            for name in guide_sources:
+                (ROOT/'skills/op1-design/references/visuals'/(name+'.json')).write_text(json.dumps(scenes[name],indent=2)+'\n')
             render_share()
     print(f'Rendered {len(rendered)} Iosevka preview PNGs. Bounds, readout groups and artwork clearance passed. No private input used.')
 

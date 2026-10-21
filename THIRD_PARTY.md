@@ -17,7 +17,7 @@ excluded from MIT and from the portable skill. Its independently written host lo
 local `opfont.svg` in memory; neither the MIT licence nor that capability grants
 redistribution rights to the font, kerning database or derived glyph data.
 The editable SVG examples retain the original schematic alphabet. The example
-PNGs use the bundled Iosevka Thin placeholder under its included OFL licence.
+PNGs use the bundled Iosevka placeholder under its included OFL licence.
 No stock font file or reusable stock glyph vectors are included. Native code examples elsewhere in the ecosystem can
 carry GPL and additional firmware terms; their APIs are cited, not copied here.
 
@@ -78,9 +78,9 @@ Authors under the SIL Open Font License 1.1. The local font is in
 
 ## Iosevka Host Preview Font
 
-Public example PNGs and the optional workbench use **Iosevka Thin 34.9.0**,
+Public example PNGs and the optional workbench use **Iosevka 34.9.0**,
 Copyright (c) 2015–2026 Renzhi Li, under the SIL Open Font License 1.1. The
-unmodified font and its [licence](skills/op1-design/assets/fonts/Iosevka-OFL.md)
+unmodified Thin, ExtraLight, Light and Regular fonts and their [licence](skills/op1-design/assets/fonts/Iosevka-OFL.md)
 are included in the portable skill, beside the versioned variant profile.
 [Iosevka source](https://github.com/be5invis/Iosevka/tree/v34.9.0). Original kit
 adapters remain MIT; the font retains OFL. It is a host placeholder and does

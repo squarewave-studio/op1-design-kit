@@ -1,0 +1,107 @@
+{
+  "width": 320,
+  "height": 160,
+  "nodes": [],
+  "texts": [
+    {
+      "id": "heading",
+      "value": "READOUT STUDY",
+      "x": 16,
+      "y": 10,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 110.66666666666667
+    },
+    {
+      "id": "name-0",
+      "value": "MODE",
+      "x": 16,
+      "y": 40,
+      "size": "browserRow",
+      "tone": "blue",
+      "maxWidth": null,
+      "align": "left",
+      "width": 32.66666666666667
+    },
+    {
+      "id": "value-0",
+      "value": "POLY",
+      "x": 255,
+      "y": 33.333333333333336,
+      "size": "parameterValue",
+      "tone": "blue",
+      "maxWidth": null,
+      "align": "right",
+      "width": 49
+    },
+    {
+      "id": "name-1",
+      "value": "OFFSET",
+      "x": 16,
+      "y": 68,
+      "size": "browserRow",
+      "tone": "green",
+      "maxWidth": null,
+      "align": "left",
+      "width": 50
+    },
+    {
+      "id": "value-1",
+      "value": "-7 ST",
+      "x": 242,
+      "y": 61.333333333333336,
+      "size": "parameterValue",
+      "tone": "green",
+      "maxWidth": null,
+      "align": "right",
+      "width": 62
+    },
+    {
+      "id": "name-2",
+      "value": "TIME",
+      "x": 16,
+      "y": 96,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 32.66666666666667
+    },
+    {
+      "id": "value-2",
+      "value": "999 MS",
+      "x": 229,
+      "y": 89.33333333333333,
+      "size": "parameterValue",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "right",
+      "width": 75
+    },
+    {
+      "id": "name-3",
+      "value": "MIN:SEC",
+      "x": 16,
+      "y": 124,
+      "size": "browserRow",
+      "tone": "orange",
+      "maxWidth": null,
+      "align": "left",
+      "width": 58.66666666666667
+    },
+    {
+      "id": "value-3",
+      "value": "01:24",
+      "x": 242,
+      "y": 117.33333333333333,
+      "size": "parameterValue",
+      "tone": "orange",
+      "maxWidth": null,
+      "align": "right",
+      "width": 62
+    }
+  ],
+  "readouts": []
+}

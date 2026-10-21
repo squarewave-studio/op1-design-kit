@@ -1,5 +1,7 @@
 # OP-1 Design Kit
 
+Version **0.2.0 · Draft**.
+
 A draft design kit for the **original OP-1**, made by SquareWave Studio based on
 community sources and a review of the stock user interface.
 
@@ -12,7 +14,7 @@ CPU considerations, with original examples and a portable agent skill.
 
 ![Original Membrane instrument concept](op1-ui/examples/renders/membrane-rest.png)
 
-*Original artwork rendered with the bundled Iosevka Thin placeholder.
+*Original artwork rendered with the bundled Iosevka placeholder.
 Stock lettering and native spacing need a separate local check.*
 
 ## Install The Skill
@@ -37,7 +39,9 @@ visual references, font guidance and portable checking tools.
 - [Components](op1-ui/docs/COMPONENTS.md): reference helpers and target integration.
 - [Sources And Credits](op1-ui/docs/SOURCES.md): community work behind the guidance.
 
-The guide needs no font setup. Iosevka Thin, its OFL licence and the selected
+The guide needs no font setup. Host previews pair each logical text size with
+a bundled Iosevka weight: XS 400, S 300, M/L 200 and XL/XXL 100.
+See the [font guide](skills/op1-design/references/PREVIEW-FONT.md) for examples. Iosevka, its OFL licence and the selected
 variant profile are bundled in the skill. See [Host Preview Font](op1-ui/docs/PREVIEW-FONT.md). For stock-lettering checks, use your own firmware
 locally; no firmware resources are included or served here.
 

@@ -1,0 +1,74 @@
+{
+  "width": 320,
+  "height": 160,
+  "nodes": [],
+  "texts": [
+    {
+      "id": "compact-caption",
+      "value": "COMPACT",
+      "x": 16,
+      "y": 16,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 58.66666666666667
+    },
+    {
+      "id": "medium-caption",
+      "value": "INTERMEDIATE",
+      "x": 175,
+      "y": 16,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 102
+    },
+    {
+      "id": "compact-number",
+      "value": "120",
+      "x": 16,
+      "y": 52,
+      "size": "tempoCompact",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 64.4868
+    },
+    {
+      "id": "medium-number",
+      "value": "120",
+      "x": 175,
+      "y": 49,
+      "size": "tempoMedium",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 77.049
+    },
+    {
+      "id": "compact-unit",
+      "value": "BPM",
+      "x": 16,
+      "y": 106,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 24
+    },
+    {
+      "id": "medium-unit",
+      "value": "BPM",
+      "x": 175,
+      "y": 106,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 24
+    }
+  ],
+  "readouts": []
+}

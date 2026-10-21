@@ -1,0 +1,74 @@
+{
+  "width": 320,
+  "height": 160,
+  "nodes": [],
+  "texts": [
+    {
+      "id": "browser-row",
+      "value": "BROWSER ROW",
+      "x": 16,
+      "y": 10,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 93.33333333333334
+    },
+    {
+      "id": "parameter-value",
+      "value": "READOUT",
+      "x": 16,
+      "y": 39,
+      "size": "parameterValue",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 88
+    },
+    {
+      "id": "clock-caption",
+      "value": "CLOCK",
+      "x": 16,
+      "y": 73,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 41.333333333333336
+    },
+    {
+      "id": "clock-number",
+      "value": "40",
+      "x": 16,
+      "y": 96,
+      "size": "clockNumber",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 46.359950000000005
+    },
+    {
+      "id": "mixer-caption",
+      "value": "LEVEL",
+      "x": 210,
+      "y": 58,
+      "size": "browserRow",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 41.333333333333336
+    },
+    {
+      "id": "mixer-level",
+      "value": "53",
+      "x": 210,
+      "y": 84,
+      "size": "mixerLevel",
+      "tone": "white",
+      "maxWidth": null,
+      "align": "left",
+      "width": 61.34445000000001
+    }
+  ],
+  "readouts": []
+}

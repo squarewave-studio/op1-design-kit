@@ -1,541 +1,2165 @@
 {
-  "fontSHA256": "273de62b3dd42f5c47407cf2150cf0bc1c44b13bd217ad08009e9ef34bc351b2",
-  "profile": "iosevka-thin-op1-preview-v1",
-  "glyphs": {
-    " ": {
-      "name": "space",
-      "bounds": null,
-      "advance": 500
+  "profile": "iosevka-op1-preview-v2",
+  "weights": {
+    "100": {
+      "fontSHA256": "273de62b3dd42f5c47407cf2150cf0bc1c44b13bd217ad08009e9ef34bc351b2",
+      "glyphs": {
+        " ": {
+          "name": "space",
+          "bounds": null,
+          "advance": 500
+        },
+        "A": {
+          "name": "A",
+          "bounds": [
+            58,
+            0,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "B": {
+          "name": "B",
+          "bounds": [
+            72,
+            0,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "C": {
+          "name": "C",
+          "bounds": [
+            64,
+            -8,
+            430,
+            743
+          ],
+          "advance": 500
+        },
+        "D": {
+          "name": "D",
+          "bounds": [
+            72,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "E": {
+          "name": "E",
+          "bounds": [
+            80,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "F": {
+          "name": "F",
+          "bounds": [
+            108,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "G": {
+          "name": "G",
+          "bounds": [
+            64,
+            -8,
+            430,
+            743
+          ],
+          "advance": 500
+        },
+        "H": {
+          "name": "H",
+          "bounds": [
+            72,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "I": {
+          "name": "I.cv19-1",
+          "bounds": [
+            240,
+            0,
+            260,
+            735
+          ],
+          "advance": 500
+        },
+        "J": {
+          "name": "J",
+          "bounds": [
+            52,
+            -8,
+            417,
+            735
+          ],
+          "advance": 500
+        },
+        "K": {
+          "name": "K",
+          "bounds": [
+            88,
+            0,
+            425,
+            735
+          ],
+          "advance": 500
+        },
+        "L": {
+          "name": "L",
+          "bounds": [
+            108,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "M": {
+          "name": "M",
+          "bounds": [
+            72,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "N": {
+          "name": "N",
+          "bounds": [
+            72,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "O": {
+          "name": "O",
+          "bounds": [
+            64,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "P": {
+          "name": "P",
+          "bounds": [
+            90,
+            0,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "Q": {
+          "name": "Q",
+          "bounds": [
+            64,
+            -165,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "R": {
+          "name": "R",
+          "bounds": [
+            72,
+            0,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "S": {
+          "name": "S",
+          "bounds": [
+            62,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "T": {
+          "name": "T",
+          "bounds": [
+            66,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "U": {
+          "name": "U",
+          "bounds": [
+            72,
+            -8,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "V": {
+          "name": "V",
+          "bounds": [
+            58,
+            0,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "W": {
+          "name": "W",
+          "bounds": [
+            56,
+            0,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "X": {
+          "name": "X",
+          "bounds": [
+            68,
+            0,
+            432,
+            735
+          ],
+          "advance": 500
+        },
+        "Y": {
+          "name": "Y",
+          "bounds": [
+            67,
+            0,
+            433,
+            735
+          ],
+          "advance": 500
+        },
+        "Z": {
+          "name": "Z",
+          "bounds": [
+            72,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "0": {
+          "name": "zero.cv10-1",
+          "bounds": [
+            64,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "1": {
+          "name": "one.cv01-1",
+          "bounds": [
+            240,
+            0,
+            260,
+            735
+          ],
+          "advance": 500
+        },
+        "2": {
+          "name": "two.cv02-1",
+          "bounds": [
+            70,
+            0,
+            432,
+            743
+          ],
+          "advance": 500
+        },
+        "3": {
+          "name": "three.cv03-1",
+          "bounds": [
+            62,
+            -8,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "4": {
+          "name": "four.cv04-1",
+          "bounds": [
+            64,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "5": {
+          "name": "five.cv05-1",
+          "bounds": [
+            70,
+            -8,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "6": {
+          "name": "six.cv06-1",
+          "bounds": [
+            64,
+            -8,
+            438,
+            743
+          ],
+          "advance": 500
+        },
+        "7": {
+          "name": "seven.cv07-1",
+          "bounds": [
+            72,
+            0,
+            428,
+            735
+          ],
+          "advance": 500
+        },
+        "8": {
+          "name": "eight.cv08-2",
+          "bounds": [
+            64,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "9": {
+          "name": "nine.cv09-3",
+          "bounds": [
+            64,
+            0,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "!": {
+          "name": "exclam",
+          "bounds": [
+            216,
+            -8,
+            285,
+            735
+          ],
+          "advance": 500
+        },
+        "\"": {
+          "name": "quotedbl",
+          "bounds": [
+            139,
+            442,
+            361,
+            772
+          ],
+          "advance": 500
+        },
+        "#": {
+          "name": "numbersign",
+          "bounds": [
+            63,
+            18,
+            437,
+            717
+          ],
+          "advance": 500
+        },
+        "%": {
+          "name": "percent",
+          "bounds": [
+            28,
+            -8,
+            472,
+            743
+          ],
+          "advance": 500
+        },
+        "*": {
+          "name": "asterisk",
+          "bounds": [
+            47,
+            431,
+            453,
+            816
+          ],
+          "advance": 500
+        },
+        "+": {
+          "name": "plus",
+          "bounds": [
+            72,
+            155,
+            428,
+            525
+          ],
+          "advance": 500
+        },
+        ",": {
+          "name": "comma",
+          "bounds": [
+            214,
+            -215,
+            286,
+            63
+          ],
+          "advance": 500
+        },
+        "-": {
+          "name": "hyphen",
+          "bounds": [
+            72,
+            331,
+            428,
+            349
+          ],
+          "advance": 500
+        },
+        ".": {
+          "name": "period",
+          "bounds": [
+            215,
+            -8,
+            286,
+            63
+          ],
+          "advance": 500
+        },
+        "/": {
+          "name": "slash",
+          "bounds": [
+            71,
+            -143,
+            429,
+            823
+          ],
+          "advance": 500
+        },
+        ":": {
+          "name": "colon",
+          "bounds": [
+            215,
+            -8,
+            286,
+            528
+          ],
+          "advance": 500
+        },
+        ";": {
+          "name": "semicolon",
+          "bounds": [
+            214,
+            -215,
+            286,
+            528
+          ],
+          "advance": 500
+        },
+        "<": {
+          "name": "less",
+          "bounds": [
+            72,
+            113,
+            433,
+            567
+          ],
+          "advance": 500
+        },
+        "=": {
+          "name": "equal",
+          "bounds": [
+            72,
+            246,
+            428,
+            434
+          ],
+          "advance": 500
+        },
+        ">": {
+          "name": "greater",
+          "bounds": [
+            67,
+            113,
+            428,
+            567
+          ],
+          "advance": 500
+        },
+        "?": {
+          "name": "question",
+          "bounds": [
+            70,
+            -8,
+            428,
+            743
+          ],
+          "advance": 500
+        },
+        "_": {
+          "name": "underscore",
+          "bounds": [
+            72,
+            -18,
+            428,
+            0
+          ],
+          "advance": 500
+        }
+      }
     },
-    "A": {
-      "name": "A",
-      "bounds": [
-        58,
-        0,
-        442,
-        735
-      ],
-      "advance": 500
+    "200": {
+      "fontSHA256": "38230d6c2b0f8744a1358636a615e1e2025588c5e88f9d2915f2c60f98cc9fb2",
+      "glyphs": {
+        " ": {
+          "name": "space",
+          "bounds": null,
+          "advance": 500
+        },
+        "A": {
+          "name": "A",
+          "bounds": [
+            53,
+            0,
+            447,
+            735
+          ],
+          "advance": 500
+        },
+        "B": {
+          "name": "B",
+          "bounds": [
+            69,
+            0,
+            447,
+            735
+          ],
+          "advance": 500
+        },
+        "C": {
+          "name": "C",
+          "bounds": [
+            61,
+            -8,
+            433,
+            743
+          ],
+          "advance": 500
+        },
+        "D": {
+          "name": "D",
+          "bounds": [
+            69,
+            0,
+            439,
+            735
+          ],
+          "advance": 500
+        },
+        "E": {
+          "name": "E",
+          "bounds": [
+            77,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "F": {
+          "name": "F",
+          "bounds": [
+            104,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "G": {
+          "name": "G",
+          "bounds": [
+            61,
+            -8,
+            433,
+            743
+          ],
+          "advance": 500
+        },
+        "H": {
+          "name": "H",
+          "bounds": [
+            69,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "I": {
+          "name": "I.cv19-1",
+          "bounds": [
+            230,
+            0,
+            270,
+            735
+          ],
+          "advance": 500
+        },
+        "J": {
+          "name": "J",
+          "bounds": [
+            50,
+            -8,
+            415,
+            735
+          ],
+          "advance": 500
+        },
+        "K": {
+          "name": "K",
+          "bounds": [
+            85,
+            0,
+            433,
+            735
+          ],
+          "advance": 500
+        },
+        "L": {
+          "name": "L",
+          "bounds": [
+            104,
+            0,
+            437,
+            735
+          ],
+          "advance": 500
+        },
+        "M": {
+          "name": "M",
+          "bounds": [
+            65,
+            0,
+            435,
+            735
+          ],
+          "advance": 500
+        },
+        "N": {
+          "name": "N",
+          "bounds": [
+            69,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "O": {
+          "name": "O",
+          "bounds": [
+            61,
+            -8,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "P": {
+          "name": "P",
+          "bounds": [
+            86,
+            0,
+            447,
+            735
+          ],
+          "advance": 500
+        },
+        "Q": {
+          "name": "Q",
+          "bounds": [
+            61,
+            -170,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "R": {
+          "name": "R",
+          "bounds": [
+            69,
+            0,
+            455,
+            735
+          ],
+          "advance": 500
+        },
+        "S": {
+          "name": "S",
+          "bounds": [
+            59,
+            -8,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "T": {
+          "name": "T",
+          "bounds": [
+            63,
+            0,
+            437,
+            735
+          ],
+          "advance": 500
+        },
+        "U": {
+          "name": "U",
+          "bounds": [
+            69,
+            -8,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "V": {
+          "name": "V",
+          "bounds": [
+            53,
+            0,
+            447,
+            735
+          ],
+          "advance": 500
+        },
+        "W": {
+          "name": "W",
+          "bounds": [
+            49,
+            0,
+            451,
+            735
+          ],
+          "advance": 500
+        },
+        "X": {
+          "name": "X",
+          "bounds": [
+            61,
+            0,
+            439,
+            735
+          ],
+          "advance": 500
+        },
+        "Y": {
+          "name": "Y",
+          "bounds": [
+            60,
+            0,
+            440,
+            735
+          ],
+          "advance": 500
+        },
+        "Z": {
+          "name": "Z",
+          "bounds": [
+            69,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "0": {
+          "name": "zero.cv10-1",
+          "bounds": [
+            61,
+            -8,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "1": {
+          "name": "one.cv01-1",
+          "bounds": [
+            230,
+            0,
+            270,
+            735
+          ],
+          "advance": 500
+        },
+        "2": {
+          "name": "two.cv02-1",
+          "bounds": [
+            67,
+            0,
+            435,
+            743
+          ],
+          "advance": 500
+        },
+        "3": {
+          "name": "three.cv03-1",
+          "bounds": [
+            59,
+            -8,
+            447,
+            735
+          ],
+          "advance": 500
+        },
+        "4": {
+          "name": "four.cv04-1",
+          "bounds": [
+            61,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "5": {
+          "name": "five.cv05-1",
+          "bounds": [
+            67,
+            -8,
+            439,
+            735
+          ],
+          "advance": 500
+        },
+        "6": {
+          "name": "six.cv06-1",
+          "bounds": [
+            61,
+            -8,
+            441,
+            743
+          ],
+          "advance": 500
+        },
+        "7": {
+          "name": "seven.cv07-1",
+          "bounds": [
+            69,
+            0,
+            431,
+            735
+          ],
+          "advance": 500
+        },
+        "8": {
+          "name": "eight.cv08-2",
+          "bounds": [
+            61,
+            -8,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "9": {
+          "name": "nine.cv09-3",
+          "bounds": [
+            61,
+            0,
+            439,
+            743
+          ],
+          "advance": 500
+        },
+        "!": {
+          "name": "exclam",
+          "bounds": [
+            203,
+            -8,
+            297,
+            735
+          ],
+          "advance": 500
+        },
+        "\"": {
+          "name": "quotedbl",
+          "bounds": [
+            128,
+            442,
+            372,
+            772
+          ],
+          "advance": 500
+        },
+        "#": {
+          "name": "numbersign",
+          "bounds": [
+            51,
+            18,
+            449,
+            717
+          ],
+          "advance": 500
+        },
+        "%": {
+          "name": "percent",
+          "bounds": [
+            26,
+            -8,
+            474,
+            743
+          ],
+          "advance": 500
+        },
+        "*": {
+          "name": "asterisk",
+          "bounds": [
+            44,
+            425,
+            456,
+            816
+          ],
+          "advance": 500
+        },
+        "+": {
+          "name": "plus",
+          "bounds": [
+            69,
+            152,
+            431,
+            528
+          ],
+          "advance": 500
+        },
+        ",": {
+          "name": "comma",
+          "bounds": [
+            191,
+            -215,
+            301,
+            94
+          ],
+          "advance": 500
+        },
+        "-": {
+          "name": "hyphen",
+          "bounds": [
+            69,
+            322,
+            431,
+            358
+          ],
+          "advance": 500
+        },
+        ".": {
+          "name": "period",
+          "bounds": [
+            199,
+            -8,
+            301,
+            94
+          ],
+          "advance": 500
+        },
+        "/": {
+          "name": "slash",
+          "bounds": [
+            66,
+            -143,
+            434,
+            823
+          ],
+          "advance": 500
+        },
+        ":": {
+          "name": "colon",
+          "bounds": [
+            199,
+            -8,
+            301,
+            528
+          ],
+          "advance": 500
+        },
+        ";": {
+          "name": "semicolon",
+          "bounds": [
+            191,
+            -215,
+            301,
+            528
+          ],
+          "advance": 500
+        },
+        "<": {
+          "name": "less",
+          "bounds": [
+            69,
+            102,
+            441,
+            578
+          ],
+          "advance": 500
+        },
+        "=": {
+          "name": "equal",
+          "bounds": [
+            69,
+            235,
+            431,
+            445
+          ],
+          "advance": 500
+        },
+        ">": {
+          "name": "greater",
+          "bounds": [
+            59,
+            102,
+            431,
+            578
+          ],
+          "advance": 500
+        },
+        "?": {
+          "name": "question",
+          "bounds": [
+            67,
+            -8,
+            431,
+            743
+          ],
+          "advance": 500
+        },
+        "_": {
+          "name": "underscore",
+          "bounds": [
+            69,
+            -37,
+            431,
+            0
+          ],
+          "advance": 500
+        }
+      }
     },
-    "B": {
-      "name": "B",
-      "bounds": [
-        72,
-        0,
-        444,
-        735
-      ],
-      "advance": 500
+    "300": {
+      "fontSHA256": "88e418ee51fada3c7578bd0d3b533c9f517dfcb97733751c854b3fa2f1b2a690",
+      "glyphs": {
+        " ": {
+          "name": "space",
+          "bounds": null,
+          "advance": 500
+        },
+        "A": {
+          "name": "A",
+          "bounds": [
+            48,
+            0,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "B": {
+          "name": "B",
+          "bounds": [
+            66,
+            0,
+            450,
+            735
+          ],
+          "advance": 500
+        },
+        "C": {
+          "name": "C",
+          "bounds": [
+            58,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "D": {
+          "name": "D",
+          "bounds": [
+            66,
+            0,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "E": {
+          "name": "E",
+          "bounds": [
+            74,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "F": {
+          "name": "F",
+          "bounds": [
+            99,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "G": {
+          "name": "G",
+          "bounds": [
+            58,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "H": {
+          "name": "H",
+          "bounds": [
+            66,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "I": {
+          "name": "I.cv19-1",
+          "bounds": [
+            220,
+            0,
+            280,
+            735
+          ],
+          "advance": 500
+        },
+        "J": {
+          "name": "J",
+          "bounds": [
+            47,
+            -8,
+            413,
+            735
+          ],
+          "advance": 500
+        },
+        "K": {
+          "name": "K",
+          "bounds": [
+            82,
+            0,
+            440,
+            735
+          ],
+          "advance": 500
+        },
+        "L": {
+          "name": "L",
+          "bounds": [
+            99,
+            0,
+            440,
+            735
+          ],
+          "advance": 500
+        },
+        "M": {
+          "name": "M",
+          "bounds": [
+            57,
+            0,
+            443,
+            735
+          ],
+          "advance": 500
+        },
+        "N": {
+          "name": "N",
+          "bounds": [
+            66,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "O": {
+          "name": "O",
+          "bounds": [
+            58,
+            -8,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "P": {
+          "name": "P",
+          "bounds": [
+            83,
+            0,
+            450,
+            735
+          ],
+          "advance": 500
+        },
+        "Q": {
+          "name": "Q",
+          "bounds": [
+            58,
+            -176,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "R": {
+          "name": "R",
+          "bounds": [
+            66,
+            0,
+            458,
+            735
+          ],
+          "advance": 500
+        },
+        "S": {
+          "name": "S",
+          "bounds": [
+            56,
+            -8,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "T": {
+          "name": "T",
+          "bounds": [
+            60,
+            0,
+            440,
+            735
+          ],
+          "advance": 500
+        },
+        "U": {
+          "name": "U",
+          "bounds": [
+            66,
+            -8,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "V": {
+          "name": "V",
+          "bounds": [
+            48,
+            0,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "W": {
+          "name": "W",
+          "bounds": [
+            41,
+            0,
+            459,
+            735
+          ],
+          "advance": 500
+        },
+        "X": {
+          "name": "X",
+          "bounds": [
+            54,
+            0,
+            446,
+            735
+          ],
+          "advance": 500
+        },
+        "Y": {
+          "name": "Y",
+          "bounds": [
+            52,
+            0,
+            448,
+            735
+          ],
+          "advance": 500
+        },
+        "Z": {
+          "name": "Z",
+          "bounds": [
+            66,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "0": {
+          "name": "zero.cv10-1",
+          "bounds": [
+            58,
+            -8,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "1": {
+          "name": "one.cv01-1",
+          "bounds": [
+            220,
+            0,
+            280,
+            735
+          ],
+          "advance": 500
+        },
+        "2": {
+          "name": "two.cv02-1",
+          "bounds": [
+            64,
+            0,
+            438,
+            743
+          ],
+          "advance": 500
+        },
+        "3": {
+          "name": "three.cv03-1",
+          "bounds": [
+            56,
+            -8,
+            450,
+            735
+          ],
+          "advance": 500
+        },
+        "4": {
+          "name": "four.cv04-1",
+          "bounds": [
+            58,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "5": {
+          "name": "five.cv05-1",
+          "bounds": [
+            64,
+            -8,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "6": {
+          "name": "six.cv06-1",
+          "bounds": [
+            58,
+            -8,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "7": {
+          "name": "seven.cv07-1",
+          "bounds": [
+            66,
+            0,
+            434,
+            735
+          ],
+          "advance": 500
+        },
+        "8": {
+          "name": "eight.cv08-2",
+          "bounds": [
+            58,
+            -8,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "9": {
+          "name": "nine.cv09-3",
+          "bounds": [
+            58,
+            0,
+            442,
+            743
+          ],
+          "advance": 500
+        },
+        "!": {
+          "name": "exclam",
+          "bounds": [
+            190,
+            -8,
+            310,
+            735
+          ],
+          "advance": 500
+        },
+        "\"": {
+          "name": "quotedbl",
+          "bounds": [
+            117,
+            442,
+            383,
+            772
+          ],
+          "advance": 500
+        },
+        "#": {
+          "name": "numbersign",
+          "bounds": [
+            39,
+            18,
+            461,
+            717
+          ],
+          "advance": 500
+        },
+        "%": {
+          "name": "percent",
+          "bounds": [
+            25,
+            -8,
+            475,
+            743
+          ],
+          "advance": 500
+        },
+        "*": {
+          "name": "asterisk",
+          "bounds": [
+            41,
+            420,
+            459,
+            816
+          ],
+          "advance": 500
+        },
+        "+": {
+          "name": "plus",
+          "bounds": [
+            66,
+            149,
+            434,
+            531
+          ],
+          "advance": 500
+        },
+        ",": {
+          "name": "comma",
+          "bounds": [
+            171,
+            -215,
+            316,
+            125
+          ],
+          "advance": 500
+        },
+        "-": {
+          "name": "hyphen",
+          "bounds": [
+            66,
+            312,
+            434,
+            368
+          ],
+          "advance": 500
+        },
+        ".": {
+          "name": "period",
+          "bounds": [
+            184,
+            -8,
+            316,
+            125
+          ],
+          "advance": 500
+        },
+        "/": {
+          "name": "slash",
+          "bounds": [
+            62,
+            -143,
+            438,
+            823
+          ],
+          "advance": 500
+        },
+        ":": {
+          "name": "colon",
+          "bounds": [
+            184,
+            -8,
+            316,
+            528
+          ],
+          "advance": 500
+        },
+        ";": {
+          "name": "semicolon",
+          "bounds": [
+            171,
+            -215,
+            316,
+            528
+          ],
+          "advance": 500
+        },
+        "<": {
+          "name": "less",
+          "bounds": [
+            66,
+            91,
+            449,
+            589
+          ],
+          "advance": 500
+        },
+        "=": {
+          "name": "equal",
+          "bounds": [
+            66,
+            225,
+            434,
+            455
+          ],
+          "advance": 500
+        },
+        ">": {
+          "name": "greater",
+          "bounds": [
+            51,
+            91,
+            434,
+            589
+          ],
+          "advance": 500
+        },
+        "?": {
+          "name": "question",
+          "bounds": [
+            64,
+            -8,
+            434,
+            743
+          ],
+          "advance": 500
+        },
+        "_": {
+          "name": "underscore",
+          "bounds": [
+            66,
+            -55,
+            434,
+            0
+          ],
+          "advance": 500
+        }
+      }
     },
-    "C": {
-      "name": "C",
-      "bounds": [
-        64,
-        -8,
-        430,
-        743
-      ],
-      "advance": 500
-    },
-    "D": {
-      "name": "D",
-      "bounds": [
-        72,
-        0,
-        436,
-        735
-      ],
-      "advance": 500
-    },
-    "E": {
-      "name": "E",
-      "bounds": [
-        80,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "F": {
-      "name": "F",
-      "bounds": [
-        108,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "G": {
-      "name": "G",
-      "bounds": [
-        64,
-        -8,
-        430,
-        743
-      ],
-      "advance": 500
-    },
-    "H": {
-      "name": "H",
-      "bounds": [
-        72,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "I": {
-      "name": "I.cv19-1",
-      "bounds": [
-        240,
-        0,
-        260,
-        735
-      ],
-      "advance": 500
-    },
-    "J": {
-      "name": "J",
-      "bounds": [
-        52,
-        -8,
-        417,
-        735
-      ],
-      "advance": 500
-    },
-    "K": {
-      "name": "K",
-      "bounds": [
-        88,
-        0,
-        425,
-        735
-      ],
-      "advance": 500
-    },
-    "L": {
-      "name": "L",
-      "bounds": [
-        108,
-        0,
-        434,
-        735
-      ],
-      "advance": 500
-    },
-    "M": {
-      "name": "M",
-      "bounds": [
-        72,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "N": {
-      "name": "N",
-      "bounds": [
-        72,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "O": {
-      "name": "O",
-      "bounds": [
-        64,
-        -8,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "P": {
-      "name": "P",
-      "bounds": [
-        90,
-        0,
-        444,
-        735
-      ],
-      "advance": 500
-    },
-    "Q": {
-      "name": "Q",
-      "bounds": [
-        64,
-        -165,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "R": {
-      "name": "R",
-      "bounds": [
-        72,
-        0,
-        452,
-        735
-      ],
-      "advance": 500
-    },
-    "S": {
-      "name": "S",
-      "bounds": [
-        62,
-        -8,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "T": {
-      "name": "T",
-      "bounds": [
-        66,
-        0,
-        434,
-        735
-      ],
-      "advance": 500
-    },
-    "U": {
-      "name": "U",
-      "bounds": [
-        72,
-        -8,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "V": {
-      "name": "V",
-      "bounds": [
-        58,
-        0,
-        442,
-        735
-      ],
-      "advance": 500
-    },
-    "W": {
-      "name": "W",
-      "bounds": [
-        56,
-        0,
-        444,
-        735
-      ],
-      "advance": 500
-    },
-    "X": {
-      "name": "X",
-      "bounds": [
-        68,
-        0,
-        432,
-        735
-      ],
-      "advance": 500
-    },
-    "Y": {
-      "name": "Y",
-      "bounds": [
-        67,
-        0,
-        433,
-        735
-      ],
-      "advance": 500
-    },
-    "Z": {
-      "name": "Z",
-      "bounds": [
-        72,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "0": {
-      "name": "zero.cv10-1",
-      "bounds": [
-        64,
-        -8,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "1": {
-      "name": "one.cv01-1",
-      "bounds": [
-        240,
-        0,
-        260,
-        735
-      ],
-      "advance": 500
-    },
-    "2": {
-      "name": "two.cv02-1",
-      "bounds": [
-        70,
-        0,
-        432,
-        743
-      ],
-      "advance": 500
-    },
-    "3": {
-      "name": "three.cv03-1",
-      "bounds": [
-        62,
-        -8,
-        444,
-        735
-      ],
-      "advance": 500
-    },
-    "4": {
-      "name": "four.cv04-1",
-      "bounds": [
-        64,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "5": {
-      "name": "five.cv05-1",
-      "bounds": [
-        70,
-        -8,
-        436,
-        735
-      ],
-      "advance": 500
-    },
-    "6": {
-      "name": "six.cv06-1",
-      "bounds": [
-        64,
-        -8,
-        438,
-        743
-      ],
-      "advance": 500
-    },
-    "7": {
-      "name": "seven.cv07-1",
-      "bounds": [
-        72,
-        0,
-        428,
-        735
-      ],
-      "advance": 500
-    },
-    "8": {
-      "name": "eight.cv08-2",
-      "bounds": [
-        64,
-        -8,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "9": {
-      "name": "nine.cv09-3",
-      "bounds": [
-        64,
-        0,
-        436,
-        743
-      ],
-      "advance": 500
-    },
-    "!": {
-      "name": "exclam",
-      "bounds": [
-        216,
-        -8,
-        285,
-        735
-      ],
-      "advance": 500
-    },
-    "\"": {
-      "name": "quotedbl",
-      "bounds": [
-        139,
-        442,
-        361,
-        772
-      ],
-      "advance": 500
-    },
-    "#": {
-      "name": "numbersign",
-      "bounds": [
-        63,
-        18,
-        437,
-        717
-      ],
-      "advance": 500
-    },
-    "%": {
-      "name": "percent",
-      "bounds": [
-        28,
-        -8,
-        472,
-        743
-      ],
-      "advance": 500
-    },
-    "*": {
-      "name": "asterisk",
-      "bounds": [
-        47,
-        431,
-        453,
-        816
-      ],
-      "advance": 500
-    },
-    "+": {
-      "name": "plus",
-      "bounds": [
-        72,
-        155,
-        428,
-        525
-      ],
-      "advance": 500
-    },
-    ",": {
-      "name": "comma",
-      "bounds": [
-        214,
-        -215,
-        286,
-        63
-      ],
-      "advance": 500
-    },
-    "-": {
-      "name": "hyphen",
-      "bounds": [
-        72,
-        331,
-        428,
-        349
-      ],
-      "advance": 500
-    },
-    ".": {
-      "name": "period",
-      "bounds": [
-        215,
-        -8,
-        286,
-        63
-      ],
-      "advance": 500
-    },
-    "/": {
-      "name": "slash",
-      "bounds": [
-        71,
-        -143,
-        429,
-        823
-      ],
-      "advance": 500
-    },
-    ":": {
-      "name": "colon",
-      "bounds": [
-        215,
-        -8,
-        286,
-        528
-      ],
-      "advance": 500
-    },
-    ";": {
-      "name": "semicolon",
-      "bounds": [
-        214,
-        -215,
-        286,
-        528
-      ],
-      "advance": 500
-    },
-    "<": {
-      "name": "less",
-      "bounds": [
-        72,
-        113,
-        433,
-        567
-      ],
-      "advance": 500
-    },
-    "=": {
-      "name": "equal",
-      "bounds": [
-        72,
-        246,
-        428,
-        434
-      ],
-      "advance": 500
-    },
-    ">": {
-      "name": "greater",
-      "bounds": [
-        67,
-        113,
-        428,
-        567
-      ],
-      "advance": 500
-    },
-    "?": {
-      "name": "question",
-      "bounds": [
-        70,
-        -8,
-        428,
-        743
-      ],
-      "advance": 500
-    },
-    "_": {
-      "name": "underscore",
-      "bounds": [
-        72,
-        -18,
-        428,
-        0
-      ],
-      "advance": 500
+    "400": {
+      "fontSHA256": "139d7477bd76ed89d496045e2e7f888bac9c0106aa2ad199b70c5cc869efc2b2",
+      "glyphs": {
+        " ": {
+          "name": "space",
+          "bounds": null,
+          "advance": 500
+        },
+        "A": {
+          "name": "A",
+          "bounds": [
+            44,
+            0,
+            456,
+            735
+          ],
+          "advance": 500
+        },
+        "B": {
+          "name": "B",
+          "bounds": [
+            64,
+            0,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "C": {
+          "name": "C",
+          "bounds": [
+            56,
+            -8,
+            438,
+            743
+          ],
+          "advance": 500
+        },
+        "D": {
+          "name": "D",
+          "bounds": [
+            64,
+            0,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "E": {
+          "name": "E",
+          "bounds": [
+            72,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "F": {
+          "name": "F",
+          "bounds": [
+            96,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "G": {
+          "name": "G",
+          "bounds": [
+            56,
+            -8,
+            438,
+            743
+          ],
+          "advance": 500
+        },
+        "H": {
+          "name": "H",
+          "bounds": [
+            64,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "I": {
+          "name": "I.cv19-1",
+          "bounds": [
+            211,
+            0,
+            289,
+            735
+          ],
+          "advance": 500
+        },
+        "J": {
+          "name": "J",
+          "bounds": [
+            46,
+            -8,
+            412,
+            735
+          ],
+          "advance": 500
+        },
+        "K": {
+          "name": "K",
+          "bounds": [
+            80,
+            0,
+            445,
+            735
+          ],
+          "advance": 500
+        },
+        "L": {
+          "name": "L",
+          "bounds": [
+            96,
+            0,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "M": {
+          "name": "M",
+          "bounds": [
+            51,
+            0,
+            449,
+            735
+          ],
+          "advance": 500
+        },
+        "N": {
+          "name": "N",
+          "bounds": [
+            64,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "O": {
+          "name": "O",
+          "bounds": [
+            56,
+            -8,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "P": {
+          "name": "P",
+          "bounds": [
+            80,
+            0,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "Q": {
+          "name": "Q",
+          "bounds": [
+            56,
+            -180,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "R": {
+          "name": "R",
+          "bounds": [
+            64,
+            0,
+            460,
+            735
+          ],
+          "advance": 500
+        },
+        "S": {
+          "name": "S",
+          "bounds": [
+            54,
+            -8,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "T": {
+          "name": "T",
+          "bounds": [
+            58,
+            0,
+            442,
+            735
+          ],
+          "advance": 500
+        },
+        "U": {
+          "name": "U",
+          "bounds": [
+            64,
+            -8,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "V": {
+          "name": "V",
+          "bounds": [
+            44,
+            0,
+            456,
+            735
+          ],
+          "advance": 500
+        },
+        "W": {
+          "name": "W",
+          "bounds": [
+            35,
+            0,
+            465,
+            735
+          ],
+          "advance": 500
+        },
+        "X": {
+          "name": "X",
+          "bounds": [
+            49,
+            0,
+            451,
+            735
+          ],
+          "advance": 500
+        },
+        "Y": {
+          "name": "Y",
+          "bounds": [
+            46,
+            0,
+            454,
+            735
+          ],
+          "advance": 500
+        },
+        "Z": {
+          "name": "Z",
+          "bounds": [
+            64,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "0": {
+          "name": "zero.cv10-1",
+          "bounds": [
+            56,
+            -8,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "1": {
+          "name": "one.cv01-1",
+          "bounds": [
+            211,
+            0,
+            289,
+            735
+          ],
+          "advance": 500
+        },
+        "2": {
+          "name": "two.cv02-1",
+          "bounds": [
+            62,
+            0,
+            440,
+            743
+          ],
+          "advance": 500
+        },
+        "3": {
+          "name": "three.cv03-1",
+          "bounds": [
+            54,
+            -8,
+            452,
+            735
+          ],
+          "advance": 500
+        },
+        "4": {
+          "name": "four.cv04-1",
+          "bounds": [
+            56,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "5": {
+          "name": "five.cv05-1",
+          "bounds": [
+            62,
+            -8,
+            444,
+            735
+          ],
+          "advance": 500
+        },
+        "6": {
+          "name": "six.cv06-1",
+          "bounds": [
+            56,
+            -8,
+            446,
+            743
+          ],
+          "advance": 500
+        },
+        "7": {
+          "name": "seven.cv07-1",
+          "bounds": [
+            64,
+            0,
+            436,
+            735
+          ],
+          "advance": 500
+        },
+        "8": {
+          "name": "eight.cv08-2",
+          "bounds": [
+            56,
+            -8,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "9": {
+          "name": "nine.cv09-3",
+          "bounds": [
+            56,
+            0,
+            444,
+            743
+          ],
+          "advance": 500
+        },
+        "!": {
+          "name": "exclam",
+          "bounds": [
+            180,
+            -8,
+            320,
+            735
+          ],
+          "advance": 500
+        },
+        "\"": {
+          "name": "quotedbl",
+          "bounds": [
+            107,
+            442,
+            393,
+            772
+          ],
+          "advance": 500
+        },
+        "#": {
+          "name": "numbersign",
+          "bounds": [
+            31,
+            18,
+            469,
+            717
+          ],
+          "advance": 500
+        },
+        "%": {
+          "name": "percent",
+          "bounds": [
+            24,
+            -8,
+            476,
+            743
+          ],
+          "advance": 500
+        },
+        "*": {
+          "name": "asterisk",
+          "bounds": [
+            38,
+            416,
+            462,
+            816
+          ],
+          "advance": 500
+        },
+        "+": {
+          "name": "plus",
+          "bounds": [
+            64,
+            147,
+            436,
+            533
+          ],
+          "advance": 500
+        },
+        ",": {
+          "name": "comma",
+          "bounds": [
+            156,
+            -215,
+            328,
+            148
+          ],
+          "advance": 500
+        },
+        "-": {
+          "name": "hyphen",
+          "bounds": [
+            64,
+            305,
+            436,
+            375
+          ],
+          "advance": 500
+        },
+        ".": {
+          "name": "period",
+          "bounds": [
+            172,
+            -8,
+            328,
+            148
+          ],
+          "advance": 500
+        },
+        "/": {
+          "name": "slash",
+          "bounds": [
+            59,
+            -143,
+            441,
+            823
+          ],
+          "advance": 500
+        },
+        ":": {
+          "name": "colon",
+          "bounds": [
+            172,
+            -8,
+            328,
+            528
+          ],
+          "advance": 500
+        },
+        ";": {
+          "name": "semicolon",
+          "bounds": [
+            156,
+            -215,
+            328,
+            528
+          ],
+          "advance": 500
+        },
+        "<": {
+          "name": "less",
+          "bounds": [
+            64,
+            83,
+            455,
+            597
+          ],
+          "advance": 500
+        },
+        "=": {
+          "name": "equal",
+          "bounds": [
+            64,
+            217,
+            436,
+            463
+          ],
+          "advance": 500
+        },
+        ">": {
+          "name": "greater",
+          "bounds": [
+            45,
+            83,
+            436,
+            597
+          ],
+          "advance": 500
+        },
+        "?": {
+          "name": "question",
+          "bounds": [
+            62,
+            -8,
+            436,
+            743
+          ],
+          "advance": 500
+        },
+        "_": {
+          "name": "underscore",
+          "bounds": [
+            64,
+            -70,
+            436,
+            0
+          ],
+          "advance": 500
+        }
+      }
     }
   }
 }
