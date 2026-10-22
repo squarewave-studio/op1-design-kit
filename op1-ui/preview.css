@@ -63,3 +63,29 @@ footer{font:12px/1.7 var(--sw-font-sans);letter-spacing:0;padding:28px 0}
 .intro>.mark i{width:72px;height:72px;border:1px solid #ffffff20}
 @media(max-width:900px){.intro{align-items:flex-start;gap:24px}.intro>.mark{grid-template-columns:repeat(2,44px);gap:8px;margin:8px 0 0}.intro>.mark i{width:44px;height:44px}}
 @media(max-width:600px){.intro h1{font-size:clamp(34px,10.1vw,56px)}.intro>.mark{grid-template-columns:repeat(4,32px);gap:10px;margin:28px 0 0}.intro>.mark i{width:32px;height:32px}}
+
+/* Page themes never alter the instrument-screen colours. */
+:root[data-theme=light]{color-scheme:light;--sw-primary:#0e7490;--sw-primary-hover:#155e75;--sw-surface:#ffffff;--sw-surface-raised:#f5f7f8;--sw-border:#dbe1e7;--sw-border-strong:#a0aab5;--sw-text:#17212b;--sw-text-secondary:#526171}
+:root[data-theme=light] .intro>.mark i{border-color:#17212b30}
+.github-links{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
+.masthead-actions a{display:inline-flex;align-items:center;min-height:44px}
+.masthead .github-stars{gap:6px;justify-content:center;border:1px solid var(--sw-border-strong);border-radius:6px;padding:0 10px;font-variant-numeric:tabular-nums}
+.github-stars svg{flex-shrink:0;width:16px;height:16px}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:44px;padding:0;border:1px solid var(--sw-border-strong);border-radius:6px;color:var(--sw-text);background:transparent}
+.theme-toggle[hidden]{display:none}
+.theme-toggle:hover{background:var(--sw-surface-raised)}
+.theme-toggle svg{width:20px;height:20px}
+.theme-moon,:root[data-theme=light] .theme-sun{display:none}
+:root[data-theme=light] .theme-moon{display:block}
+.github-stars [data-star-count]{min-width:3ch;text-align:center}
+@media(max-width:600px){.masthead-actions{display:grid;grid-template-columns:1fr auto auto;gap:8px}.masthead-actions .kit-version{grid-column:1/-1;margin:0}.github-links{gap:8px}}
+
+/* Use the same content edges for the masthead, page and footer. */
+:root{--page-width:1440px;--page-gutter:4vw}
+body.docs{--page-width:1320px}
+body>main,.docs-layout{max-width:var(--page-width);padding-inline:var(--page-gutter)}
+.masthead,.docs .masthead,body>footer{width:calc(min(100%,var(--page-width)) - 2*var(--page-gutter));max-width:none;margin-inline:auto;padding-inline:0}
+@media(max-width:860px){body.docs{--page-gutter:24px}}
+@media(max-width:600px){body.docs{--page-gutter:20px}}
+@media(max-width:480px){body{--page-gutter:20px}}
+.mobile-contents{margin-inline:var(--page-gutter)}

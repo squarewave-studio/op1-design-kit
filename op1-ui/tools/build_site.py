@@ -61,7 +61,7 @@ DESCRIPTIONS = {
     'For Agents': 'Install the portable op1-design skill and use the shared rules and design-kit.json in your project.'
 }
 def masthead():
-    return '<header class="masthead"><div class="kit-identity"><a class="kit-title" href="index.html">OP-1 Design Kit</a><a class="kit-maintainer" href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit"><span>by</span><img src="assets/squarewave-mark.svg" width="18" height="18" alt=""><span>SquareWave Studio</span></a></div><nav class="masthead-actions" aria-label="Project"><span class="kit-version">v0.2 · DRAFT</span><a href="contributing.html">Contribute</a><a href="https://github.com/squarewave-studio/op1-design-kit">GitHub ↗</a></nav></header>'
+    return '<header class="masthead"><div class="kit-identity"><a class="kit-title" href="index.html">OP-1 Design Kit</a><a class="kit-maintainer" href="https://squarewave.studio/?utm_source=op1-design-kit&amp;utm_medium=referral&amp;utm_campaign=op1-design-kit"><span>by</span><img src="assets/squarewave-mark.svg" width="18" height="18" alt=""><span>SquareWave Studio</span></a></div><nav class="masthead-actions" aria-label="Project"><span class="kit-version">v0.2 · DRAFT</span><a href="contributing.html">Contribute</a><span class="github-links"><a href="https://github.com/squarewave-studio/op1-design-kit">GitHub ↗</a><a class="github-stars" data-github-stars href="https://github.com/squarewave-studio/op1-design-kit/stargazers" aria-label="View GitHub Stargazers"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></svg><span data-star-count>Star</span></a></span><button class="theme-toggle" data-theme-toggle type="button" aria-label="Switch To Light Mode" title="Switch To Light Mode" hidden><svg class="theme-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></svg><svg class="theme-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.5 14A9 9 0 0 1 10 3.5 9 9 0 1 0 20.5 14Z"/></svg></button></nav></header>'
 
 def edit_link(current):
     source=PAGES[current][1].relative_to(ROOT) if current in PAGES else Path('skills/op1-design/SKILL.md')
@@ -94,7 +94,7 @@ def render_page(title, body, current):
     nav=documentation_navigation(current)
     # Keep the opening text together before the local contents list.
     body=re.sub(r'(</h1>(?:\s*<p>(?!<img).*?</p>)+)',lambda m:m[1]+page_contents(body),body,count=1,flags=re.S)
-    return f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · OP-1 Design Kit</title><meta name="description" content="{html.escape(description)}"><meta property="og:title" content="{html.escape(title)} · OP-1 Design Kit"><meta property="og:description" content="{html.escape(description)}">{share_metadata()}<meta property="og:type" content="website"><link rel="stylesheet" href="preview.css"></head><body class="docs"><a class="skip-link" href="#content">Skip To Content</a>{masthead()}<details class="mobile-contents"><summary>Kit Contents</summary>{nav}</details><div class="docs-layout"><aside class="docs-sidebar">{nav}</aside><main class="document" id="content">{body}{edit_link(current)}{reading_links(current)}</main></div>{FOOTER}</body></html>'''
+    return f'''<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} · OP-1 Design Kit</title><meta name="description" content="{html.escape(description)}"><meta property="og:title" content="{html.escape(title)} · OP-1 Design Kit"><meta property="og:description" content="{html.escape(description)}">{share_metadata()}<meta property="og:type" content="website"><script src="theme-init.js"></script><link rel="stylesheet" href="preview.css"><script src="header.js" defer></script></head><body class="docs"><a class="skip-link" href="#content">Skip To Content</a>{masthead()}<details class="mobile-contents"><summary>Kit Contents</summary>{nav}</details><div class="docs-layout"><aside class="docs-sidebar">{nav}</aside><main class="document" id="content">{body}{edit_link(current)}{reading_links(current)}</main></div>{FOOTER}</body></html>'''
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -112,7 +112,7 @@ def main():
         if inputs.is_relative_to(ROOT): parser.error('Keep manual excerpt inputs outside the repository')
         for key in MANUAL_REFERENCES:
             shutil.copy2(inputs / (key+'.png'), out / 'references/manual' / (key+'.png'))
-    for name in ('preview.css', 'index.html', 'llms.txt'):
+    for name in ('preview.css', 'index.html', 'llms.txt', 'theme-init.js', 'header.js'):
         shutil.copy2(SOURCE / name, out / name)
     home=(out / 'index.html').read_text()
     home=re.sub(r'<meta property="og:image"[^>]*>',share_metadata(),home,count=1)
